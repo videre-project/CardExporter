@@ -86,10 +86,6 @@ Create a `.env` file in the repository root.
 ### Credentials and service endpoints
 
 ```env
-# MTGO login. Required only by commands that log into the client.
-USERNAME=your_mtgo_username
-PASSWORD=your_mtgo_password
-
 # PostgreSQL
 CARDEXPORTER_DATABASE_URL=Host=carddata-postgres;Port=5432;Database=cardexporter;Username=cardexporter;Password=cardexporter
 
