@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/CardExporter/">
+    <Project Path="CardExporter/CardExporter.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,1 @@
+\i /pg/schema.sql

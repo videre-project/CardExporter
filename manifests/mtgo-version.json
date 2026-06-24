@@ -1,0 +1,1200 @@
+{
+  "version": "3.4.157.4679",
+  "codebase": "3.4.157.4679.20260623090043",
+  "date": "2026-06-23T09:00:43",
+  "public_key": "e0b489d8605198df",
+  "dependencies": [
+    {
+      "name": "AdminScene",
+      "file": "AdminScene.dll",
+      "version": "3.4.157.4679",
+      "size": 36864,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "e31353bedf6fc6cecbca681eee22aa804807f37"
+      }
+    },
+    {
+      "name": "Ben.Demystifier",
+      "file": "Ben.Demystifier.dll",
+      "version": "0.4.0.0",
+      "size": 72704,
+      "public_key": "a6d206e05440431a",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "19a9d08812c03c2c3835c21c9e95c865a0594bd"
+      }
+    },
+    {
+      "name": "Card",
+      "file": "Card.dll",
+      "version": "3.4.157.4679",
+      "size": 232741888,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "98caf5ebbd6e341969aa121d5fabf40e3c686f"
+      }
+    },
+    {
+      "name": "CardManager",
+      "file": "CardManager.dll",
+      "version": "3.4.157.4679",
+      "size": 685056,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "7cdab6b9479273901b7cb4e471e77a961f1b5f60"
+      }
+    },
+    {
+      "name": "Chat",
+      "file": "Chat.dll",
+      "version": "3.4.157.4679",
+      "size": 329728,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "584a62c39c851078bb49a3c6e1c25ca887ae8"
+      }
+    },
+    {
+      "name": "CollectionAndDeckEditorScene",
+      "file": "CollectionAndDeckEditorScene.dll",
+      "version": "3.4.157.4679",
+      "size": 616960,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "2a507a65842e8824d162faf7f251a19011308a"
+      }
+    },
+    {
+      "name": "CommunityToolkit.Mvvm",
+      "file": "CommunityToolkit.Mvvm.dll",
+      "version": "8.4.0.0",
+      "size": 147784,
+      "public_key": "4aff67a105548ee2",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "76989b379ef0d6bd6643eb9845f76153f2e8ca"
+      }
+    },
+    {
+      "name": "Core",
+      "file": "Core.dll",
+      "version": "3.4.157.4679",
+      "size": 151040,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "ee6226f76444a1f89e3e90681765e3d338aad"
+      }
+    },
+    {
+      "name": "DraftScene",
+      "file": "DraftScene.dll",
+      "version": "3.4.157.4679",
+      "size": 186368,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "eeefaeba93249f718c74a458a87a81b3a1ea3f81"
+      }
+    },
+    {
+      "name": "DuelScene",
+      "file": "DuelScene.dll",
+      "version": "3.4.157.4679",
+      "size": 1575936,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "be402574c425a0f24e6acbcfc76566bc87b0c43a"
+      }
+    },
+    {
+      "name": "EntityFramework",
+      "file": "EntityFramework.dll",
+      "version": "6.0.0.0",
+      "size": 4997152,
+      "public_key": "b77a5c561934e089",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "7773d4cd047a843ed36e7b71cb9bc1a799d741"
+      }
+    },
+    {
+      "name": "EntityFramework.SqlServer",
+      "file": "EntityFramework.SqlServer.dll",
+      "version": "6.0.0.0",
+      "size": 592416,
+      "public_key": "b77a5c561934e089",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "bbcfe1d0d9cd1775f1ccf1309916df6cd471b23"
+      }
+    },
+    {
+      "name": "FieldValidation",
+      "file": "FieldValidation.dll",
+      "version": "3.4.157.4679",
+      "size": 31232,
+      "public_key": "20c89727be25f230",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "7da3d816bf36a557eacbd1cc63516b52eaa61e"
+      }
+    },
+    {
+      "name": "FlsClient",
+      "file": "FlsClient.dll",
+      "version": "3.4.157.4679",
+      "size": 83456,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "3e6dc0616e388d85efc6fc1b49b1b3da48aaaafb"
+      }
+    },
+    {
+      "name": "Frames.Framework",
+      "file": "Frames.Framework.dll",
+      "version": "0.0.0.0",
+      "size": 275968,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "2e39ef2fd3db941c490809459d29cbb9cbd655b"
+      }
+    },
+    {
+      "name": "Frames.Framework.Database",
+      "file": "Frames.Framework.Database.dll",
+      "version": "0.0.0.0",
+      "size": 69632,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "453f395b65df25f1a7918684ed30c9b333d41a"
+      }
+    },
+    {
+      "name": "Frames.Framework.Wpf",
+      "file": "Frames.Framework.Wpf.dll",
+      "version": "0.0.0.0",
+      "size": 5215232,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "de83fc7d4ec167883d11c48afc128466da8db61"
+      }
+    },
+    {
+      "name": "GameDetails",
+      "file": "GameDetails.dll",
+      "version": "3.4.157.4679",
+      "size": 547840,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "25ba836f87dbdf274a3cb2477d51cd528b6d86d2"
+      }
+    },
+    {
+      "name": "HelpScene",
+      "file": "HelpScene.dll",
+      "version": "3.4.157.4679",
+      "size": 15360,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "225f5a7d75d4ecfa583da058d494bc090c3b7"
+      }
+    },
+    {
+      "name": "HomeScene",
+      "file": "HomeScene.dll",
+      "version": "3.4.157.4679",
+      "size": 101888,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "959fb5c72e75f76baa7fe28962b5c6558f38c18"
+      }
+    },
+    {
+      "name": "LoginScene",
+      "file": "LoginScene.dll",
+      "version": "3.4.157.4679",
+      "size": 166400,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "7afcc896cc6349cb20e6c18a94a25589a185d1f"
+      }
+    },
+    {
+      "name": "Message",
+      "file": "Message.dll",
+      "version": "3.4.157.4679",
+      "size": 45056,
+      "public_key": "20c89727be25f230",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "9d24e8fb06aac5162439dbcaf1abc2660bd2fc1"
+      }
+    },
+    {
+      "name": "Microsoft.Bcl.AsyncInterfaces",
+      "file": "Microsoft.Bcl.AsyncInterfaces.dll",
+      "version": "10.0.0.8",
+      "size": 27984,
+      "public_key": "cc7b13ffcd2ddd51",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "c2a1ecdacf672d4198e720ee8c384c920d5e3"
+      }
+    },
+    {
+      "name": "Microsoft.Extensions.Configuration",
+      "file": "Microsoft.Extensions.Configuration.dll",
+      "version": "10.0.0.8",
+      "size": 47912,
+      "public_key": "adb9793829ddae60",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "4bf02bae65d70d379832247d1673a99648932ba"
+      }
+    },
+    {
+      "name": "Microsoft.Extensions.Configuration.Abstractions",
+      "file": "Microsoft.Extensions.Configuration.Abstractions.dll",
+      "version": "10.0.0.8",
+      "size": 32080,
+      "public_key": "adb9793829ddae60",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "5e89279be83bfabc636447e5eb1f8955103ed"
+      }
+    },
+    {
+      "name": "Microsoft.Extensions.Configuration.Binder",
+      "file": "Microsoft.Extensions.Configuration.Binder.dll",
+      "version": "10.0.0.8",
+      "size": 49960,
+      "public_key": "adb9793829ddae60",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "f9692813aa14b5addb3b21889d9d5cf427e55b2"
+      }
+    },
+    {
+      "name": "Microsoft.Extensions.DependencyInjection",
+      "file": "Microsoft.Extensions.DependencyInjection.dll",
+      "version": "10.0.0.8",
+      "size": 101672,
+      "public_key": "adb9793829ddae60",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "5ed1477edd63062f4124fa41f59387326a33d"
+      }
+    },
+    {
+      "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "file": "Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "version": "10.0.0.8",
+      "size": 65832,
+      "public_key": "adb9793829ddae60",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "dacf26717076533fe45253b2a461bd05a3f5"
+      }
+    },
+    {
+      "name": "Microsoft.Extensions.Logging",
+      "file": "Microsoft.Extensions.Logging.dll",
+      "version": "10.0.0.8",
+      "size": 54608,
+      "public_key": "adb9793829ddae60",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "f6aa5cd959e1dc7ecfcb39c9b9cef37f7f0f592"
+      }
+    },
+    {
+      "name": "Microsoft.Extensions.Logging.Abstractions",
+      "file": "Microsoft.Extensions.Logging.Abstractions.dll",
+      "version": "10.0.0.8",
+      "size": 69928,
+      "public_key": "adb9793829ddae60",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "9f684ff8feffde6558fa8b02fdb16ded279ee1"
+      }
+    },
+    {
+      "name": "Microsoft.Extensions.Options",
+      "file": "Microsoft.Extensions.Options.dll",
+      "version": "10.0.0.8",
+      "size": 69968,
+      "public_key": "adb9793829ddae60",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "81e9def6f6c7c7443f1d95bfbfccbab635f511"
+      }
+    },
+    {
+      "name": "Microsoft.Extensions.Options.ConfigurationExtensions",
+      "file": "Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+      "version": "10.0.0.8",
+      "size": 29520,
+      "public_key": "adb9793829ddae60",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "8ee83c0350b3e59bf606aca6b4ab67b2877ed"
+      }
+    },
+    {
+      "name": "Microsoft.Extensions.Primitives",
+      "file": "Microsoft.Extensions.Primitives.dll",
+      "version": "10.0.0.8",
+      "size": 50984,
+      "public_key": "adb9793829ddae60",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "e7f62e654964b6d3de283bb7ee1654141fd5ca95"
+      }
+    },
+    {
+      "name": "Microsoft.Win32.Registry",
+      "file": "Microsoft.Win32.Registry.dll",
+      "version": "4.1.3.0",
+      "size": 23112,
+      "public_key": "b03f5f7f11d50a3a",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "1c27a41fd84d6bfe99dabae2e59fcf12fccf6213"
+      }
+    },
+    {
+      "name": "Microsoft.WindowsAPICodePack",
+      "file": "Microsoft.WindowsAPICodePack.dll",
+      "version": "1.1.5.0",
+      "size": 103936,
+      "public_key": "8985beaab7ea3f04",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "3aa9d184535a68447cacc9870882db92efb431"
+      }
+    },
+    {
+      "name": "Microsoft.WindowsAPICodePack.Shell",
+      "file": "Microsoft.WindowsAPICodePack.Shell.dll",
+      "version": "1.1.5.0",
+      "size": 513024,
+      "public_key": "8985beaab7ea3f04",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "908f5a46116797eadf5aab52e4cacb5bb36ca014"
+      }
+    },
+    {
+      "name": "Microsoft.Xaml.Behaviors",
+      "file": "Microsoft.Xaml.Behaviors.dll",
+      "version": "1.1.0.0",
+      "size": 146504,
+      "public_key": "b03f5f7f11d50a3a",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "e8dac8a2809c6b9160c917e2112f731dd279494"
+      }
+    },
+    {
+      "name": "MTGO",
+      "file": "MTGO.exe",
+      "version": "3.4.157.4679",
+      "size": 14577240,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "7868d1e9fb7d6361de5a69ebc8f634fdb4981"
+      }
+    },
+    {
+      "name": "Mtgo.Shared.Common",
+      "file": "Mtgo.Shared.Common.dll",
+      "version": "0.0.0.0",
+      "size": 30720,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "a34ea2771027893385beeb78e4d61ad1345a87f"
+      }
+    },
+    {
+      "name": "Mtgo.Shared.Configuration",
+      "file": "Mtgo.Shared.Configuration.dll",
+      "version": "0.0.0.0",
+      "size": 6144,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "7f9ee68aa895af462f979514855ee966a4112c"
+      }
+    },
+    {
+      "name": "Mtgo.Shared.EntityFramework",
+      "file": "Mtgo.Shared.EntityFramework.dll",
+      "version": "0.0.0.0",
+      "size": 18944,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "f2dbb6fa7c06bc690b9222956d4123d29faeb80"
+      }
+    },
+    {
+      "name": "Mtgo.Shared.Logging",
+      "file": "Mtgo.Shared.Logging.dll",
+      "version": "0.0.0.0",
+      "size": 10752,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "2a14f75ba3185166fc035ac39902fe224a4a3e0"
+      }
+    },
+    {
+      "name": "Mtgo.Shared.Parser.Attributes",
+      "file": "Mtgo.Shared.Parser.Attributes.dll",
+      "version": "0.0.0.0",
+      "size": 1996800,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "1f1d249f1266593a1b244f9ad798ae2e0dc5e94"
+      }
+    },
+    {
+      "name": "Mtgo.Shared.Wpf",
+      "file": "Mtgo.Shared.Wpf.dll",
+      "version": "0.0.0.0",
+      "size": 164352,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "fcee9ff82e9f71982a146183cc314cdbd3243"
+      }
+    },
+    {
+      "name": "Mtgo.Shared.Wpf.Abstractions",
+      "file": "Mtgo.Shared.Wpf.Abstractions.dll",
+      "version": "0.0.0.0",
+      "size": 13312,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "27a35cd471d18c3edce9df35a4db9efd65aa13b5"
+      }
+    },
+    {
+      "name": "Mtgo.Shared.Wpf.Mvvm",
+      "file": "Mtgo.Shared.Wpf.Mvvm.dll",
+      "version": "0.0.0.0",
+      "size": 30208,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "135fafecfff912e232bf1a40549cd42436dca5e7"
+      }
+    },
+    {
+      "name": "Mtgo.Shared.Wpf.Mvvm.Abstractions",
+      "file": "Mtgo.Shared.Wpf.Mvvm.Abstractions.dll",
+      "version": "0.0.0.0",
+      "size": 16896,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "1e4d645903272261e6f2ccb56a98822c9a116"
+      }
+    },
+    {
+      "name": "MTGOEnumStruct",
+      "file": "MTGOEnumStruct.dll",
+      "version": "3.4.157.4679",
+      "size": 799232,
+      "public_key": "20c89727be25f230",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "243d562637b2dc666b56fbe992858b986526d5a"
+      }
+    },
+    {
+      "name": "MTGOMessage",
+      "file": "MTGOMessage.dll",
+      "version": "3.4.157.4679",
+      "size": 2658304,
+      "public_key": "20c89727be25f230",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "7d12e29b576433e03ec34afd2bd5ee1ca59d"
+      }
+    },
+    {
+      "name": "MTGOValidation",
+      "file": "MTGOValidation.dll",
+      "version": "3.4.157.4679",
+      "size": 40960,
+      "public_key": "20c89727be25f230",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "68747ffd78a84d3a1c8189c8bd5fe18db951ca4"
+      }
+    },
+    {
+      "name": "NAudio.Core",
+      "file": "NAudio.Core.dll",
+      "version": "2.1.0.0",
+      "size": 187904,
+      "public_key": "e279aa5131008a41",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "9d7bf773aa866968182f15dfd73a0d046bd18"
+      }
+    },
+    {
+      "name": "NAudio.Wasapi",
+      "file": "NAudio.Wasapi.dll",
+      "version": "2.1.0.0",
+      "size": 173568,
+      "public_key": "e279aa5131008a41",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "5c3a1be14f4e925085caaa31625ea11e1db4f3ed"
+      }
+    },
+    {
+      "name": "NAudio.WinMM",
+      "file": "NAudio.WinMM.dll",
+      "version": "2.1.0.0",
+      "size": 57344,
+      "public_key": "e279aa5131008a41",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "a79f8ec86b2c5f403aef8a8f10d362b3354bb72"
+      }
+    },
+    {
+      "name": "p4api.net",
+      "file": "p4api.net.dll",
+      "version": "2023.2.258.5793",
+      "size": 475968,
+      "public_key": "f6b9b9d036c873e1",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "cec3ded961601c2e5568416aba48695d3efdb26"
+      }
+    },
+    {
+      "name": "PerforceLib",
+      "file": "PerforceLib.dll",
+      "version": "3.4.157.4679",
+      "size": 31232,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "a99526ce5bec8cf12b66484f0fd4156f79d2764"
+      }
+    },
+    {
+      "name": "PlayScene",
+      "file": "PlayScene.dll",
+      "version": "3.4.157.4679",
+      "size": 494080,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "4763ad7b974c4a78dd99de947d1d0aa71f115"
+      }
+    },
+    {
+      "name": "RuleBasedValidation",
+      "file": "RuleBasedValidation.dll",
+      "version": "3.4.157.4679",
+      "size": 57344,
+      "public_key": "20c89727be25f230",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "cfbceaa88bce37da904f8e57191166a7b579e38f"
+      }
+    },
+    {
+      "name": "Serilog",
+      "file": "Serilog.dll",
+      "version": "4.3.0.0",
+      "size": 165376,
+      "public_key": "24c2f752a8e58a10",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "83d940205fe0f81fbef265f28044f12adebd83c"
+      }
+    },
+    {
+      "name": "Serilog.Extensions.Logging",
+      "file": "Serilog.Extensions.Logging.dll",
+      "version": "10.0.0.0",
+      "size": 29696,
+      "public_key": "24c2f752a8e58a10",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "c2f355fd422cea439f6dfa3b53047ba54a55eb7"
+      }
+    },
+    {
+      "name": "Serilog.Sinks.Console",
+      "file": "Serilog.Sinks.Console.dll",
+      "version": "6.1.1.0",
+      "size": 40960,
+      "public_key": "24c2f752a8e58a10",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "d552adb3ba814ba5a69dc9494be3984bb526cd"
+      }
+    },
+    {
+      "name": "Serilog.Sinks.Debug",
+      "file": "Serilog.Sinks.Debug.dll",
+      "version": "2.0.0.0",
+      "size": 7168,
+      "public_key": "24c2f752a8e58a10",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "985d7cb5ff3cb71c14e12a5f8d51d94861b1843"
+      }
+    },
+    {
+      "name": "Serilog.Sinks.File",
+      "file": "Serilog.Sinks.File.dll",
+      "version": "7.0.0.0",
+      "size": 38912,
+      "public_key": "24c2f752a8e58a10",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "3f1b39ee5b1d7ca575152989287a4f53cc407d47"
+      }
+    },
+    {
+      "name": "SettingsScene",
+      "file": "SettingsScene.dll",
+      "version": "3.4.157.4679",
+      "size": 846336,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "2b9cbe44589312811cd1eff64761c5b251ec8d7"
+      }
+    },
+    {
+      "name": "ShaderEffects",
+      "file": "ShaderEffects.dll",
+      "version": "3.4.157.4679",
+      "size": 7304192,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "163d85b212af51ae92f75d5e8ec511cc28c02d"
+      }
+    },
+    {
+      "name": "SharedResources",
+      "file": "SharedResources.dll",
+      "version": "3.4.157.4679",
+      "size": 8498688,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "fc669115ee2b7786ac85e6dd781bbc74e818339"
+      }
+    },
+    {
+      "name": "ShopResources",
+      "file": "ShopResources.dll",
+      "version": "3.4.157.4679",
+      "size": 47616,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "abf418a64d6fa48d950559a74a51553ffaf7f1c"
+      }
+    },
+    {
+      "name": "SQLite.CodeFirst",
+      "file": "SQLite.CodeFirst.dll",
+      "version": "1.7.0.36",
+      "size": 47104,
+      "public_key": "eb96ba0a78d831a7",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "48cf222649c1338040404168e56a219334fe0ba"
+      }
+    },
+    {
+      "name": "StoreScene",
+      "file": "StoreScene.dll",
+      "version": "3.4.157.4679",
+      "size": 114176,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "c8fb80d42c1d52cf36ba7c82158f583aff4e455"
+      }
+    },
+    {
+      "name": "System.Buffers",
+      "file": "System.Buffers.dll",
+      "version": "4.0.5.0",
+      "size": 23816,
+      "public_key": "cc7b13ffcd2ddd51",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "d87680e1a96549cf45506d17566ec08c27a770d8"
+      }
+    },
+    {
+      "name": "System.Collections.Immutable",
+      "file": "System.Collections.Immutable.dll",
+      "version": "10.0.0.8",
+      "size": 252712,
+      "public_key": "b03f5f7f11d50a3a",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "d0157a4aa7b7c12f77515311534836178c048"
+      }
+    },
+    {
+      "name": "System.ComponentModel.Annotations",
+      "file": "System.ComponentModel.Annotations.dll",
+      "version": "4.2.1.0",
+      "size": 43152,
+      "public_key": "b03f5f7f11d50a3a",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "ceacbd53b6a02e1f7337a6b058924e1e11949bb"
+      }
+    },
+    {
+      "name": "System.Configuration.ConfigurationManager",
+      "file": "System.Configuration.ConfigurationManager.dll",
+      "version": "10.0.0.8",
+      "size": 95016,
+      "public_key": "cc7b13ffcd2ddd51",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "f410539dd3ef7e2a86f7404595436563e9488c6b"
+      }
+    },
+    {
+      "name": "System.Data.SQLite",
+      "file": "System.Data.SQLite.dll",
+      "version": "1.0.119.0",
+      "size": 450232,
+      "public_key": "db937bc2d44ff139",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "5ba0c52d9d60b34ee74d13f8389804029e6fe"
+      }
+    },
+    {
+      "name": "System.Data.SQLite.EF6",
+      "file": "System.Data.SQLite.EF6.dll",
+      "version": "1.0.119.0",
+      "size": 206520,
+      "public_key": "db937bc2d44ff139",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "42522cec4f745df62ffb4ec9c7e663ff7f1cce"
+      }
+    },
+    {
+      "name": "System.Data.SQLite.Linq",
+      "file": "System.Data.SQLite.Linq.dll",
+      "version": "1.0.119.0",
+      "size": 206520,
+      "public_key": "db937bc2d44ff139",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "2e8785f098c3d42182c6fa7b977244d71a4c30"
+      }
+    },
+    {
+      "name": "System.Diagnostics.DiagnosticSource",
+      "file": "System.Diagnostics.DiagnosticSource.dll",
+      "version": "10.0.0.8",
+      "size": 223056,
+      "public_key": "cc7b13ffcd2ddd51",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "a2b126d033491eac955a44de1f86e4e094b87"
+      }
+    },
+    {
+      "name": "System.IO.Pipelines",
+      "file": "System.IO.Pipelines.dll",
+      "version": "10.0.0.8",
+      "size": 85288,
+      "public_key": "cc7b13ffcd2ddd51",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "9014dd27703b577dbcc1510882cc38672459bd3"
+      }
+    },
+    {
+      "name": "System.Memory",
+      "file": "System.Memory.dll",
+      "version": "4.0.5.0",
+      "size": 145200,
+      "public_key": "cc7b13ffcd2ddd51",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "96c87b7148805aadcd4b9e23162deb06d7a472"
+      }
+    },
+    {
+      "name": "System.Numerics.Vectors",
+      "file": "System.Numerics.Vectors.dll",
+      "version": "4.1.6.0",
+      "size": 110344,
+      "public_key": "b03f5f7f11d50a3a",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "c5583c3257cf193ff4736671445f8da64366a6a1"
+      }
+    },
+    {
+      "name": "System.Reflection.Metadata",
+      "file": "System.Reflection.Metadata.dll",
+      "version": "10.0.0.8",
+      "size": 514856,
+      "public_key": "b03f5f7f11d50a3a",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "5afd352e1f1fb7cad098ebbdaf7e64a4c2d74be"
+      }
+    },
+    {
+      "name": "System.Runtime.CompilerServices.Unsafe",
+      "file": "System.Runtime.CompilerServices.Unsafe.dll",
+      "version": "6.0.3.0",
+      "size": 19256,
+      "public_key": "b03f5f7f11d50a3a",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "4329cd4aaf8df5d1cf9f242486ef8e646fddda"
+      }
+    },
+    {
+      "name": "System.Security.AccessControl",
+      "file": "System.Security.AccessControl.dll",
+      "version": "4.1.3.0",
+      "size": 30792,
+      "public_key": "b03f5f7f11d50a3a",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "8a3b1bd9df5d52c24de234a2928fad86927f6d"
+      }
+    },
+    {
+      "name": "System.Security.Principal.Windows",
+      "file": "System.Security.Principal.Windows.dll",
+      "version": "4.1.3.0",
+      "size": 15224,
+      "public_key": "b03f5f7f11d50a3a",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "2aed74577f5f623f7e91adda8ef74a11eea437"
+      }
+    },
+    {
+      "name": "System.Text.Encodings.Web",
+      "file": "System.Text.Encodings.Web.dll",
+      "version": "10.0.0.8",
+      "size": 87336,
+      "public_key": "cc7b13ffcd2ddd51",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "6e70e860b920c8379ef7139a1a9da608fc54df3"
+      }
+    },
+    {
+      "name": "System.Text.Json",
+      "file": "System.Text.Json.dll",
+      "version": "10.0.0.8",
+      "size": 778024,
+      "public_key": "cc7b13ffcd2ddd51",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "cd68d5a8abbee533e92c114e27d983d5ca16636"
+      }
+    },
+    {
+      "name": "System.Threading.Channels",
+      "file": "System.Threading.Channels.dll",
+      "version": "10.0.0.8",
+      "size": 90408,
+      "public_key": "cc7b13ffcd2ddd51",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "ef2f2d46dfcd1ac81d863a5d82d4897da9924d1"
+      }
+    },
+    {
+      "name": "System.Threading.Tasks.Extensions",
+      "file": "System.Threading.Tasks.Extensions.dll",
+      "version": "4.2.4.0",
+      "size": 27960,
+      "public_key": "cc7b13ffcd2ddd51",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "3439da9b7918fac17836acbe1fa4e5c4119ec"
+      }
+    },
+    {
+      "name": "System.Windows.Interactivity",
+      "file": "System.Windows.Interactivity.dll",
+      "version": "4.0.0.0",
+      "size": 39936,
+      "public_key": "31bf3856ad364e35",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "dabb4ecffdc422a8eebff5d4ec8116a6e90d7e7"
+      }
+    },
+    {
+      "name": "Telerik.Windows.Controls",
+      "file": "Telerik.Windows.Controls.dll",
+      "version": "2013.3.1016.40",
+      "size": 3376640,
+      "public_key": "5803cfa389c90ce7",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "62cc4de3e4e75797caf5f4d5cf35cbea9819554"
+      }
+    },
+    {
+      "name": "Telerik.Windows.Controls.Docking",
+      "file": "Telerik.Windows.Controls.Docking.dll",
+      "version": "2013.3.1016.40",
+      "size": 876032,
+      "public_key": "5803cfa389c90ce7",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "9ebedb4ecb404092ecb32e1a26da4035215cf655"
+      }
+    },
+    {
+      "name": "Telerik.Windows.Controls.Navigation",
+      "file": "Telerik.Windows.Controls.Navigation.dll",
+      "version": "2013.3.1016.40",
+      "size": 2712576,
+      "public_key": "5803cfa389c90ce7",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "e51f56f5b0c1f4ea93ea7f2bce349ab38b47cf3"
+      }
+    },
+    {
+      "name": "Telerik.Windows.Data",
+      "file": "Telerik.Windows.Data.dll",
+      "version": "2013.3.1016.40",
+      "size": 453632,
+      "public_key": "5803cfa389c90ce7",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "5016998595891f8e9a181ae68301751387d7ad0"
+      }
+    },
+    {
+      "name": "ThemeResources",
+      "file": "ThemeResources.dll",
+      "version": "3.4.157.4679",
+      "size": 9474560,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "e6b1f6a72b4cb7767331579ba9fde7c9f1be9c6e"
+      }
+    },
+    {
+      "name": "TradeScene",
+      "file": "TradeScene.dll",
+      "version": "3.4.157.4679",
+      "size": 158208,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "4d83ba506454e9b4fae3c1d2a44f279eace4312"
+      }
+    },
+    {
+      "name": "WotC.Common",
+      "file": "WotC.Common.dll",
+      "version": "3.4.157.4679",
+      "size": 188928,
+      "public_key": "20c89727be25f230",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "859dcd8efb591b08742b012e973c53cb383c23e"
+      }
+    },
+    {
+      "name": "WotC.Common.Client",
+      "file": "WotC.Common.Client.dll",
+      "version": "3.4.157.4679",
+      "size": 12288,
+      "public_key": "20c89727be25f230",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "6ebad2dcc0805dac6920d540f073f6dd3940e1b9"
+      }
+    },
+    {
+      "name": "WotC.MtGO.Client.Common",
+      "file": "WotC.MtGO.Client.Common.dll",
+      "version": "0.0.0.0",
+      "size": 20480,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "5476e85e8f495bfa3bcdad82d19bb5b3acbf134"
+      }
+    },
+    {
+      "name": "WotC.MtGO.Client.Common.Collections",
+      "file": "WotC.MtGO.Client.Common.Collections.dll",
+      "version": "3.4.157.4679",
+      "size": 13312,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "5d1523d4d4a74c9ca62e9ba9619f4a2833fc8"
+      }
+    },
+    {
+      "name": "WotC.MtGO.Client.Common.Diagnostics",
+      "file": "WotC.MtGO.Client.Common.Diagnostics.dll",
+      "version": "3.4.157.4679",
+      "size": 111104,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "596056541cddc78418afa36faf30ffa5d7ecc31"
+      }
+    },
+    {
+      "name": "WotC.MtGO.Client.Model.Admin",
+      "file": "WotC.MtGO.Client.Model.Admin.dll",
+      "version": "3.4.157.4679",
+      "size": 10240,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "28282defbfd102d803e3835771d514630766567"
+      }
+    },
+    {
+      "name": "WotC.MtGO.Client.Model.Chat",
+      "file": "WotC.MtGO.Client.Model.Chat.dll",
+      "version": "3.4.157.4679",
+      "size": 103936,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "e0f1e79cabfa27765e2698c846ef4fbe0193d11"
+      }
+    },
+    {
+      "name": "WotC.MtGO.Client.Model.Core",
+      "file": "WotC.MtGO.Client.Model.Core.dll",
+      "version": "3.4.157.4679",
+      "size": 573440,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "dc9f8caa6ad3ef7f95d5d055adf21616361d6b"
+      }
+    },
+    {
+      "name": "WotC.MtGO.Client.Model.Data",
+      "file": "WotC.MtGO.Client.Model.Data.dll",
+      "version": "3.4.157.4679",
+      "size": 21504,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "5bd38187fcc0a44de57b7bf76389088a5d8139b"
+      }
+    },
+    {
+      "name": "WotC.MtGO.Client.Model.Help",
+      "file": "WotC.MtGO.Client.Model.Help.dll",
+      "version": "3.4.157.4679",
+      "size": 9728,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "1f36f72a83d51b76a6d94cb04b2dbe1f7ebc52e"
+      }
+    },
+    {
+      "name": "WotC.MtGO.Client.Model.Home",
+      "file": "WotC.MtGO.Client.Model.Home.dll",
+      "version": "3.4.157.4679",
+      "size": 8704,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "86adb4abe2f561ea7341544172b74e9d8a756c5"
+      }
+    },
+    {
+      "name": "WotC.MtGO.Client.Model.Play",
+      "file": "WotC.MtGO.Client.Model.Play.dll",
+      "version": "3.4.157.4679",
+      "size": 13312512,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "c2226d4a95afc7b912d28b345cf033c56a6556"
+      }
+    },
+    {
+      "name": "WotC.MtGO.Client.Model.Reference",
+      "file": "WotC.MtGO.Client.Model.Reference.dll",
+      "version": "3.4.157.4679",
+      "size": 231936,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "7dd5d55b5395e98cd033a98dbfc3d9524254ca"
+      }
+    },
+    {
+      "name": "WotC.MtGO.Client.Model.Session",
+      "file": "WotC.MtGO.Client.Model.Session.dll",
+      "version": "3.4.157.4679",
+      "size": 23552,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "d6b43b757d3bfcfb692d4addecfd36a3c9ace1b2"
+      }
+    },
+    {
+      "name": "WotC.MtGO.Client.Model.Settings",
+      "file": "WotC.MtGO.Client.Model.Settings.dll",
+      "version": "3.4.157.4679",
+      "size": 67072,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "a5b3282bcece20d685a4d88e6ab434496e5acd"
+      }
+    },
+    {
+      "name": "WotC.MtGO.Client.Model.Store",
+      "file": "WotC.MtGO.Client.Model.Store.dll",
+      "version": "3.4.157.4679",
+      "size": 72192,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "e8a9afe12881378ce4c02b527c89797fcf7eadaa"
+      }
+    },
+    {
+      "name": "WotC.MtGO.Client.Model.Trade",
+      "file": "WotC.MtGO.Client.Model.Trade.dll",
+      "version": "3.4.157.4679",
+      "size": 61952,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "586cb3e72fb1bf91949d1cece85aa1cfdba8f8"
+      }
+    },
+    {
+      "name": "WotC.MTGO.Common.GameServer.Attribute",
+      "file": "WotC.MTGO.Common.GameServer.Attribute.dll",
+      "version": "3.4.157.4679",
+      "size": 6656,
+      "hash": {
+        "algorithm": "sha1",
+        "value": "d58392c19db82572a36c33279ebf40968c49c49d"
+      }
+    },
+    {
+      "name": "Xceed.Wpf.Toolkit",
+      "file": "Xceed.Wpf.Toolkit.dll",
+      "version": "2.0.0.0",
+      "size": 900608,
+      "public_key": "3e4669d2f30244f4",
+      "hash": {
+        "algorithm": "sha1",
+        "value": "16aff43db47fee0c967e3b7a9fb7654296c9d"
+      }
+    }
+  ]
+}

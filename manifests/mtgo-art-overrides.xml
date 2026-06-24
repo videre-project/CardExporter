@@ -1,0 +1,1717 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mtgoArtOverrides targetStyle="010" targetDirectory="Images/ArtInFrame/Tier1">
+  <override setCode="P3" setName="Starter 1999" catalogId="76712" name="Knight Errant" collectorNumber="19/173" artId="6743" targetCacheFile="06743_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9051" setCode="PO" artId="6743" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76718" name="Chorus of Woe" collectorNumber="68/173" artId="4718" targetCacheFile="04718_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10895" setCode="P2" artId="4718" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76720" name="Snapping Drake" collectorNumber="52/173" artId="6630" targetCacheFile="06630_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8835" setCode="PO" artId="6630" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76722" name="Wind Sail" collectorNumber="62/173" artId="4688" targetCacheFile="04688_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10837" setCode="P2" artId="4688" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76724" name="Touch of Brilliance" collectorNumber="57/173" artId="4686" targetCacheFile="04686_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10833" setCode="P2" artId="4686" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76726" name="Plains" collectorNumber="166/173" artId="1997" targetCacheFile="01997_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11383" setCode="6E" collectorNumber="331/350" artId="1997" />
+      <mtgoSource catalogId="7193" setCode="MI" collectorNumber="331/350" artId="1997" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76730" name="Lynx" collectorNumber="131/173" artId="4761" targetCacheFile="04761_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10977" setCode="P2" artId="4761" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76732" name="Howling Fury" collectorNumber="82/173" artId="6582" targetCacheFile="06582_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8739" setCode="PO" artId="6582" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76734" name="Piracy" collectorNumber="45/173" artId="4706" targetCacheFile="04706_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10871" setCode="P2" artId="4706" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76738" name="Norwood Archers" collectorNumber="137/173" artId="4767" targetCacheFile="04767_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10987" setCode="P2" artId="4767" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76740" name="Soul Feast" collectorNumber="90/173" artId="15698" targetCacheFile="15698_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12963" setCode="UD" collectorNumber="72/143" artId="15698" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76744" name="Monstrous Growth" collectorNumber="132/173" artId="4770" targetCacheFile="04770_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10993" setCode="P2" artId="4770" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76746" name="Bargain" collectorNumber="7/173" artId="4637" targetCacheFile="04637_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10773" setCode="P2" artId="4637" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76750" name="Bull Hippo" collectorNumber="126/173" artId="8641" targetCacheFile="08641_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11825" setCode="UZ" collectorNumber="239/350" artId="8641" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76752" name="Summer Bloom" collectorNumber="144/173" artId="6675" targetCacheFile="06675_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11737" setCode="6E" collectorNumber="255/350" artId="6675" />
+      <mtgoSource catalogId="8919" setCode="PO" artId="6675" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76754" name="Phantom Warrior" collectorNumber="44/173" artId="2945" targetCacheFile="02945_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11651" setCode="6E" collectorNumber="85/350" artId="2945" />
+      <mtgoSource catalogId="9437" setCode="WL" collectorNumber="48/167" artId="2945" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76756" name="Durkwood Boars" collectorNumber="127/173" artId="541" targetCacheFile="00541_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="4917" setCode="4E" artId="541" />
+      <mtgoSource catalogId="8017" setCode="5E" artId="541" />
+      <mtgoSource catalogId="3187" setCode="LE" artId="541" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76758" name="Mountain" collectorNumber="165/173" artId="2434" targetCacheFile="02434_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8537" setCode="5E" artId="2434" />
+      <mtgoSource catalogId="11563" setCode="6E" collectorNumber="344/350" artId="2434" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76760" name="Goblin Mountaineer" collectorNumber="105/173" artId="4738" targetCacheFile="04738_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10933" setCode="P2" artId="4738" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76762" name="Alluring Scent" collectorNumber="124/173" artId="4787" targetCacheFile="04787_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="38950" setCode="ME4" collectorNumber="141/260" artId="4787" />
+      <mtgoSource catalogId="11027" setCode="P2" artId="4787" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76764" name="Nature's Cloak" collectorNumber="135/173" artId="6665" targetCacheFile="06665_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8899" setCode="PO" artId="6665" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76768" name="Moon Sprite" collectorNumber="133/173" artId="6662" targetCacheFile="06662_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8893" setCode="PO" artId="6662" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76770" name="Water Elemental" collectorNumber="60/173" artId="283" targetCacheFile="00283_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="875" setCode="1E" artId="283" />
+      <mtgoSource catalogId="1465" setCode="2E" artId="283" />
+      <mtgoSource catalogId="2069" setCode="2U" artId="283" />
+      <mtgoSource catalogId="2963" setCode="3E" artId="283" />
+      <mtgoSource catalogId="4735" setCode="4E" artId="283" />
+      <mtgoSource catalogId="38632" setCode="ME4" collectorNumber="70/260" artId="283" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76772" name="Renewing Touch" collectorNumber="140/173" artId="4778" targetCacheFile="04778_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11009" setCode="P2" artId="4778" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76774" name="Mountain" collectorNumber="163/173" artId="6774" targetCacheFile="06774_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11763" setCode="6E" collectorNumber="346/350" artId="6774" />
+      <mtgoSource catalogId="9111" setCode="PO" artId="6774" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76778" name="Bog Imp" collectorNumber="65/173" artId="6565" targetCacheFile="06565_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11717" setCode="6E" collectorNumber="116/350" artId="6565" />
+      <mtgoSource catalogId="8707" setCode="PO" artId="6565" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76780" name="Remove Soul" collectorNumber="49/173" artId="2460" targetCacheFile="02460_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8589" setCode="5E" artId="2460" />
+      <mtgoSource catalogId="11573" setCode="6E" collectorNumber="94/350" artId="2460" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76782" name="Sylvan Yeti" collectorNumber="146/173" artId="4784" targetCacheFile="04784_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11021" setCode="P2" artId="4784" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76784" name="Dakmor Plague" collectorNumber="72/173" artId="4725" targetCacheFile="04725_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="38932" setCode="ME4" collectorNumber="73/260" artId="4725" />
+      <mtgoSource catalogId="10907" setCode="P2" artId="4725" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76788" name="Coercion" collectorNumber="69/173" artId="4724" targetCacheFile="04724_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10905" setCode="P2" artId="4724" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76790" name="Psychic Transfer" collectorNumber="46/173" artId="2008" targetCacheFile="02008_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11389" setCode="6E" collectorNumber="90/350" artId="2008" />
+      <mtgoSource catalogId="7215" setCode="MI" collectorNumber="85/350" artId="2008" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76792" name="Giant Octopus" collectorNumber="39/173" artId="6619" targetCacheFile="06619_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8813" setCode="PO" artId="6619" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76796" name="Righteous Fury" collectorNumber="23/173" artId="4679" targetCacheFile="04679_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="30762" setCode="ME2" collectorNumber="30/245" artId="4679" />
+      <mtgoSource catalogId="10819" setCode="P2" artId="4679" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76798" name="Wood Elves" collectorNumber="153/173" artId="6682" targetCacheFile="06682_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8933" setCode="PO" artId="6682" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76800" name="Last Chance" collectorNumber="110/173" artId="6702" targetCacheFile="06702_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="38986" setCode="ME4" collectorNumber="125/260" artId="6702" />
+      <mtgoSource catalogId="8971" setCode="PO" artId="6702" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76802" name="Bog Wraith" collectorNumber="67/173" artId="25" targetCacheFile="00025_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="361" setCode="1E" artId="25" />
+      <mtgoSource catalogId="951" setCode="2E" artId="25" />
+      <mtgoSource catalogId="1555" setCode="2U" artId="25" />
+      <mtgoSource catalogId="2507" setCode="3E" artId="25" />
+      <mtgoSource catalogId="4345" setCode="4E" artId="25" />
+      <mtgoSource catalogId="7813" setCode="5E" artId="25" />
+      <mtgoSource catalogId="11071" setCode="6E" collectorNumber="118/350" artId="25" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76804" name="Wicked Pact" collectorNumber="92/173" artId="6602" targetCacheFile="06602_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="38958" setCode="ME4" collectorNumber="102/260" artId="6602" />
+      <mtgoSource catalogId="8779" setCode="PO" artId="6602" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76808" name="Scathe Zombies" collectorNumber="87/173" artId="2465" targetCacheFile="02465_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8599" setCode="5E" artId="2465" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76812" name="Plains" collectorNumber="167/173" artId="4789" targetCacheFile="04789_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11705" setCode="6E" collectorNumber="334/350" artId="4789" />
+      <mtgoSource catalogId="11031" setCode="P2" artId="4789" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76814" name="Storm Crow" collectorNumber="53/173" artId="6632" targetCacheFile="06632_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11723" setCode="6E" collectorNumber="101/350" artId="6632" />
+      <mtgoSource catalogId="8839" setCode="PO" artId="6632" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76818" name="Grizzly Bears" collectorNumber="129/173" artId="2392" targetCacheFile="02392_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8453" setCode="5E" artId="2392" />
+      <mtgoSource catalogId="11537" setCode="6E" collectorNumber="236/350" artId="2392" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76820" name="Vengeance" collectorNumber="29/173" artId="6759" targetCacheFile="06759_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9083" setCode="PO" artId="6759" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76822" name="Steadfastness" collectorNumber="27/173" artId="6754" targetCacheFile="06754_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9073" setCode="PO" artId="6754" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76828" name="Wild Ox" collectorNumber="151/173" artId="4774" targetCacheFile="04774_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="38942" setCode="ME4" collectorNumber="174/260" artId="4774" />
+      <mtgoSource catalogId="11001" setCode="P2" artId="4774" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76830" name="Fire Tempest" collectorNumber="97/173" artId="6694" targetCacheFile="06694_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="38982" setCode="ME4" collectorNumber="114/260" artId="6694" />
+      <mtgoSource catalogId="8955" setCode="PO" artId="6694" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76832" name="Hand of Death" collectorNumber="80/173" artId="4717" targetCacheFile="04717_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10893" setCode="P2" artId="4717" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76834" name="Ransack" collectorNumber="47/173" artId="3740" targetCacheFile="03740_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10343" setCode="ST" collectorNumber="39/143" artId="3740" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76836" name="Sylvan Basilisk" collectorNumber="145/173" artId="4804" targetCacheFile="04804_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11059" setCode="P2" artId="4804" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76838" name="Barbtooth Wurm" collectorNumber="125/173" artId="4776" targetCacheFile="04776_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11005" setCode="P2" artId="4776" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76842" name="Eye Spy" collectorNumber="38/173" artId="4695" targetCacheFile="04695_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10849" setCode="P2" artId="4695" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76846" name="Dakmor Scorpion" collectorNumber="73/173" artId="4708" targetCacheFile="04708_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10875" setCode="P2" artId="4708" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76848" name="Extinguish" collectorNumber="37/173" artId="4691" targetCacheFile="04691_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10841" setCode="P2" artId="4691" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76852" name="Ardent Militia" collectorNumber="5/173" artId="2839" targetCacheFile="02839_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11621" setCode="6E" collectorNumber="3/350" artId="2839" />
+      <mtgoSource catalogId="9237" setCode="WL" collectorNumber="5/167" artId="2839" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76854" name="Fire Elemental" collectorNumber="96/173" artId="83" targetCacheFile="00083_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="477" setCode="1E" artId="83" />
+      <mtgoSource catalogId="1067" setCode="2E" artId="83" />
+      <mtgoSource catalogId="1671" setCode="2U" artId="83" />
+      <mtgoSource catalogId="2609" setCode="3E" artId="83" />
+      <mtgoSource catalogId="4425" setCode="4E" artId="83" />
+      <mtgoSource catalogId="11079" setCode="6E" collectorNumber="176/350" artId="83" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76856" name="Plains" collectorNumber="168/173" artId="6783" targetCacheFile="06783_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11767" setCode="6E" collectorNumber="333/350" artId="6783" />
+      <mtgoSource catalogId="9129" setCode="PO" artId="6783" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76860" name="Border Guard" collectorNumber="9/173" artId="6732" targetCacheFile="06732_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9029" setCode="PO" artId="6732" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76862" name="Relentless Assault" collectorNumber="115/173" artId="2239" targetCacheFile="02239_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11445" setCode="6E" collectorNumber="202/350" artId="2239" />
+      <mtgoSource catalogId="7687" setCode="VI" collectorNumber="91/167" artId="2239" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76864" name="Merfolk of the Pearl Trident" collectorNumber="42/173" artId="6623" targetCacheFile="06623_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11721" setCode="6E" collectorNumber="82/350" artId="6623" />
+      <mtgoSource catalogId="8821" setCode="PO" artId="6623" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76866" name="Hulking Ogre" collectorNumber="108/173" artId="15771" targetCacheFile="15771_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="13021" setCode="UD" collectorNumber="87/143" artId="15771" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76874" name="Abyssal Horror" collectorNumber="63/173" artId="8099" targetCacheFile="08099_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11783" setCode="UZ" collectorNumber="115/350" artId="8099" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76876" name="Goblin Glider" collectorNumber="102/173" artId="4737" targetCacheFile="04737_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10931" setCode="P2" artId="4737" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76878" name="Forest" collectorNumber="157/173" artId="4802" targetCacheFile="04802_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11711" setCode="6E" collectorNumber="348/350" artId="4802" />
+      <mtgoSource catalogId="11057" setCode="P2" artId="4802" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76880" name="Island" collectorNumber="158/173" artId="1933" targetCacheFile="01933_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11355" setCode="6E" collectorNumber="335/350" artId="1933" />
+      <mtgoSource catalogId="7065" setCode="MI" collectorNumber="336/350" artId="1933" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76884" name="Devastation" collectorNumber="94/173" artId="6689" targetCacheFile="06689_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="38978" setCode="ME4" collectorNumber="112/260" artId="6689" />
+      <mtgoSource catalogId="8945" setCode="PO" artId="6689" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76886" name="Mountain" collectorNumber="164/173" artId="1975" targetCacheFile="01975_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11367" setCode="6E" collectorNumber="345/350" artId="1975" />
+      <mtgoSource catalogId="7149" setCode="MI" collectorNumber="344/350" artId="1975" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76888" name="Nature's Lore" collectorNumber="136/173" artId="2436" targetCacheFile="02436_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8541" setCode="5E" artId="2436" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76890" name="Counterspell" collectorNumber="34/173" artId="2340" targetCacheFile="02340_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8349" setCode="5E" artId="2340" />
+      <mtgoSource catalogId="11499" setCode="6E" collectorNumber="61/350" artId="2340" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76892" name="False Peace" collectorNumber="16/173" artId="6737" targetCacheFile="06737_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9039" setCode="PO" artId="6737" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76896" name="Forest" collectorNumber="156/173" artId="4801" targetCacheFile="04801_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11709" setCode="6E" collectorNumber="347/350" artId="4801" />
+      <mtgoSource catalogId="11055" setCode="P2" artId="4801" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76904" name="Island" collectorNumber="159/173" artId="2413" targetCacheFile="02413_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8495" setCode="5E" artId="2413" />
+      <mtgoSource catalogId="11549" setCode="6E" collectorNumber="336/350" artId="2413" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76906" name="Southern Elephant" collectorNumber="142/173" artId="9087" targetCacheFile="09087_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="38996" setCode="ME4" collectorNumber="167/260" artId="9087" />
+      <mtgoSource catalogId="25072" setCode="PK" collectorNumber="146/166" artId="9087" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76908" name="Dread Reaper" collectorNumber="76/173" artId="6573" targetCacheFile="06573_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="38952" setCode="ME4" collectorNumber="78/260" artId="6573" />
+      <mtgoSource catalogId="8723" setCode="PO" artId="6573" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76910" name="Swamp" collectorNumber="170/173" artId="301" targetCacheFile="00301_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="1501" setCode="2E" artId="301" />
+      <mtgoSource catalogId="2105" setCode="2U" artId="301" />
+      <mtgoSource catalogId="2997" setCode="3E" artId="301" />
+      <mtgoSource catalogId="4767" setCode="4E" artId="301" />
+      <mtgoSource catalogId="11139" setCode="6E" collectorNumber="340/350" artId="301" />
+      <mtgoSource catalogId="27851" setCode="MED" collectorNumber="189/195" artId="301" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76912" name="Whiptail Wurm" collectorNumber="149/173" artId="6679" targetCacheFile="06679_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="38976" setCode="ME4" collectorNumber="173/260" artId="6679" />
+      <mtgoSource catalogId="8927" setCode="PO" artId="6679" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76916" name="Air Elemental" collectorNumber="32/173" artId="4693" targetCacheFile="04693_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11701" setCode="6E" collectorNumber="56/350" artId="4693" />
+      <mtgoSource catalogId="10845" setCode="P2" artId="4693" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76918" name="Charging Paladin" collectorNumber="12/173" artId="6734" targetCacheFile="06734_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9033" setCode="PO" artId="6734" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76920" name="Feral Shadow" collectorNumber="77/173" artId="6577" targetCacheFile="06577_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8731" setCode="PO" artId="6577" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76922" name="Forest" collectorNumber="155/173" artId="6770" targetCacheFile="06770_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11761" setCode="6E" collectorNumber="350/350" artId="6770" />
+      <mtgoSource catalogId="9103" setCode="PO" artId="6770" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76932" name="Armageddon" collectorNumber="6/173" artId="4681" targetCacheFile="04681_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11699" setCode="6E" collectorNumber="4/350" artId="4681" />
+      <mtgoSource catalogId="10823" setCode="P2" artId="4681" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76934" name="Blinding Light" collectorNumber="8/173" artId="6731" targetCacheFile="06731_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9027" setCode="PO" artId="6731" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76936" name="Breath of Life" collectorNumber="10/173" artId="6733" targetCacheFile="06733_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9031" setCode="PO" artId="6733" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76938" name="Champion Lancer" collectorNumber="11/173" artId="17564" targetCacheFile="17564_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="39002" setCode="ME4" collectorNumber="8/260" artId="17564" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76940" name="Devoted Hero" collectorNumber="13/173" artId="6736" targetCacheFile="06736_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9037" setCode="PO" artId="6736" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76942" name="Gerrard's Wisdom" collectorNumber="18/173" artId="2955" targetCacheFile="02955_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9457" setCode="WL" collectorNumber="15/167" artId="2955" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76946" name="Path of Peace" collectorNumber="21/173" artId="8808" targetCacheFile="08808_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12159" setCode="UZ" collectorNumber="29/350" artId="8808" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76948" name="Righteous Charge" collectorNumber="22/173" artId="4668" targetCacheFile="04668_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="38922" setCode="ME4" collectorNumber="23/260" artId="4668" />
+      <mtgoSource catalogId="10797" setCode="P2" artId="4668" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76954" name="Wild Griffin" collectorNumber="31/173" artId="4662" targetCacheFile="04662_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="38918" setCode="ME4" collectorNumber="35/260" artId="4662" />
+      <mtgoSource catalogId="10785" setCode="P2" artId="4662" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76956" name="Ingenious Thief" collectorNumber="40/173" artId="6621" targetCacheFile="06621_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8817" setCode="PO" artId="6621" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76958" name="Man-o'-War" collectorNumber="41/173" artId="6622" targetCacheFile="06622_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8819" setCode="PO" artId="6622" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76962" name="Relearn" collectorNumber="48/173" artId="2946" targetCacheFile="02946_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11653" setCode="6E" collectorNumber="93/350" artId="2946" />
+      <mtgoSource catalogId="9439" setCode="WL" collectorNumber="51/167" artId="2946" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76964" name="Sleight of Hand" collectorNumber="51/173" artId="4636" targetCacheFile="04636_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="38912" setCode="ME4" collectorNumber="62/260" artId="4636" />
+      <mtgoSource catalogId="10771" setCode="P2" artId="4636" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76972" name="Undo" collectorNumber="58/173" artId="2282" targetCacheFile="02282_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="7773" setCode="VI" collectorNumber="47/167" artId="2282" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76976" name="Wind Drake" collectorNumber="61/173" artId="6640" targetCacheFile="06640_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11725" setCode="6E" collectorNumber="106/350" artId="6640" />
+      <mtgoSource catalogId="8855" setCode="PO" artId="6640" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76986" name="Dark Offering" collectorNumber="75/173" artId="4723" targetCacheFile="04723_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10903" setCode="P2" artId="4723" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76988" name="Grim Tutor" collectorNumber="79/173" artId="17569" targetCacheFile="17569_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="33906" setCode="ME3" collectorNumber="69/230" artId="17569" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76990" name="Muck Rats" collectorNumber="84/173" artId="4707" targetCacheFile="04707_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10873" setCode="P2" artId="4707" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76992" name="Raise Dead" collectorNumber="85/173" artId="6592" targetCacheFile="06592_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11719" setCode="6E" collectorNumber="152/350" artId="6592" />
+      <mtgoSource catalogId="8759" setCode="PO" artId="6592" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="76998" name="Earth Elemental" collectorNumber="95/173" artId="73" targetCacheFile="00073_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="457" setCode="1E" artId="73" />
+      <mtgoSource catalogId="1047" setCode="2E" artId="73" />
+      <mtgoSource catalogId="1651" setCode="2U" artId="73" />
+      <mtgoSource catalogId="2591" setCode="3E" artId="73" />
+      <mtgoSource catalogId="4413" setCode="4E" artId="73" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77000" name="Goblin Cavaliers" collectorNumber="98/173" artId="4740" targetCacheFile="04740_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="38936" setCode="ME4" collectorNumber="118/260" artId="4740" />
+      <mtgoSource catalogId="10937" setCode="P2" artId="4740" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77008" name="Goblin Hero" collectorNumber="103/173" artId="2389" targetCacheFile="02389_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8447" setCode="5E" artId="2389" />
+      <mtgoSource catalogId="11533" setCode="6E" collectorNumber="184/350" artId="2389" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77014" name="Jagged Lightning" collectorNumber="109/173" artId="4754" targetCacheFile="04754_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10963" setCode="P2" artId="4754" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77016" name="Mons's Goblin Raiders" collectorNumber="112/173" artId="2431" targetCacheFile="02431_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8531" setCode="5E" artId="2431" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77020" name="Scorching Spear" collectorNumber="116/173" artId="6715" targetCacheFile="06715_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8995" setCode="PO" artId="6715" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77022" name="Spitting Earth" collectorNumber="117/173" artId="2065" targetCacheFile="02065_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11395" setCode="6E" collectorNumber="208/350" artId="2065" />
+      <mtgoSource catalogId="7329" setCode="MI" collectorNumber="193/350" artId="2065" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77026" name="Thunder Dragon" collectorNumber="119/173" artId="17574" targetCacheFile="17574_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="39004" setCode="ME4" collectorNumber="138/260" artId="17574" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77028" name="Volcanic Dragon" collectorNumber="122/173" artId="2109" targetCacheFile="02109_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11413" setCode="6E" collectorNumber="214/350" artId="2109" />
+      <mtgoSource catalogId="7417" setCode="MI" collectorNumber="201/350" artId="2109" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77030" name="Volcanic Hammer" collectorNumber="123/173" artId="4746" targetCacheFile="04746_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10947" setCode="P2" artId="4746" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77032" name="Gorilla Warrior" collectorNumber="128/173" artId="6655" targetCacheFile="06655_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8881" setCode="PO" artId="6655" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77036" name="Squall" collectorNumber="143/173" artId="17577" targetCacheFile="17577_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="39006" setCode="ME4" collectorNumber="168/260" artId="17577" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77040" name="Untamed Wilds" collectorNumber="148/173" artId="702" targetCacheFile="00702_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="4979" setCode="4E" artId="702" />
+      <mtgoSource catalogId="8053" setCode="5E" artId="702" />
+      <mtgoSource catalogId="11187" setCode="6E" collectorNumber="263/350" artId="702" />
+      <mtgoSource catalogId="3507" setCode="LE" artId="702" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77046" name="Island" collectorNumber="160/173" artId="4792" targetCacheFile="04792_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11707" setCode="6E" collectorNumber="337/350" artId="4792" />
+      <mtgoSource catalogId="11037" setCode="P2" artId="4792" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77048" name="Island" collectorNumber="161/173" artId="6776" targetCacheFile="06776_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11765" setCode="6E" collectorNumber="338/350" artId="6776" />
+      <mtgoSource catalogId="9115" setCode="PO" artId="6776" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77050" name="Plains" collectorNumber="169/173" artId="1998" targetCacheFile="01998_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11385" setCode="6E" collectorNumber="332/350" artId="1998" />
+      <mtgoSource catalogId="7195" setCode="MI" collectorNumber="332/350" artId="1998" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77052" name="Swamp" collectorNumber="171/173" artId="6764" targetCacheFile="06764_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11755" setCode="6E" collectorNumber="342/350" artId="6764" />
+      <mtgoSource catalogId="9091" setCode="PO" artId="6764" />
+    </mtgoSources>
+  </override>
+  <override setCode="P3" setName="Starter 1999" catalogId="77054" name="Swamp" collectorNumber="172/173" artId="6765" targetCacheFile="06765_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11757" setCode="6E" collectorNumber="339/350" artId="6765" />
+      <mtgoSource catalogId="9093" setCode="PO" artId="6765" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76482" name="Control Magic" collectorNumber="23/136" artId="44" targetCacheFile="00044_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="399" setCode="1E" artId="44" />
+      <mtgoSource catalogId="989" setCode="2E" artId="44" />
+      <mtgoSource catalogId="1593" setCode="2U" artId="44" />
+      <mtgoSource catalogId="2539" setCode="3E" artId="44" />
+      <mtgoSource catalogId="4371" setCode="4E" artId="44" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76216" name="Fireball" collectorNumber="37/90" artId="84" targetCacheFile="00084_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="479" setCode="1E" artId="84" />
+      <mtgoSource catalogId="1069" setCode="2E" artId="84" />
+      <mtgoSource catalogId="1673" setCode="2U" artId="84" />
+      <mtgoSource catalogId="2611" setCode="3E" artId="84" />
+      <mtgoSource catalogId="4427" setCode="4E" artId="84" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76254" name="Force of Nature" collectorNumber="56/90" artId="89" targetCacheFile="00089_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="489" setCode="1E" artId="89" />
+      <mtgoSource catalogId="1079" setCode="2E" artId="89" />
+      <mtgoSource catalogId="1683" setCode="2U" artId="89" />
+      <mtgoSource catalogId="2621" setCode="3E" artId="89" />
+      <mtgoSource catalogId="4437" setCode="4E" artId="89" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76300" name="Island" collectorNumber="79/90" artId="128" targetCacheFile="00128_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="567" setCode="1E" artId="128" />
+      <mtgoSource catalogId="1157" setCode="2E" artId="128" />
+      <mtgoSource catalogId="1761" setCode="2U" artId="128" />
+      <mtgoSource catalogId="2685" setCode="3E" artId="128" />
+      <mtgoSource catalogId="4497" setCode="4E" artId="128" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76224" name="Lightning Bolt" collectorNumber="41/90" artId="147" targetCacheFile="00147_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="605" setCode="1E" artId="147" />
+      <mtgoSource catalogId="1195" setCode="2E" artId="147" />
+      <mtgoSource catalogId="1799" setCode="2U" artId="147" />
+      <mtgoSource catalogId="2719" setCode="3E" artId="147" />
+      <mtgoSource catalogId="4525" setCode="4E" artId="147" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76168" name="Mahamoti Djinn" collectorNumber="13/90" artId="156" targetCacheFile="00156_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="623" setCode="1E" artId="156" />
+      <mtgoSource catalogId="1213" setCode="2E" artId="156" />
+      <mtgoSource catalogId="1817" setCode="2U" artId="156" />
+      <mtgoSource catalogId="2737" setCode="3E" artId="156" />
+      <mtgoSource catalogId="4541" setCode="4E" artId="156" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76312" name="Mountain" collectorNumber="85/90" artId="166" targetCacheFile="00166_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="643" setCode="1E" artId="166" />
+      <mtgoSource catalogId="1233" setCode="2E" artId="166" />
+      <mtgoSource catalogId="1837" setCode="2U" artId="166" />
+      <mtgoSource catalogId="2111" setCode="AN" artId="166" />
+      <mtgoSource catalogId="2757" setCode="3E" artId="166" />
+    </mtgoSources>
+  </override>
+  <override setCode="P4" setName="Starter 2000" catalogId="76412" name="Obsianus Golem" collectorNumber="45/57" artId="179" targetCacheFile="00179_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="669" setCode="1E" artId="179" />
+      <mtgoSource catalogId="1259" setCode="2E" artId="179" />
+      <mtgoSource catalogId="1863" setCode="2U" artId="179" />
+      <mtgoSource catalogId="2771" setCode="3E" artId="179" />
+      <mtgoSource catalogId="4573" setCode="4E" artId="179" />
+    </mtgoSources>
+  </override>
+  <override setCode="P4" setName="Starter 2000" catalogId="76390" name="Orcish Oriflamme" collectorNumber="34/57" artId="181" targetCacheFile="00181_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="673" setCode="1E" artId="181" />
+      <mtgoSource catalogId="1263" setCode="2E" artId="181" />
+      <mtgoSource catalogId="1867" setCode="2U" artId="181" />
+      <mtgoSource catalogId="2775" setCode="3E" artId="181" />
+      <mtgoSource catalogId="4577" setCode="4E" artId="181" />
+    </mtgoSources>
+  </override>
+  <override setCode="P4" setName="Starter 2000" catalogId="76356" name="Prodigal Sorcerer" collectorNumber="17/57" artId="197" targetCacheFile="00197_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy" targetCatalogIds="76356,76500" targetSets="BR,P4">
+    <mtgoSources>
+      <mtgoSource catalogId="703" setCode="1E" artId="197" />
+      <mtgoSource catalogId="1293" setCode="2E" artId="197" />
+      <mtgoSource catalogId="1897" setCode="2U" artId="197" />
+      <mtgoSource catalogId="2807" setCode="3E" artId="197" />
+      <mtgoSource catalogId="4607" setCode="4E" artId="197" />
+    </mtgoSources>
+  </override>
+  <override setCode="P4" setName="Starter 2000" catalogId="76414" name="Rod of Ruin" collectorNumber="46/57" artId="212" targetCacheFile="00212_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="733" setCode="1E" artId="212" />
+      <mtgoSource catalogId="1323" setCode="2E" artId="212" />
+      <mtgoSource catalogId="1927" setCode="2U" artId="212" />
+      <mtgoSource catalogId="2833" setCode="3E" artId="212" />
+      <mtgoSource catalogId="4625" setCode="4E" artId="212" />
+    </mtgoSources>
+  </override>
+  <override setCode="P4" setName="Starter 2000" catalogId="76340" name="Samite Healer" collectorNumber="9/57" artId="215" targetCacheFile="00215_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="739" setCode="1E" artId="215" />
+      <mtgoSource catalogId="1329" setCode="2E" artId="215" />
+      <mtgoSource catalogId="1933" setCode="2U" artId="215" />
+      <mtgoSource catalogId="2839" setCode="3E" artId="215" />
+      <mtgoSource catalogId="4629" setCode="4E" artId="215" />
+    </mtgoSources>
+  </override>
+  <override setCode="P4" setName="Starter 2000" catalogId="76376" name="Scathe Zombies" collectorNumber="27/57" artId="218" targetCacheFile="00218_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="745" setCode="1E" artId="218" />
+      <mtgoSource catalogId="1335" setCode="2E" artId="218" />
+      <mtgoSource catalogId="1939" setCode="2U" artId="218" />
+      <mtgoSource catalogId="2845" setCode="3E" artId="218" />
+      <mtgoSource catalogId="4633" setCode="4E" artId="218" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76600" name="Scryb Sprites" collectorNumber="82/136" artId="221" targetCacheFile="00221_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="751" setCode="1E" artId="221" />
+      <mtgoSource catalogId="1341" setCode="2E" artId="221" />
+      <mtgoSource catalogId="1945" setCode="2U" artId="221" />
+      <mtgoSource catalogId="2851" setCode="3E" artId="221" />
+      <mtgoSource catalogId="4637" setCode="4E" artId="221" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76530" name="Sengir Vampire" collectorNumber="47/136" artId="224" targetCacheFile="00224_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="757" setCode="1E" artId="224" />
+      <mtgoSource catalogId="1347" setCode="2E" artId="224" />
+      <mtgoSource catalogId="1951" setCode="2U" artId="224" />
+      <mtgoSource catalogId="2857" setCode="3E" artId="224" />
+      <mtgoSource catalogId="4641" setCode="4E" artId="224" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76230" name="Shivan Dragon" collectorNumber="44/90" artId="228" targetCacheFile="00228_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="765" setCode="1E" artId="228" />
+      <mtgoSource catalogId="1355" setCode="2E" artId="228" />
+      <mtgoSource catalogId="1959" setCode="2U" artId="228" />
+      <mtgoSource catalogId="2865" setCode="3E" artId="228" />
+      <mtgoSource catalogId="4649" setCode="4E" artId="228" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76474" name="Swords to Plowshares" collectorNumber="19/136" artId="245" targetCacheFile="00245_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="799" setCode="1E" artId="245" />
+      <mtgoSource catalogId="1389" setCode="2E" artId="245" />
+      <mtgoSource catalogId="1993" setCode="2U" artId="245" />
+      <mtgoSource catalogId="2897" setCode="3E" artId="245" />
+      <mtgoSource catalogId="4679" setCode="4E" artId="245" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76208" name="Terror" collectorNumber="33/90" artId="247" targetCacheFile="00247_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy" targetCatalogIds="76208,76378,76538" targetSets="BD,BR,P4">
+    <mtgoSources>
+      <mtgoSource catalogId="803" setCode="1E" artId="247" />
+      <mtgoSource catalogId="1393" setCode="2E" artId="247" />
+      <mtgoSource catalogId="1997" setCode="2U" artId="247" />
+      <mtgoSource catalogId="2901" setCode="3E" artId="247" />
+      <mtgoSource catalogId="4681" setCode="4E" artId="247" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76616" name="Tranquility" collectorNumber="90/136" artId="256" targetCacheFile="00256_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="821" setCode="1E" artId="256" />
+      <mtgoSource catalogId="1411" setCode="2E" artId="256" />
+      <mtgoSource catalogId="2015" setCode="2U" artId="256" />
+      <mtgoSource catalogId="2913" setCode="3E" artId="256" />
+      <mtgoSource catalogId="4693" setCode="4E" artId="256" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76562" name="Uthden Troll" collectorNumber="63/136" artId="266" targetCacheFile="00266_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="841" setCode="1E" artId="266" />
+      <mtgoSource catalogId="1431" setCode="2E" artId="266" />
+      <mtgoSource catalogId="2035" setCode="2U" artId="266" />
+      <mtgoSource catalogId="2929" setCode="3E" artId="266" />
+      <mtgoSource catalogId="4705" setCode="4E" artId="266" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76476" name="Wrath of God" collectorNumber="20/136" artId="294" targetCacheFile="00294_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="897" setCode="1E" artId="294" />
+      <mtgoSource catalogId="1487" setCode="2E" artId="294" />
+      <mtgoSource catalogId="2091" setCode="2U" artId="294" />
+      <mtgoSource catalogId="2983" setCode="3E" artId="294" />
+      <mtgoSource catalogId="4753" setCode="4E" artId="294" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76596" name="Sandstorm" collectorNumber="80/136" artId="368" targetCacheFile="00368_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="2243" setCode="AN" artId="368" />
+      <mtgoSource catalogId="4813" setCode="4E" artId="368" />
+      <mtgoSource catalogId="38684" setCode="ME4" collectorNumber="164/260" artId="368" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76280" name="Clockwork Avian" collectorNumber="69/90" artId="399" targetCacheFile="00399_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="2305" setCode="AQ" artId="399" />
+      <mtgoSource catalogId="4835" setCode="4E" artId="399" />
+      <mtgoSource catalogId="38710" setCode="ME4" collectorNumber="190/260" artId="399" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76192" name="Fallen Angel" collectorNumber="25/90" artId="552" targetCacheFile="00552_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="3209" setCode="LE" artId="552" />
+      <mtgoSource catalogId="5179" setCode="CH" artId="552" />
+      <mtgoSource catalogId="8021" setCode="5E" artId="552" />
+      <mtgoSource catalogId="11163" setCode="6E" collectorNumber="127/350" artId="552" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76454" name="Land Tax" collectorNumber="9/136" artId="609" targetCacheFile="00609_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="3321" setCode="LE" artId="609" />
+      <mtgoSource catalogId="4939" setCode="4E" artId="609" />
+      <mtgoSource catalogId="33554" setCode="ME3" collectorNumber="17/230" artId="609" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76536" name="Syphon Soul" collectorNumber="50/136" artId="683" targetCacheFile="00683_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="3469" setCode="LE" artId="683" />
+      <mtgoSource catalogId="11183" setCode="6E" collectorNumber="159/350" artId="683" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76564" name="Wall of Heat" collectorNumber="64/136" artId="713" targetCacheFile="00713_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="3529" setCode="LE" artId="713" />
+      <mtgoSource catalogId="5267" setCode="CH" artId="713" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76490" name="Flood" collectorNumber="27/136" artId="770" targetCacheFile="00770_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="3779" setCode="DK" artId="770" />
+      <mtgoSource catalogId="5019" setCode="4E" artId="770" />
+      <mtgoSource catalogId="8081" setCode="5E" artId="770" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76166" name="Leviathan" collectorNumber="12/90" artId="791" targetCacheFile="00791_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="3819" setCode="DK" artId="791" />
+      <mtgoSource catalogId="8085" setCode="5E" artId="791" />
+      <mtgoSource catalogId="26023" setCode="TSB" collectorNumber="23/121" artId="791" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76154" name="Counterspell" collectorNumber="6/90" artId="1120" targetCacheFile="01120_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="5439" setCode="IA" artId="1120" />
+      <mtgoSource catalogId="30404" setCode="ME2" collectorNumber="44/245" artId="1120" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76276" name="Diabolic Vision" collectorNumber="67/90" artId="1130" targetCacheFile="01130_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="5459" setCode="IA" artId="1130" />
+      <mtgoSource catalogId="30414" setCode="ME2" collectorNumber="191/245" artId="1130" />
+    </mtgoSources>
+  </override>
+  <override setCode="P4" setName="Starter 2000" catalogId="76380" name="Flame Spirit" collectorNumber="29/57" artId="1156" targetCacheFile="01156_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="5511" setCode="IA" artId="1156" />
+      <mtgoSource catalogId="8151" setCode="5E" artId="1156" />
+      <mtgoSource catalogId="11213" setCode="6E" collectorNumber="179/350" artId="1156" />
+      <mtgoSource catalogId="30436" setCode="ME2" collectorNumber="126/245" artId="1156" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76586" name="Lhurgoyf" collectorNumber="75/136" artId="1266" targetCacheFile="01266_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="5731" setCode="IA" artId="1266" />
+      <mtgoSource catalogId="8175" setCode="5E" artId="1266" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76170" name="Power Sink" collectorNumber="14/90" artId="1327" targetCacheFile="01327_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="5853" setCode="IA" artId="1327" />
+      <mtgoSource catalogId="11231" setCode="6E" collectorNumber="87/350" artId="1327" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76266" name="Scaled Wurm" collectorNumber="62/90" artId="1347" targetCacheFile="01347_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy" targetCatalogIds="76266,76598" targetSets="BD,BR">
+    <mtgoSources>
+      <mtgoSource catalogId="5893" setCode="IA" artId="1347" />
+      <mtgoSource catalogId="8209" setCode="5E" artId="1347" />
+      <mtgoSource catalogId="11235" setCode="6E" collectorNumber="251/350" artId="1347" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76268" name="Shambling Strider" collectorNumber="63/90" artId="1351" targetCacheFile="01351_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="5901" setCode="IA" artId="1351" />
+      <mtgoSource catalogId="28067" setCode="MED" collectorNumber="129/195" artId="1351" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76270" name="Wild Growth" collectorNumber="64/90" artId="1427" targetCacheFile="01427_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="6053" setCode="IA" artId="1427" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76272" name="Woolly Spider" collectorNumber="65/90" artId="1433" targetCacheFile="01433_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="6065" setCode="IA" artId="1433" />
+      <mtgoSource catalogId="30604" setCode="ME2" collectorNumber="189/245" artId="1433" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76210" name="Balduvian Horde" collectorNumber="34/90" artId="1594" targetCacheFile="01594_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="6387" setCode="AL" artId="1594" />
+      <mtgoSource catalogId="11265" setCode="6E" collectorNumber="167/350" artId="1594" />
+      <mtgoSource catalogId="28097" setCode="MED" collectorNumber="86/195" artId="1594" />
+      <mtgoSource catalogId="35992" setCode="PRM" collectorNumber="442/1158" artId="1594" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76180" name="Bone Harvest" collectorNumber="19/90" artId="1811" targetCacheFile="01811_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="6821" setCode="MI" collectorNumber="108/350" artId="1811" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76244" name="Crash of Rhinos" collectorNumber="51/90" artId="1837" targetCacheFile="01837_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="6873" setCode="MI" collectorNumber="210/350" artId="1837" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76194" name="Feral Shadow" collectorNumber="26/90" artId="1884" targetCacheFile="01884_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="6967" setCode="MI" collectorNumber="122/350" artId="1884" />
+      <mtgoSource catalogId="11327" setCode="6E" collectorNumber="131/350" artId="1884" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76252" name="Fog" collectorNumber="55/90" artId="1894" targetCacheFile="01894_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="6987" setCode="MI" collectorNumber="216/350" artId="1894" />
+      <mtgoSource catalogId="11337" setCode="6E" collectorNumber="230/350" artId="1894" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76262" name="Quirion Elves" collectorNumber="60/90" artId="2012" targetCacheFile="02012_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="7223" setCode="MI" collectorNumber="234/350" artId="2012" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76532" name="Sewer Rats" collectorNumber="48/136" artId="2046" targetCacheFile="02046_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="7291" setCode="MI" collectorNumber="139/350" artId="2046" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76236" name="Talruum Minotaur" collectorNumber="47/90" artId="2078" targetCacheFile="02078_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="7355" setCode="MI" collectorNumber="196/350" artId="2078" />
+      <mtgoSource catalogId="11403" setCode="6E" collectorNumber="210/350" artId="2078" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76242" name="Viashino Warrior" collectorNumber="50/90" artId="2105" targetCacheFile="02105_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="7409" setCode="MI" collectorNumber="200/350" artId="2105" />
+      <mtgoSource catalogId="11411" setCode="6E" collectorNumber="213/350" artId="2105" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76620" name="Village Elder" collectorNumber="92/136" artId="2107" targetCacheFile="02107_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="7413" setCode="MI" collectorNumber="251/350" artId="2107" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76152" name="Cloud Elemental" collectorNumber="5/90" artId="2145" targetCacheFile="02145_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="7499" setCode="VI" collectorNumber="29/167" artId="2145" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76162" name="Impulse" collectorNumber="10/90" artId="2190" targetCacheFile="02190_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="7589" setCode="VI" collectorNumber="34/167" artId="2190" />
+      <mtgoSource catalogId="36006" setCode="PRM" collectorNumber="218/1158" artId="2190" />
+    </mtgoSources>
+  </override>
+  <override setCode="P4" setName="Starter 2000" catalogId="76352" name="Inspiration" collectorNumber="15/57" artId="2193" targetCacheFile="02193_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="7595" setCode="VI" collectorNumber="35/167" artId="2193" />
+      <mtgoSource catalogId="11435" setCode="6E" collectorNumber="76/350" artId="2193" />
+    </mtgoSources>
+  </override>
+  <override setCode="P4" setName="Starter 2000" catalogId="76374" name="Python" collectorNumber="26/57" artId="2233" targetCacheFile="02233_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="7675" setCode="VI" collectorNumber="68/167" artId="2233" />
+      <mtgoSource catalogId="11443" setCode="6E" collectorNumber="150/350" artId="2233" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76594" name="River Boa" collectorNumber="79/136" artId="2246" targetCacheFile="02246_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="7701" setCode="VI" collectorNumber="118/167" artId="2246" />
+      <mtgoSource catalogId="11451" setCode="6E" collectorNumber="249/350" artId="2246" />
+      <mtgoSource catalogId="36014" setCode="PRM" collectorNumber="369/1158" artId="2246" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76472" name="Sun Clasp" collectorNumber="18/136" artId="2264" targetCacheFile="02264_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="7737" setCode="VI" collectorNumber="21/167" artId="2264" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76206" name="Tar Pit Warrior" collectorNumber="32/90" artId="2269" targetCacheFile="02269_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="7747" setCode="VI" collectorNumber="70/167" artId="2269" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76508" name="Abyssal Specter" collectorNumber="36/136" artId="2298" targetCacheFile="02298_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8265" setCode="5E" artId="2298" />
+      <mtgoSource catalogId="11471" setCode="6E" collectorNumber="110/350" artId="2298" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76478" name="Air Elemental" collectorNumber="21/136" artId="2300" targetCacheFile="02300_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8269" setCode="5E" artId="2300" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76190" name="Drain Life" collectorNumber="24/90" artId="2352" targetCacheFile="02352_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8373" setCode="5E" artId="2352" />
+    </mtgoSources>
+  </override>
+  <override setCode="P4" setName="Starter 2000" catalogId="76370" name="Drudge Skeletons" collectorNumber="24/57" artId="2354" targetCacheFile="02354_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8377" setCode="5E" artId="2354" />
+      <mtgoSource catalogId="11509" setCode="6E" collectorNumber="123/350" artId="2354" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76284" name="Dwarven Ruins" collectorNumber="71/90" artId="2357" targetCacheFile="02357_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8383" setCode="5E" artId="2357" />
+      <mtgoSource catalogId="11511" setCode="6E" collectorNumber="323/350" artId="2357" />
+    </mtgoSources>
+  </override>
+  <override setCode="P4" setName="Starter 2000" catalogId="76348" name="Flight" collectorNumber="13/57" artId="2367" targetCacheFile="02367_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8403" setCode="5E" artId="2367" />
+      <mtgoSource catalogId="11523" setCode="6E" collectorNumber="68/350" artId="2367" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76692" name="Forest" collectorNumber="128/136" artId="2371" targetCacheFile="02371_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8411" setCode="5E" artId="2371" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76694" name="Forest" collectorNumber="129/136" artId="2372" targetCacheFile="02372_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8413" setCode="5E" artId="2372" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76450" name="Healing Salve" collectorNumber="7/136" artId="2394" targetCacheFile="02394_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8457" setCode="5E" artId="2394" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76638" name="Plains" collectorNumber="101/136" artId="2450" targetCacheFile="02450_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8569" setCode="5E" artId="2450" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76640" name="Plains" collectorNumber="102/136" artId="2451" targetCacheFile="02451_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8571" setCode="5E" artId="2451" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76642" name="Plains" collectorNumber="103/136" artId="2452" targetCacheFile="02452_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8573" setCode="5E" artId="2452" />
+    </mtgoSources>
+  </override>
+  <override setCode="P4" setName="Starter 2000" catalogId="76416" name="Soul Net" collectorNumber="47/57" artId="2481" targetCacheFile="02481_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8631" setCode="5E" artId="2481" />
+      <mtgoSource catalogId="11585" setCode="6E" collectorNumber="313/350" artId="2481" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76298" name="Svyelunite Temple" collectorNumber="78/90" artId="2489" targetCacheFile="02489_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8647" setCode="5E" artId="2489" />
+      <mtgoSource catalogId="11593" setCode="6E" collectorNumber="329/350" artId="2489" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76214" name="Bloodrock Cyclops" collectorNumber="36/90" artId="2813" targetCacheFile="02813_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9185" setCode="WL" collectorNumber="90/167" artId="2813" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76528" name="Sadistic Glee" collectorNumber="46/136" artId="2976" targetCacheFile="02976_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9499" setCode="TE" collectorNumber="153/350" artId="2976" />
+    </mtgoSources>
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="76074" name="Respite" collectorNumber="176/210" artId="3002" targetCacheFile="03002_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9551" setCode="TE" collectorNumber="249/350" artId="3002" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76570" name="Broken Fall" collectorNumber="67/136" artId="3006" targetCacheFile="03006_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9559" setCode="TE" collectorNumber="216/350" artId="3006" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76550" name="Lightning Elemental" collectorNumber="57/136" artId="3011" targetCacheFile="03011_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9569" setCode="TE" collectorNumber="186/350" artId="3011" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76160" name="Giant Crab" collectorNumber="9/90" artId="3036" targetCacheFile="03036_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9619" setCode="TE" collectorNumber="66/350" artId="3036" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76496" name="Manta Riders" collectorNumber="30/136" artId="3037" targetCacheFile="03037_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9621" setCode="TE" collectorNumber="74/350" artId="3037" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76466" name="Soltari Foot Soldier" collectorNumber="15/136" artId="3049" targetCacheFile="03049_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9645" setCode="TE" collectorNumber="43/350" artId="3049" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76438" name="Advance Scout" collectorNumber="1/136" artId="3058" targetCacheFile="03058_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9663" setCode="TE" collectorNumber="1/350" artId="3058" />
+    </mtgoSources>
+  </override>
+  <override setCode="P4" setName="Starter 2000" catalogId="76334" name="Hero's Resolve" collectorNumber="6/57" artId="3069" targetCacheFile="03069_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9685" setCode="TE" collectorNumber="23/350" artId="3069" />
+      <mtgoSource catalogId="11677" setCode="6E" collectorNumber="24/350" artId="3069" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76572" name="Dirtcowl Wurm" collectorNumber="68/136" artId="3136" targetCacheFile="03136_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9819" setCode="TE" collectorNumber="221/350" artId="3136" />
+      <mtgoSource catalogId="32190" setCode="PRM" collectorNumber="148/1158" artId="3136" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76618" name="Trumpeting Armodon" collectorNumber="91/136" artId="3231" targetCacheFile="03231_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10009" setCode="TE" collectorNumber="262/350" artId="3231" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76278" name="Segmented Wurm" collectorNumber="68/90" artId="3308" targetCacheFile="03308_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10163" setCode="TE" collectorNumber="269/350" artId="3308" />
+    </mtgoSources>
+  </override>
+  <override setCode="CN2" setName="Conspiracy: Take the Crown" catalogId="75016" name="Horn of Greed" collectorNumber="211/221" artId="3706" targetCacheFile="03706_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10289" setCode="ST" collectorNumber="135/143" artId="3706" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76592" name="Plated Rootwalla" collectorNumber="78/136" artId="3735" targetCacheFile="03735_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10475" setCode="EX" collectorNumber="116/143" artId="3735" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76604" name="Skyshroud Elite" collectorNumber="84/136" artId="3763" targetCacheFile="03763_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10483" setCode="EX" collectorNumber="123/143" artId="3763" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76612" name="Spike Worker" collectorNumber="88/136" artId="3776" targetCacheFile="03776_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10395" setCode="ST" collectorNumber="120/143" artId="3776" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76584" name="Hurricane" collectorNumber="74/136" artId="4788" targetCacheFile="04788_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11029" setCode="P2" artId="4788" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76682" name="Mountain" collectorNumber="123/136" artId="4798" targetCacheFile="04798_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11049" setCode="P2" artId="4798" />
+      <mtgoSource catalogId="107201" setCode="DMR" collectorNumber="408" artId="4798" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76234" name="Sonic Burst" collectorNumber="46/90" artId="5426" targetCacheFile="05426_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="10531" setCode="EX" collectorNumber="103/143" artId="5426" />
+    </mtgoSources>
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="76014" name="Lizard Warrior" collectorNumber="146/210" artId="6705" targetCacheFile="06705_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="8977" setCode="PO" artId="6705" />
+    </mtgoSources>
+  </override>
+  <override setCode="P4" setName="Starter 2000" catalogId="76326" name="Armored Pegasus" collectorNumber="2/57" artId="6729" targetCacheFile="06729_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9023" setCode="PO" artId="6729" />
+      <mtgoSource catalogId="11749" setCode="6E" collectorNumber="5/350" artId="6729" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76644" name="Plains" collectorNumber="104/136" artId="6781" targetCacheFile="06781_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9125" setCode="PO" artId="6781" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76646" name="Plains" collectorNumber="105/136" artId="6782" targetCacheFile="06782_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="9127" setCode="PO" artId="6782" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76512" name="Crazed Skirge" collectorNumber="38/136" artId="7203" targetCacheFile="07203_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11769" setCode="UZ" collectorNumber="125/350" artId="7203" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76310" name="Swamp" collectorNumber="84/90" artId="8627" targetCacheFile="08627_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy" targetCatalogIds="76310,76666" targetSets="BD,BR">
+    <mtgoSources>
+      <mtgoSource catalogId="11797" setCode="UZ" collectorNumber="339/350" artId="8627" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76488" name="Disruptive Student" collectorNumber="26/136" artId="8628" targetCacheFile="08628_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11799" setCode="UZ" collectorNumber="69/350" artId="8628" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76670" name="Swamp" collectorNumber="117/136" artId="8634" targetCacheFile="08634_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11811" setCode="UZ" collectorNumber="341/350" artId="8634" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76672" name="Swamp" collectorNumber="118/136" artId="8635" targetCacheFile="08635_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11813" setCode="UZ" collectorNumber="342/350" artId="8635" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76684" name="Mountain" collectorNumber="124/136" artId="8636" targetCacheFile="08636_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11815" setCode="UZ" collectorNumber="343/350" artId="8636" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76688" name="Mountain" collectorNumber="126/136" artId="8638" targetCacheFile="08638_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11819" setCode="UZ" collectorNumber="345/350" artId="8638" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76690" name="Mountain" collectorNumber="127/136" artId="8639" targetCacheFile="08639_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11821" setCode="UZ" collectorNumber="346/350" artId="8639" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76468" name="Songstitcher" collectorNumber="16/136" artId="8664" targetCacheFile="08664_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11871" setCode="UZ" collectorNumber="52/350" artId="8664" />
+    </mtgoSources>
+  </override>
+  <override setCode="C15" setName="Commander (2015 Edition)" catalogId="75594" name="Blasted Landscape" collectorNumber="278/342" artId="8670" targetCacheFile="08670_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11883" setCode="UZ" collectorNumber="319/350" artId="8670" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76568" name="Argothian Elder" collectorNumber="66/136" artId="8703" targetCacheFile="08703_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11949" setCode="UZ" collectorNumber="233/350" artId="8703" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76624" name="Drifting Meadow" collectorNumber="94/136" artId="8715" targetCacheFile="08715_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="11973" setCode="UZ" collectorNumber="320/350" artId="8715" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76546" name="Fire Ants" collectorNumber="55/136" artId="8737" targetCacheFile="08737_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12017" setCode="UZ" collectorNumber="187/350" artId="8737" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76486" name="Curfew" collectorNumber="25/136" artId="8747" targetCacheFile="08747_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12037" setCode="UZ" collectorNumber="68/350" artId="8747" />
+    </mtgoSources>
+  </override>
+  <override setCode="C15" setName="Commander (2015 Edition)" catalogId="75538" name="Crystal Chimes" collectorNumber="250/342" artId="8752" targetCacheFile="08752_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12047" setCode="UZ" collectorNumber="292/350" artId="8752" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76658" name="Island" collectorNumber="111/136" artId="8757" targetCacheFile="08757_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12057" setCode="UZ" collectorNumber="338/350" artId="8757" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76440" name="Angelic Page" collectorNumber="2/136" artId="8768" targetCacheFile="08768_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12079" setCode="UZ" collectorNumber="4/350" artId="8768" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76614" name="Symbiosis" collectorNumber="89/136" artId="8818" targetCacheFile="08818_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12179" setCode="UZ" collectorNumber="275/350" artId="8818" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76460" name="Sanctum Custodian" collectorNumber="12/136" artId="8837" targetCacheFile="08837_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12217" setCode="UZ" collectorNumber="42/350" artId="8837" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76560" name="Steam Blast" collectorNumber="62/136" artId="8859" targetCacheFile="08859_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12261" setCode="UZ" collectorNumber="219/350" artId="8859" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76446" name="Catastrophe" collectorNumber="5/136" artId="8870" targetCacheFile="08870_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12283" setCode="UZ" collectorNumber="6/350" artId="8870" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76174" name="Tolarian Winds" collectorNumber="16/90" artId="8890" targetCacheFile="08890_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12323" setCode="UZ" collectorNumber="104/350" artId="8890" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76548" name="Heat Ray" collectorNumber="56/136" artId="8900" targetCacheFile="08900_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12341" setCode="UZ" collectorNumber="199/350" artId="8900" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76204" name="Skittering Skirge" collectorNumber="31/90" artId="8901" targetCacheFile="08901_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12343" setCode="UZ" collectorNumber="158/350" artId="8901" />
+      <mtgoSource catalogId="36126" setCode="PRM" collectorNumber="240/1158" artId="8901" />
+    </mtgoSources>
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75950" name="Ill-Gotten Gains" collectorNumber="114/210" artId="8910" targetCacheFile="08910_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12361" setCode="UZ" collectorNumber="138/350" artId="8910" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76522" name="Pestilence" collectorNumber="43/136" artId="8934" targetCacheFile="08934_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12409" setCode="UZ" collectorNumber="147/350" artId="8934" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76704" name="Forest" collectorNumber="134/136" artId="9019" targetCacheFile="09019_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="24944" setCode="PK" collectorNumber="178/166" artId="9019" />
+      <mtgoSource catalogId="33188" setCode="TD0" collectorNumber="A154/156" artId="9019" />
+      <mtgoSource catalogId="33782" setCode="ME3" collectorNumber="228/230" artId="9019" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76706" name="Forest" collectorNumber="135/136" artId="9020" targetCacheFile="09020_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="24946" setCode="PK" collectorNumber="179/166" artId="9020" />
+      <mtgoSource catalogId="33190" setCode="TD0" collectorNumber="A155/156" artId="9020" />
+      <mtgoSource catalogId="33784" setCode="ME3" collectorNumber="229/230" artId="9020" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76708" name="Forest" collectorNumber="136/136" artId="9021" targetCacheFile="09021_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="24948" setCode="PK" collectorNumber="180/166" artId="9021" />
+      <mtgoSource catalogId="33192" setCode="TD0" collectorNumber="A156/156" artId="9021" />
+      <mtgoSource catalogId="33786" setCode="ME3" collectorNumber="230/230" artId="9021" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76660" name="Island" collectorNumber="112/136" artId="9037" targetCacheFile="09037_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="24976" setCode="PK" collectorNumber="168/166" artId="9037" />
+      <mtgoSource catalogId="33194" setCode="TD0" collectorNumber="A146/156" artId="9037" />
+      <mtgoSource catalogId="33798" setCode="ME3" collectorNumber="221/230" artId="9037" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76662" name="Island" collectorNumber="113/136" artId="9038" targetCacheFile="09038_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="24978" setCode="PK" collectorNumber="170/166" artId="9038" />
+      <mtgoSource catalogId="33196" setCode="TD0" collectorNumber="A147/156" artId="9038" />
+      <mtgoSource catalogId="33800" setCode="ME3" collectorNumber="220/230" artId="9038" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76664" name="Island" collectorNumber="114/136" artId="9039" targetCacheFile="09039_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="24980" setCode="PK" collectorNumber="171/166" artId="9039" />
+      <mtgoSource catalogId="33198" setCode="TD0" collectorNumber="A145/156" artId="9039" />
+      <mtgoSource catalogId="33802" setCode="ME3" collectorNumber="219/230" artId="9039" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76650" name="Plains" collectorNumber="107/136" artId="9121" targetCacheFile="09121_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="25140" setCode="PK" collectorNumber="166/166" artId="9121" />
+      <mtgoSource catalogId="33206" setCode="TD0" collectorNumber="A143/156" artId="9121" />
+      <mtgoSource catalogId="33858" setCode="ME3" collectorNumber="217/230" artId="9121" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76652" name="Plains" collectorNumber="108/136" artId="9122" targetCacheFile="09122_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="25142" setCode="PK" collectorNumber="167/166" artId="9122" />
+      <mtgoSource catalogId="33208" setCode="TD0" collectorNumber="A144/156" artId="9122" />
+      <mtgoSource catalogId="33860" setCode="ME3" collectorNumber="218/230" artId="9122" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76654" name="Plains" collectorNumber="109/136" artId="9123" targetCacheFile="09123_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="25144" setCode="PK" collectorNumber="169/166" artId="9123" />
+      <mtgoSource catalogId="33210" setCode="TD0" collectorNumber="A142/156" artId="9123" />
+      <mtgoSource catalogId="33862" setCode="ME3" collectorNumber="216/230" artId="9123" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76498" name="Opportunity" collectorNumber="31/136" artId="9509" targetCacheFile="09509_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12491" setCode="UL" collectorNumber="37/143" artId="9509" />
+    </mtgoSources>
+  </override>
+  <override setCode="BR" setName="Battle Royale Box Set" catalogId="76534" name="Subversion" collectorNumber="49/136" artId="10329" targetCacheFile="10329_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12503" setCode="UL" collectorNumber="68/143" artId="10329" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76274" name="Yavimaya Wurm" collectorNumber="66/90" artId="10340" targetCacheFile="10340_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12525" setCode="UL" collectorNumber="120/143" artId="10340" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76176" name="Vigilant Drake" collectorNumber="17/90" artId="10405" targetCacheFile="10405_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12651" setCode="UL" collectorNumber="46/143" artId="10405" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76146" name="Blizzard Elemental" collectorNumber="2/90" artId="15613" targetCacheFile="15613_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12799" setCode="UD" collectorNumber="27/143" artId="15613" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76202" name="Skittering Horror" collectorNumber="30/90" artId="15707" targetCacheFile="15707_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="12981" setCode="UD" collectorNumber="70/143" artId="15707" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76260" name="Plated Spider" collectorNumber="59/90" artId="15726" targetCacheFile="15726_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="13017" setCode="UD" collectorNumber="116/143" artId="15726" />
+    </mtgoSources>
+  </override>
+  <override setCode="C15" setName="Commander (2015 Edition)" catalogId="75584" name="Urza's Incubator" collectorNumber="273/342" artId="16333" targetCacheFile="16333_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="13031" setCode="UD" collectorNumber="142/143" artId="16333" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76248" name="Deadly Insect" collectorNumber="53/90" artId="19097" targetCacheFile="19097_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="13255" setCode="MM" collectorNumber="238/350" artId="19097" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76304" name="Island" collectorNumber="81/90" artId="19281" targetCacheFile="19281_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="13611" setCode="MM" collectorNumber="338/350" artId="19281" />
+    </mtgoSources>
+  </override>
+  <override setCode="C15" setName="Commander (2015 Edition)" catalogId="75222" name="Dominate" collectorNumber="92/342" artId="21217" targetCacheFile="21217_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="13879" setCode="NE" collectorNumber="31/143" artId="21217" />
+    </mtgoSources>
+  </override>
+  <override setCode="C16" setName="Commander (2016 Edition)" catalogId="74244" name="Aura Mutation" collectorNumber="180/351" artId="24134" targetCacheFile="24134_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="14575" setCode="IN" collectorNumber="232/350" artId="24134" />
+    </mtgoSources>
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75940" name="Traveler's Cloak" collectorNumber="109/210" artId="25212" targetCacheFile="25212_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="14839" setCode="IN" collectorNumber="83/350" artId="25212" />
+    </mtgoSources>
+  </override>
+  <override setCode="BD" setName="Beatdown Box Set" catalogId="76282" name="Clockwork Beast" collectorNumber="70/90" artId="27465" targetCacheFile="27465_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="btd" collectorNumber="70" artCrop="https://cards.scryfall.io/art_crop/front/d/5/d5e5ae63-4963-485e-b40c-3450ee46674b.jpg?1562940262" scryfallUri="https://scryfall.com/card/btd/70/clockwork-beast?utm_source=api" illustrationId="05004e06-d6ac-4a61-aa65-bb97290848c2" artist="Carl Critchlow" byteCount="96502" sha256="7dc7d410254d4237f52735aff3e95e89fe2efef86e95700db54eabb79c7f1b91" />
+  </override>
+  <override setCode="C16" setName="Commander (2016 Edition)" catalogId="74204" name="Quirion Explorer" collectorNumber="160/351" artId="27968" targetCacheFile="27968_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="15223" setCode="PS" collectorNumber="90/143" artId="27968" />
+    </mtgoSources>
+  </override>
+  <override setCode="C15" setName="Commander (2015 Edition)" catalogId="75434" name="Primal Growth" collectorNumber="198/342" artId="27971" targetCacheFile="27971_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="15229" setCode="PS" collectorNumber="87/143" artId="27971" />
+    </mtgoSources>
+  </override>
+  <override setCode="C15" setName="Commander (2015 Edition)" catalogId="75334" name="Desolation Giant" collectorNumber="148/342" artId="31062" targetCacheFile="31062_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="16106" setCode="AP" collectorNumber="59/143" artId="31062" />
+      <mtgoSource catalogId="26159" setCode="TSB" collectorNumber="57/121" artId="31062" />
+    </mtgoSources>
+  </override>
+  <override setCode="C15" setName="Commander (2015 Edition)" catalogId="75182" name="Karmic Justice" collectorNumber="72/342" artId="33526" targetCacheFile="33526_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="16999" setCode="OD" collectorNumber="26/350" artId="33526" />
+    </mtgoSources>
+  </override>
+  <override setCode="C16" setName="Commander (2016 Edition)" catalogId="74108" name="Guiltfeeder" collectorNumber="112/351" artId="36466" targetCacheFile="36466_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="17364" setCode="JUD" collectorNumber="68/143" artId="36466" />
+    </mtgoSources>
+  </override>
+  <override setCode="C15" setName="Commander (2015 Edition)" catalogId="75212" name="Blatant Thievery" collectorNumber="87/342" artId="43002" targetCacheFile="43002_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="17835" setCode="ONS" collectorNumber="71/350" artId="43002" />
+    </mtgoSources>
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75932" name="Screaming Seahawk" collectorNumber="105/210" artId="43116" targetCacheFile="43116_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="18049" setCode="ONS" collectorNumber="112/350" artId="43116" />
+    </mtgoSources>
+  </override>
+  <override setCode="C16" setName="Commander (2016 Edition)" catalogId="74096" name="Bane of the Living" collectorNumber="106/351" artId="46565" targetCacheFile="46565_typ_reg_sty_010.jpg" sourceType="mtgo-cache-copy">
+    <mtgoSources>
+      <mtgoSource catalogId="18439" setCode="LGN" collectorNumber="60/145" artId="46565" />
+    </mtgoSources>
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="76008" name="Flowstone Blade" collectorNumber="143/210" artId="131647" targetCacheFile="131647_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="143" artCrop="https://cards.scryfall.io/art_crop/front/0/8/08ffbdce-bf74-4366-a4c5-422e3d5c92b4.jpg?1562864455" scryfallUri="https://scryfall.com/card/cns/143/flowstone-blade?utm_source=api" illustrationId="a5fc117c-5bb1-4f80-9a43-c74085be958d" artist="Allen Williams" byteCount="92615" sha256="3248bf5d4af454bf7030acc11068ee274f2c9f7aaeb24a6b72e57025b25da8d6" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75732" name="Immediate Action" collectorNumber="5/210" artId="153115" targetCacheFile="153115_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="5" artCrop="https://cards.scryfall.io/art_crop/front/1/6/167c6740-0625-4987-8fac-516aab564ca1.jpg?1720517036" scryfallUri="https://scryfall.com/card/cns/5/immediate-action?utm_source=api" illustrationId="2994ff76-46fd-4d78-adcd-f121debabf0a" artist="Karl Kopinski" byteCount="98450" sha256="3a622922ea406dbe82109c223b796c079e23ff5dc04097ff6471b65fcdb26770" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75848" name="Lurking Automaton" collectorNumber="63/210" artId="153116" targetCacheFile="153116_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="63" artCrop="https://cards.scryfall.io/art_crop/front/e/0/e052a306-2bcd-4dcd-b41d-fa886227dab6.jpg?1562867339" scryfallUri="https://scryfall.com/card/cns/63/lurking-automaton?utm_source=api" illustrationId="45f3407c-fe61-492c-9cd8-36b988f658ed" artist="Yeong-Hao Han" byteCount="104723" sha256="e2ebd0171043100b6a9c83981c4a7f78fa1cd38aba6eb424aeead08618a4f0e8" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75728" name="Brago's Favor" collectorNumber="3/210" artId="153117" targetCacheFile="153117_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="3" artCrop="https://cards.scryfall.io/art_crop/front/9/b/9bb6ece9-2038-4dbc-83aa-01ab4d7980b4.jpg?1720517033" scryfallUri="https://scryfall.com/card/cns/3/bragos-favor?utm_source=api" illustrationId="79d6f1a3-04a5-40c9-b943-6344da21a5f0" artist="Karla Ortiz" byteCount="100595" sha256="49665b239820aa0561e3bf164ad73aaf636f3e6381e242957e2594a6f40e8ea4" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75830" name="Agent of Acquisitions" collectorNumber="54/210" artId="153118" targetCacheFile="153118_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="54" artCrop="https://cards.scryfall.io/art_crop/front/c/5/c57def6f-cc2a-4aec-927b-6a561d9fa7a1.jpg?1562866868" scryfallUri="https://scryfall.com/card/cns/54/agent-of-acquisitions?utm_source=api" illustrationId="c10daa9b-cc2b-46d9-9398-a7591f78b655" artist="Eytan Zana" byteCount="116381" sha256="0d1f5590fb75ff743dddf3ecbdc9c4188f031b161ce90603d4eee46133d35463" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75738" name="Power Play" collectorNumber="8/210" artId="153119" targetCacheFile="153119_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="8" artCrop="https://cards.scryfall.io/art_crop/front/b/b/bbfca319-edc4-45f2-b208-35c8112ec918.jpg?1681082908" scryfallUri="https://scryfall.com/card/cns/8/power-play?utm_source=api" illustrationId="05878879-1b20-4f70-a3ac-94e736c58523" artist="Matt Stewart" byteCount="114697" sha256="e208cc12e92b2ed327e4d79a28ee33ba594267372ee0b9dcf30e1c45e3aac024" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75746" name="Unexpected Potential" collectorNumber="12/210" artId="153120" targetCacheFile="153120_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="12" artCrop="https://cards.scryfall.io/art_crop/front/8/7/8789ef9e-f68c-4ff0-8621-47678038131b.jpg?1681082949" scryfallUri="https://scryfall.com/card/cns/12/unexpected-potential?utm_source=api" illustrationId="89160b66-cacf-4aa4-b579-29202eaaf686" artist="Izzy" byteCount="102325" sha256="0c966f84a07ddb0d018e7201756b735f83880bbf1c70808f59bb38eb1bf46e90" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75730" name="Double Stroke" collectorNumber="4/210" artId="153121" targetCacheFile="153121_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="4" artCrop="https://cards.scryfall.io/art_crop/front/b/0/b0ec6d79-8a22-49d5-ac00-7fd60b278a4d.jpg?1681082859" scryfallUri="https://scryfall.com/card/cns/4/double-stroke?utm_source=api" illustrationId="dc3f0f1a-e569-4150-9a10-0b1c2b59924c" artist="Christopher Moeller" byteCount="110443" sha256="bd56337816e4b39d86f7785dc999c95de8067c7dc516da2b8fc992d9eb02edb2" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75784" name="Enraged Revolutionary" collectorNumber="31/210" artId="153123" targetCacheFile="153123_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="31" artCrop="https://cards.scryfall.io/art_crop/front/d/f/dffcd035-e7e7-4763-813c-5e4193cdb893.jpg?1562867338" scryfallUri="https://scryfall.com/card/cns/31/enraged-revolutionary?utm_source=api" illustrationId="0b5f9164-3b25-4c09-9e3d-e7b3c5ddba33" artist="Drew Baker" byteCount="101151" sha256="c785bf963aadd3866f5b9228a001ce74bed3bfdff4cab1b455806b675ea7b5d3" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75750" name="Brago's Representative" collectorNumber="14/210" artId="153124" targetCacheFile="153124_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="14" artCrop="https://cards.scryfall.io/art_crop/front/b/f/bfa2b59c-eaeb-4946-80e0-f937a206aa0c.jpg?1562866856" scryfallUri="https://scryfall.com/card/cns/14/bragos-representative?utm_source=api" illustrationId="5cc7a0a6-1b04-4cde-a7db-3246df734032" artist="Anthony Palumbo" byteCount="104278" sha256="a8d6ae81a94c054bbd28827fa66bbf5cf80e12cc7f884887f58896ae6326ffaa" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75744" name="Sentinel Dispatch" collectorNumber="11/210" artId="153127" targetCacheFile="153127_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="11" artCrop="https://cards.scryfall.io/art_crop/front/2/b/2b5f4072-47d6-46e2-affb-3affb908124e.jpg?1720517041" scryfallUri="https://scryfall.com/card/cns/11/sentinel-dispatch?utm_source=api" illustrationId="30ac88b7-1f63-4d1f-a066-dc22b48ca47a" artist="Adam Paquette" byteCount="100570" sha256="91a05a544481466cf0ed8440e0da3d50103c8f3e472fe7668fc3766bba8f991a" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75838" name="Cogwork Librarian" collectorNumber="58/210" artId="153128" targetCacheFile="153128_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="58" artCrop="https://cards.scryfall.io/art_crop/front/4/5/453de664-0f09-4772-a626-51d58d1173f3.jpg?1562864968" scryfallUri="https://scryfall.com/card/cns/58/cogwork-librarian?utm_source=api" illustrationId="223a5334-d2cb-4fe7-b1c9-a99b6510196c" artist="Dan Murayama Scott" byteCount="106618" sha256="6be6d9b804b3cdce69ebb0fd572e677ba406cd8fa0ce4f79c258f47fcb878977" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75736" name="Muzzio's Preparations" collectorNumber="7/210" artId="153129" targetCacheFile="153129_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="7" artCrop="https://cards.scryfall.io/art_crop/front/5/7/57c57a16-328d-4c87-adf0-7af8f3515339.jpg?1720517038" scryfallUri="https://scryfall.com/card/cns/7/muzzios-preparations?utm_source=api" illustrationId="6b782c79-54a3-469e-8257-d2bb5366aa0f" artist="Karl Kopinski" byteCount="103957" sha256="f44add380c3d0d3f24e602c9ef29fd8614d7e26eb99f8d5ceb41c734abe0639e" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75726" name="Backup Plan" collectorNumber="2/210" artId="153131" targetCacheFile="153131_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="2" artCrop="https://cards.scryfall.io/art_crop/front/8/4/84c5a45a-adc2-41f9-893c-58a03bebbf0c.jpg?1681082857" scryfallUri="https://scryfall.com/card/cns/2/backup-plan?utm_source=api" illustrationId="fe8be8b1-40a4-4e55-b87d-f3c32e35bace" artist="David Palumbo" byteCount="103930" sha256="a5ee2bcec8a693cc3a644ac3db4815c3d2eadfe48950314f604de6e2d7f7bdcd" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75734" name="Iterative Analysis" collectorNumber="6/210" artId="153132" targetCacheFile="153132_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="6" artCrop="https://cards.scryfall.io/art_crop/front/2/1/212a39fa-e1b3-4ae3-945f-6d8cda6372ae.jpg?1681082904" scryfallUri="https://scryfall.com/card/cns/6/iterative-analysis?utm_source=api" illustrationId="3bf6fb45-a25a-4f79-b1e4-d6acc6745880" artist="Winona Nelson" byteCount="99645" sha256="330c9f093417762b7a04e48ce6bf8582e7d5940625caf914dc21945425632ac2" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75748" name="Worldknit" collectorNumber="13/210" artId="153133" targetCacheFile="153133_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="13" artCrop="https://cards.scryfall.io/art_crop/front/7/f/7f1fe849-b407-4252-b175-3f4afbbcea1b.jpg?1681082953" scryfallUri="https://scryfall.com/card/cns/13/worldknit?utm_source=api" illustrationId="c9571659-3432-4a5d-a3c8-62ef773eb047" artist="Adam Paquette" byteCount="109878" sha256="d3bf5a8578b3e4ca8db6fc8b15e7780781f4113cdfd3bf90983597ecbc2d2d13" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75778" name="Grudge Keeper" collectorNumber="28/210" artId="153134" targetCacheFile="153134_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="28" artCrop="https://cards.scryfall.io/art_crop/front/c/f/cf00b8d3-30bb-44b8-8531-4bfd018acc0c.jpg?1562866880" scryfallUri="https://scryfall.com/card/cns/28/grudge-keeper?utm_source=api" illustrationId="28c9d93b-6b32-42e5-9f12-11cae4689fe6" artist="Ryan Barger" byteCount="100090" sha256="40b27b19cbfca93b2874160fbdefdb2750982e701621d3dc24c32a7fec688d41" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75814" name="Flamewright" collectorNumber="46/210" artId="153135" targetCacheFile="153135_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="46" artCrop="https://cards.scryfall.io/art_crop/front/f/c/fc0f2b5a-f9fd-4f58-bc98-201b4c0e8252.jpg?1562867370" scryfallUri="https://scryfall.com/card/cns/46/flamewright?utm_source=api" illustrationId="0be5094b-ac67-4783-a313-693f7de07fab" artist="Mathias Kollros" byteCount="112154" sha256="9e81abd34ffe990ae3b8412f06ab236a9d0ff6d549705367baa40a95afb94f97" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75752" name="Council Guardian" collectorNumber="15/210" artId="153136" targetCacheFile="153136_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="15" artCrop="https://cards.scryfall.io/art_crop/front/3/3/3394ecc3-3b37-4e4a-880b-3aa62b288900.jpg?1562864951" scryfallUri="https://scryfall.com/card/cns/15/council-guardian?utm_source=api" illustrationId="e2a53416-5871-4ac6-a125-dec228ebceff" artist="Volkan Baǵa" byteCount="121627" sha256="a726e113601f7cda4979644dae1c9849263b8ca96887d3fa2c8854ea53fc0e14" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75840" name="Cogwork Spy" collectorNumber="59/210" artId="153138" targetCacheFile="153138_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="59" artCrop="https://cards.scryfall.io/art_crop/front/6/6/661a7927-73ad-4230-a754-ba43b35be149.jpg?1562865450" scryfallUri="https://scryfall.com/card/cns/59/cogwork-spy?utm_source=api" illustrationId="07fc4c13-f493-405e-8271-49792d11a7f4" artist="Tomasz Jedruszek" byteCount="119613" sha256="78d8fe4f5560be0009bbe90f142036da14728f9ac1474fe498548be3f2e576ad" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75826" name="Woodvine Elemental" collectorNumber="52/210" artId="153139" targetCacheFile="153139_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="52" artCrop="https://cards.scryfall.io/art_crop/front/8/a/8acdb147-2339-4c55-b4f6-6a79679f2040.jpg?1562865926" scryfallUri="https://scryfall.com/card/cns/52/woodvine-elemental?utm_source=api" illustrationId="a8a3e829-60ed-4c67-9559-85b447b89736" artist="Mike Bierek" byteCount="113491" sha256="3e90218ef01e87dd327e2edc2b2e46dbf066b48d1e01c5b02e5c9691fd42881c" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75800" name="Selvala's Charge" collectorNumber="39/210" artId="153140" targetCacheFile="153140_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="39" artCrop="https://cards.scryfall.io/art_crop/front/4/2/426b63f9-5788-45d2-b934-1579320bc775.jpg?1562864963" scryfallUri="https://scryfall.com/card/cns/39/selvalas-charge?utm_source=api" illustrationId="6bedb228-89b9-4f7c-99f1-6c11f8b31af7" artist="Dan Murayama Scott" byteCount="102941" sha256="1f94c58fc2bc4e64adf2dd75aedee4ecc74aaa7212d47d9eb0856324aab633c2" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75802" name="Selvala's Enforcer" collectorNumber="40/210" artId="153141" targetCacheFile="153141_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="40" artCrop="https://cards.scryfall.io/art_crop/front/0/0/000ba9c3-cd88-47c1-966a-00466569a9bf.jpg?1562864254" scryfallUri="https://scryfall.com/card/cns/40/selvalas-enforcer?utm_source=api" illustrationId="2d46eb5a-ccdf-4ba2-9742-dea608494348" artist="Jesper Ejsing" byteCount="108492" sha256="7be3b1d4bed56994717361b22a106d83edb81b4f933b0887003ace083b22cfe2" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75742" name="Secrets of Paradise" collectorNumber="10/210" artId="153142" targetCacheFile="153142_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="10" artCrop="https://cards.scryfall.io/art_crop/front/1/5/15ace01c-93de-49e6-b9f9-276a2303f42f.jpg?1720517040" scryfallUri="https://scryfall.com/card/cns/10/secrets-of-paradise?utm_source=api" illustrationId="e7d53e6a-fce6-4959-9114-f4c00c255cb2" artist="Tyler Jacobson" byteCount="97333" sha256="926723617d47cbcfebb6a4fbdb16299f3d098c30736f3f8909b3e1d477b758f8" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75852" name="Paliano, the High City" collectorNumber="65/210" artId="153143" targetCacheFile="153143_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="65" artCrop="https://cards.scryfall.io/art_crop/front/e/a/eac8649b-b892-4854-8422-fd117ccac39a.jpg?1562867353" scryfallUri="https://scryfall.com/card/cns/65/paliano-the-high-city?utm_source=api" illustrationId="48aa74d2-7f57-4a85-afac-8bf377644b08" artist="Adam Paquette" byteCount="114708" sha256="06e4e3de2c9f0ab959cc56784dd00eede15505822382ce4809e1d3c95b89d8fc" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75774" name="Bite of the Black Rose" collectorNumber="26/210" artId="153148" targetCacheFile="153148_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="26" artCrop="https://cards.scryfall.io/art_crop/front/2/5/254d1363-1204-41d2-9799-34484a3eb211.jpg?1562864493" scryfallUri="https://scryfall.com/card/cns/26/bite-of-the-black-rose?utm_source=api" illustrationId="1a512596-3926-42fe-960c-c3bed743d959" artist="Franz Vohwinkel" byteCount="104054" sha256="4ebb8ca5e71f3da9f1327e8f0b33dd028cd6d6a1e9aa370aa7ed7e5cbeb3f665" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75764" name="Marchesa's Emissary" collectorNumber="21/210" artId="153150" targetCacheFile="153150_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="21" artCrop="https://cards.scryfall.io/art_crop/front/5/6/567a2444-30c4-49aa-a1f4-b5f4fb98d6fa.jpg?1562865434" scryfallUri="https://scryfall.com/card/cns/21/marchesas-emissary?utm_source=api" illustrationId="04309c73-c084-4a79-939b-eabfee1392d5" artist="Tyler Jacobson" byteCount="92847" sha256="6d12a4b3b1225bbe2802a551e5e99f06757785888d568c6a6f416591e7432b3b" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75766" name="Marchesa's Infiltrator" collectorNumber="22/210" artId="153151" targetCacheFile="153151_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="22" artCrop="https://cards.scryfall.io/art_crop/front/e/9/e9ac1e2c-1b9c-43b8-819e-9b391967e16c.jpg?1562867350" scryfallUri="https://scryfall.com/card/cns/22/marchesas-infiltrator?utm_source=api" illustrationId="6bdb0f59-cef4-41fc-a68f-55c1222bc92b" artist="Lucas Graciano" byteCount="105278" sha256="f105f72f46d6a4cca59db7f3939640932f7c905aa66a04bfefdac41c7646e0b6" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75772" name="Split Decision" collectorNumber="25/210" artId="153152" targetCacheFile="153152_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="25" artCrop="https://cards.scryfall.io/art_crop/front/8/3/83ed7ebe-48be-4e6e-a293-b81484f85142.jpg?1562865914" scryfallUri="https://scryfall.com/card/cns/25/split-decision?utm_source=api" illustrationId="72c25d67-620c-43c5-b656-a10839e325de" artist="Robbie Trevino" byteCount="105097" sha256="744a60edb200cd59d9a0f4ca48535620050de924725cbe312991d6d8f7ae49dc" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75786" name="Grenzo's Cutthroat" collectorNumber="32/210" artId="153155" targetCacheFile="153155_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="32" artCrop="https://cards.scryfall.io/art_crop/front/9/b/9bb46638-eeb2-4bb3-bef2-bedd343722ef.jpg?1562866378" scryfallUri="https://scryfall.com/card/cns/32/grenzos-cutthroat?utm_source=api" illustrationId="aa079d90-1583-4b58-9adc-7e30bf3df736" artist="Svetlin Velinov" byteCount="97177" sha256="c35c21f73a6430876b76fdd4445a94fbf5bbeecca52f2477919271e2671a4abd" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75760" name="Rousing of Souls" collectorNumber="19/210" artId="153156" targetCacheFile="153156_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="19" artCrop="https://cards.scryfall.io/art_crop/front/1/b/1b7a47cc-9311-4f92-b19c-8956db5f2b5f.jpg?1562864483" scryfallUri="https://scryfall.com/card/cns/19/rousing-of-souls?utm_source=api" illustrationId="e8ad3d8d-121a-436c-965e-36b7faa58808" artist="Jeff Simpson" byteCount="95844" sha256="af0a38cffb01252d5da047aa30acf5cde4ae9d46dd95789bfdd61bcfee3a36ba" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75850" name="Whispergear Sneak" collectorNumber="64/210" artId="153157" targetCacheFile="153157_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="64" artCrop="https://cards.scryfall.io/art_crop/front/e/3/e36074e7-d173-44a1-bde3-9a89293467b1.jpg?1562867341" scryfallUri="https://scryfall.com/card/cns/64/whispergear-sneak?utm_source=api" illustrationId="c7fea5de-f2f6-41b0-a0db-6bd7a1c18cde" artist="Jesper Ejsing" byteCount="114770" sha256="005b46799036e483fa2e584454558d66f34e9fc05de2998e459e1e8cf1d8ec4c" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75832" name="Canal Dredger" collectorNumber="55/210" artId="153158" targetCacheFile="153158_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="55" artCrop="https://cards.scryfall.io/art_crop/front/a/5/a5365f0d-5e51-4e5d-9385-c4d08882c24f.jpg?1562866388" scryfallUri="https://scryfall.com/card/cns/55/canal-dredger?utm_source=api" illustrationId="55ace99e-c747-4992-bd4f-1ff4aa99ae27" artist="John Avon" byteCount="98831" sha256="6968e926090cc9e93a9e077e85a058f051139cfeeca785f550b38085888e5a2a" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75828" name="Aether Searcher" collectorNumber="53/210" artId="153159" targetCacheFile="153159_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="53" artCrop="https://cards.scryfall.io/art_crop/front/9/4/94dcff94-9f25-4ca9-a1f1-5d97de4ab9df.jpg?1562865937" scryfallUri="https://scryfall.com/card/cns/53/aether-searcher?utm_source=api" illustrationId="9dcf6632-28aa-48c3-8aab-a8bb6e2451af" artist="James Paick" byteCount="109493" sha256="c15344e036e57abe40996419f5476bfd963b418e0b0dd354a66cb2cb456a5ea6" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75724" name="Advantageous Proclamation" collectorNumber="1/210" artId="153160" targetCacheFile="153160_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="1" artCrop="https://cards.scryfall.io/art_crop/front/f/8/f8c37fe8-43b3-454e-a70b-5b0d0f396a33.jpg?1681082854" scryfallUri="https://scryfall.com/card/cns/1/advantageous-proclamation?utm_source=api" illustrationId="e6eb64bb-a1ce-4db2-b13b-5e9505dd197d" artist="Izzy" byteCount="102390" sha256="691c5a36001ba84c99a4a2c33e5462c393fcd824517c6a0719f267fa760bf686" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75740" name="Secret Summoning" collectorNumber="9/210" artId="153161" targetCacheFile="153161_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="9" artCrop="https://cards.scryfall.io/art_crop/front/7/8/7867db8a-5adc-4fe9-aabd-aa55935e3227.jpg?1681082913" scryfallUri="https://scryfall.com/card/cns/9/secret-summoning?utm_source=api" illustrationId="85819765-f6dc-4132-8f20-cd5b5340bfa1" artist="Lucas Graciano" byteCount="118879" sha256="1cccc87d5c9b42913d2ec4e5a747d859d91d06661d21aa2f08c67da9ce41bb83" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75836" name="Cogwork Grinder" collectorNumber="57/210" artId="153162" targetCacheFile="153162_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="57" artCrop="https://cards.scryfall.io/art_crop/front/8/0/807b1ac7-a495-4d67-a6c6-480d1b0522d8.jpg?1562865907" scryfallUri="https://scryfall.com/card/cns/57/cogwork-grinder?utm_source=api" illustrationId="895d966a-ae5d-4a97-99bf-f203d63bc0db" artist="Jasper Sandner" byteCount="118614" sha256="3efca08b33c912085afac092c5ec9e1c40de5b9fac671a3b2483fe0b679b7307" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75796" name="Predator's Howl" collectorNumber="37/210" artId="153164" targetCacheFile="153164_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="37" artCrop="https://cards.scryfall.io/art_crop/front/c/a/cae61a9d-39fc-4c25-adec-d578d57c2903.jpg?1562866876" scryfallUri="https://scryfall.com/card/cns/37/predators-howl?utm_source=api" illustrationId="d89be4e0-074c-4316-b382-9143bcb8209c" artist="Ralph Horsley" byteCount="100405" sha256="6a2208274a71a15c4a47bea53c35a8945513a452f103c1bcf992e6d698e56f37" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75788" name="Grenzo's Rebuttal" collectorNumber="33/210" artId="153168" targetCacheFile="153168_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="33" artCrop="https://cards.scryfall.io/art_crop/front/1/b/1b798ace-18e4-45fb-98ae-69528f7b5a2f.jpg?1562864482" scryfallUri="https://scryfall.com/card/cns/33/grenzos-rebuttal?utm_source=api" illustrationId="24daf129-ad53-429d-81b8-140ef6aa1d19" artist="Dave Kendall" byteCount="109478" sha256="f7c3c0ff3b8ecb54c23b248a9f64318f038da476bf299d1402f58d646e3e0452" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75822" name="Marchesa's Smuggler" collectorNumber="50/210" artId="153172" targetCacheFile="153172_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="50" artCrop="https://cards.scryfall.io/art_crop/front/f/f/ff3a2dc1-3549-4a92-a5fa-6297cb894d22.jpg?1562867374" scryfallUri="https://scryfall.com/card/cns/50/marchesas-smuggler?utm_source=api" illustrationId="73c11037-124b-428d-9ef9-4f137e93c0e1" artist="Dan Murayama Scott" byteCount="100015" sha256="89efdc471514e6db3e3972e705e9aac1ca3eaea32ef4bc5d6bfb565fa7037a24" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75790" name="Ignition Team" collectorNumber="34/210" artId="153174" targetCacheFile="153174_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="34" artCrop="https://cards.scryfall.io/art_crop/front/9/d/9dc89eb3-4497-4f05-8fed-d378b6e425ca.jpg?1562866381" scryfallUri="https://scryfall.com/card/cns/34/ignition-team?utm_source=api" illustrationId="c8e26dbe-6c89-4491-9dba-555272edf41d" artist="Karl Kopinski" byteCount="120041" sha256="c740d1b00acae5e5f66a9304b7255ed3977a598f23fea77f2d715970376d57dc" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75844" name="Deal Broker" collectorNumber="61/210" artId="153175" targetCacheFile="153175_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="61" artCrop="https://cards.scryfall.io/art_crop/front/4/2/42dc14d0-60e2-419a-a6cf-ba155c51c310.jpg?1562864965" scryfallUri="https://scryfall.com/card/cns/61/deal-broker?utm_source=api" illustrationId="5d5f7ca6-f32f-48ff-a723-3acebe3364df" artist="Cliff Childs" byteCount="114728" sha256="743c08bd2ac1365f6749659e65605bcb7d9464132111c209db121b5d8b121cea" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75842" name="Cogwork Tracker" collectorNumber="60/210" artId="153178" targetCacheFile="153178_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="60" artCrop="https://cards.scryfall.io/art_crop/front/2/a/2ad996e5-f3b4-4aca-8b37-d20632245b4e.jpg?1562864936" scryfallUri="https://scryfall.com/card/cns/60/cogwork-tracker?utm_source=api" illustrationId="7fb443b0-2894-4609-a411-93db237528f8" artist="Alex Horley-Orlandelli" byteCount="132913" sha256="818122b4f4ae8a590dc8cad2d64705c1378b4bf8796b5dc2deb5de0241baca1a" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75846" name="Lore Seeker" collectorNumber="62/210" artId="153179" targetCacheFile="153179_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="62" artCrop="https://cards.scryfall.io/art_crop/front/9/b/9b8c78c8-b3fa-4a67-bf6c-cf708dedf42e.jpg?1562866376" scryfallUri="https://scryfall.com/card/cns/62/lore-seeker?utm_source=api" illustrationId="4ba21c39-8dc2-4dab-8447-37d8db866119" artist="Jason Felix" byteCount="114992" sha256="e3da4cb33b3cad3e2579c3846dbdbaf879950cca4e1b78f7f09b4ad3216dfeba" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75868" name="Kor Chant" collectorNumber="73/210" artId="153356" targetCacheFile="153356_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="73" artCrop="https://cards.scryfall.io/art_crop/front/9/0/9045cbc3-f8d7-4131-87ea-c1b021618c43.jpg?1562865929" scryfallUri="https://scryfall.com/card/cns/73/kor-chant?utm_source=api" illustrationId="5497a1b2-a528-46fa-8aa6-f8cc718a623f" artist="Yohann Schepacz" byteCount="91677" sha256="58029756c2503726413768a9f91b1fd4d7c256bea0411e32f70469ec451fba6c" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="76070" name="Provoke" collectorNumber="174/210" artId="153358" targetCacheFile="153358_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="174" artCrop="https://cards.scryfall.io/art_crop/front/1/f/1fadb24d-0f8c-4542-b3a2-5116563082f9.jpg?1562864486" scryfallUri="https://scryfall.com/card/cns/174/provoke?utm_source=api" illustrationId="95314112-b124-4508-b21f-d91bc43fc5c3" artist="Kev Walker" byteCount="106526" sha256="21674530e8f89f7bbb4e9ac1b13606f15e3656dc2d259fe17f4412887a6c6a1a" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="75944" name="Wind Dancer" collectorNumber="111/210" artId="153359" targetCacheFile="153359_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="111" artCrop="https://cards.scryfall.io/art_crop/front/3/d/3d7143e2-fa87-4196-b22c-6893571bf40d.jpg?1562864957" scryfallUri="https://scryfall.com/card/cns/111/wind-dancer?utm_source=api" illustrationId="70287234-60ea-4fcb-b217-44e653351ccc" artist="Cynthia Sheppard" byteCount="104102" sha256="d491c321005b2ddc1839e6d7bd65aa39f950036fc3c9625b6c0e1db0230d1c9b" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="76110" name="Spontaneous Combustion" collectorNumber="194/210" artId="153366" targetCacheFile="153366_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="194" artCrop="https://cards.scryfall.io/art_crop/front/5/5/55d50177-736a-44d6-a2a3-f6892d7037b3.jpg?1562865429" scryfallUri="https://scryfall.com/card/cns/194/spontaneous-combustion?utm_source=api" illustrationId="16630f76-4161-4134-a0d8-442707749526" artist="Jason Rainville" byteCount="91647" sha256="95f40031d26a6907a6084f2ea16deee995270f9dd0fb9fe6c8b3b8b0592f5c1f" />
+  </override>
+  <override setCode="CNS" setName="Conspiracy" catalogId="76056" name="Howling Wolf" collectorNumber="167/210" artId="153367" targetCacheFile="153367_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="cns" collectorNumber="167" artCrop="https://cards.scryfall.io/art_crop/front/0/9/09965519-274c-4082-88fe-639f77aa9cf6.jpg?1562864458" scryfallUri="https://scryfall.com/card/cns/167/howling-wolf?utm_source=api" illustrationId="7cd3141d-9c3c-4ee1-95df-fc3378d58e39" artist="Nils Hamm" byteCount="106070" sha256="722b6320b95c682cb354cefb888676c78dec0b7a0cb4ed0c295c8bc25d8469b1" />
+  </override>
+  <override setCode="C16" setName="Commander (2016 Edition)" catalogId="73904" name="Manifold Insights" collectorNumber="10/351" artId="162370" targetCacheFile="162370_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="c16" collectorNumber="10" artCrop="https://cards.scryfall.io/art_crop/front/a/e/ae9b2617-4910-4bde-b07f-dff2ac1f19d6.jpg?1562415049" scryfallUri="https://scryfall.com/card/c16/10/manifold-insights?utm_source=api" illustrationId="e3516079-06c9-468b-a679-87d539afe7da" artist="Tommy Arnold" byteCount="117665" sha256="c4daf8b073a2a619c15f17d8d18890b042dbf74c90decd81889483cc02233de7" />
+  </override>
+  <override setCode="C16" setName="Commander (2016 Edition)" catalogId="73932" name="Seeds of Renewal" collectorNumber="24/351" artId="162375" targetCacheFile="162375_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="c16" collectorNumber="24" artCrop="https://cards.scryfall.io/art_crop/front/b/a/ba13b3ba-c36e-4c79-aaa6-2c2619a2d999.jpg?1562416934" scryfallUri="https://scryfall.com/card/c16/24/seeds-of-renewal?utm_source=api" illustrationId="c9c78828-50c4-424f-8344-6e3f6963a405" artist="Jesper Ejsing" byteCount="138287" sha256="be9348d168ec39cb4bec80647e1727a6fcff62103dcba5a0817bf76c54070276" />
+  </override>
+  <override setCode="C16" setName="Commander (2016 Edition)" catalogId="73896" name="Coastal Breach" collectorNumber="6/351" artId="162427" targetCacheFile="162427_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="c16" collectorNumber="6" artCrop="https://cards.scryfall.io/art_crop/front/b/f/bf8b550a-c86f-4684-a4f6-14e75172324f.jpg?1562417848" scryfallUri="https://scryfall.com/card/c16/6/coastal-breach?utm_source=api" illustrationId="bf275e2e-20ca-4e65-a7b4-d33530e0b72a" artist="Titus Lunter" byteCount="130052" sha256="f1e0a02dd19f73941a6f8ba9451c8e865f26e045706ae6ece08a7fe2b5249d5e" />
+  </override>
+  <override setCode="C16" setName="Commander (2016 Edition)" catalogId="73906" name="Cruel Entertainment" collectorNumber="11/351" artId="162438" targetCacheFile="162438_typ_reg_sty_010.jpg" sourceType="scryfall-art-crop">
+    <scryfallSource setCode="c16" collectorNumber="11" artCrop="https://cards.scryfall.io/art_crop/front/3/e/3e304424-4a50-43bb-aee0-e9f960583aac.jpg?1562396529" scryfallUri="https://scryfall.com/card/c16/11/cruel-entertainment?utm_source=api" illustrationId="96f79ac7-b97b-4f52-8deb-86949a30eed0" artist="David Palumbo" byteCount="127498" sha256="d34d03398ea7a3bfb3c9ef037b7266f720d154c9a7993a5e3ac8f216592067ce" />
+  </override>
+</mtgoArtOverrides>
