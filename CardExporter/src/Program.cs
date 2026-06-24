@@ -53,13 +53,19 @@ internal static class Program
           options.R2.DryRun,
           logger
         );
-        if (versionManifestPreflight.ShouldSkip)
+        if (versionManifestPreflight.ShouldSkip && !options.Force)
         {
           logger.LogInformation(
             "MTGO codebase is unchanged; skipping source-file, database, image, and asset checks."
           );
           await versionManifestPreflight.CommitAsync(logger);
           return 0;
+        }
+        if (versionManifestPreflight.ShouldSkip && options.Force)
+        {
+          logger.LogInformation(
+            "MTGO codebase is unchanged but --force was specified; continuing anyway."
+          );
         }
 
         if (versionManifestPreflight.Status == VersionManifestPreflightStatus.Changed)
@@ -182,7 +188,7 @@ internal static class Program
           loggerFactory,
           logger
         );
-        if (preflight.ShouldSkip)
+        if (preflight.ShouldSkip && !options.Force)
         {
           if (!options.SyncImages)
           {

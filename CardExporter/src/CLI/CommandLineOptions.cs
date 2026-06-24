@@ -46,6 +46,7 @@ internal sealed record CommandLineOptions(
   MTGOAssetExportOptions MTGOAssets,
   bool SyncImages,
   bool SyncAssets,
+  bool Force,
   R2Options R2
 )
 {
@@ -68,6 +69,7 @@ internal sealed record CommandLineOptions(
     List<LookupProbe> lookupProbes = new List<LookupProbe>();
     bool syncImages = false;
     bool syncAssets = false;
+    bool force = false;
     string sourceManifestRoot = Environment.GetEnvironmentVariable("CARDEXPORTER_SOURCE_MANIFEST_ROOT") ??
       SourceManifestOptions.DefaultSourceManifestRoot;
     string outputRoot = Environment.GetEnvironmentVariable("EXPORT_OUTPUT_ROOT") ?? ImageExportOptions.DefaultOutputRoot;
@@ -198,6 +200,12 @@ internal sealed record CommandLineOptions(
       if (string.Equals(arg, "--dry-run", StringComparison.OrdinalIgnoreCase))
       {
         dryRun = true;
+        continue;
+      }
+
+      if (string.Equals(arg, "--force", StringComparison.OrdinalIgnoreCase))
+      {
+        force = true;
         continue;
       }
 
@@ -406,6 +414,7 @@ internal sealed record CommandLineOptions(
       ),
       syncImages,
       syncAssets,
+      force,
       new R2Options(
         cdnManifestPath,
         outputRoot,
