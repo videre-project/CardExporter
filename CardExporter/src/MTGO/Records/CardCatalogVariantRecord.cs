@@ -9,6 +9,11 @@ using CardExporter.MTGO.Parsing;
 
 namespace CardExporter.MTGO.Records;
 
+internal static class CardCatalogVariantTypes
+{
+  public const string FoilClone = "foil_clone";
+}
+
 internal sealed record CardCatalogVariantRecord(
   int CatalogId,
   int CardId,
@@ -37,7 +42,7 @@ internal sealed record CardCatalogVariantRecord(
     return new CardCatalogVariantRecord(
       CatalogId: catalogId,
       CardId: baseCard.Id,
-      VariantType: "foil_clone",
+      VariantType: CardCatalogVariantTypes.FoilClone,
       SetCode: lookups.ResolveSetCode(fields) ?? baseCard.SetCode,
       Name: lookups.ResolveCardName(fields) ?? baseCard.Name,
       CardTextureNumber: fields.CardTextureNumber,

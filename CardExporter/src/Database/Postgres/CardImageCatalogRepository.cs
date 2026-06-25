@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CardExporter.Database.R2;
+using CardExporter.MTGO.Records;
 using CardExporter.MTGO.Rendering.Cards;
 using Npgsql;
 
@@ -71,6 +72,19 @@ internal static class CardImageCatalogRepository
         UNION ALL
 
         SELECT
+          v.catalog_id AS image_catalog_id,
+          'card' AS image_kind,
+          v.set_code,
+          s.name AS set_name,
+          s.release_date
+        FROM card_catalog_variants v
+        LEFT JOIN sets s ON s.code = v.set_code
+        WHERE v.variant_type = @foilCloneVariantType
+          AND coalesce(v.set_code, '') = ANY(@separateFoilCloneImageSetCodes)
+
+        UNION ALL
+
+        SELECT
           p.id AS image_catalog_id,
           'product' AS image_kind,
           p.set_code,
@@ -110,6 +124,7 @@ internal static class CardImageCatalogRepository
       "separateFoilCloneImageSetCodes",
       FoilCloneImagePolicy.SeparateFoilCloneImageSetCodes
     );
+    command.Parameters.AddWithValue("foilCloneVariantType", CardCatalogVariantTypes.FoilClone);
     command.Parameters.AddWithValue("includeAllCards", scope.IncludeAllCards);
     command.Parameters.AddWithValue("catalogIds", scope.CatalogIds.ToArray());
     await using NpgsqlDataReader reader = await command.ExecuteReaderAsync();

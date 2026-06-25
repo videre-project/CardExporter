@@ -5,6 +5,7 @@
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using CardExporter.MTGO.Records;
 using CardExporter.MTGO.Rendering.Cards;
 using Npgsql;
 
@@ -203,6 +204,48 @@ internal static class CardImageChangeTracker
           OR p.is_tradable IS DISTINCT FROM sp.is_tradable
           OR p.raw IS DISTINCT FROM sp.raw
       ),
+      staged_card_catalog_variants AS (
+        SELECT DISTINCT ON (catalog_id)
+          v.catalog_id,
+          v.card_id,
+          v.variant_type,
+          v.set_code,
+          NULLIF(v.name, '') AS name,
+          v.card_texture_number,
+          v.is_foil,
+          v.is_token,
+          v.raw
+        FROM tmp_card_catalog_variants v
+        ORDER BY
+          v.catalog_id,
+          v.name IS NULL,
+          coalesce(length(v.name), 0) DESC
+      ),
+      separate_foil_clone_variants AS (
+        SELECT *
+        FROM staged_card_catalog_variants
+        WHERE variant_type = @foilCloneVariantType
+          AND coalesce(set_code, '') = ANY(@separateFoilCloneImageSetCodes)
+      ),
+      added_card_catalog_variants AS (
+        SELECT sv.*
+        FROM separate_foil_clone_variants sv
+        LEFT JOIN card_catalog_variants v ON v.catalog_id = sv.catalog_id
+        WHERE v.catalog_id IS NULL
+      ),
+      modified_card_catalog_variants AS (
+        SELECT sv.*
+        FROM separate_foil_clone_variants sv
+        JOIN card_catalog_variants v ON v.catalog_id = sv.catalog_id
+        WHERE v.card_id IS DISTINCT FROM sv.card_id
+          OR v.variant_type IS DISTINCT FROM sv.variant_type
+          OR v.set_code IS DISTINCT FROM sv.set_code
+          OR v.name IS DISTINCT FROM sv.name
+          OR v.card_texture_number IS DISTINCT FROM sv.card_texture_number
+          OR v.is_foil IS DISTINCT FROM sv.is_foil
+          OR v.is_token IS DISTINCT FROM sv.is_token
+          OR v.raw IS DISTINCT FROM sv.raw
+      ),
       face_rows_affected_by_added_cards AS (
         SELECT sf.*
         FROM staged_faces sf
@@ -222,6 +265,40 @@ internal static class CardImageChangeTracker
         SELECT * FROM modified_faces
         UNION
         SELECT * FROM face_rows_affected_by_modified_cards
+      ),
+      variant_rows_affected_by_added_cards AS (
+        SELECT sv.*
+        FROM separate_foil_clone_variants sv
+        JOIN added_cards ac ON ac.id = sv.card_id
+      ),
+      variant_rows_affected_by_modified_cards AS (
+        SELECT sv.*
+        FROM separate_foil_clone_variants sv
+        JOIN modified_cards mc ON mc.id = sv.card_id
+      ),
+      variant_rows_affected_by_added_faces AS (
+        SELECT sv.*
+        FROM separate_foil_clone_variants sv
+        JOIN added_affected_faces af ON af.card_id = sv.card_id
+      ),
+      variant_rows_affected_by_modified_faces AS (
+        SELECT sv.*
+        FROM separate_foil_clone_variants sv
+        JOIN modified_affected_faces mf ON mf.card_id = sv.card_id
+      ),
+      added_affected_card_catalog_variants AS (
+        SELECT * FROM added_card_catalog_variants
+        UNION
+        SELECT * FROM variant_rows_affected_by_added_cards
+        UNION
+        SELECT * FROM variant_rows_affected_by_added_faces
+      ),
+      modified_affected_card_catalog_variants AS (
+        SELECT * FROM modified_card_catalog_variants
+        UNION
+        SELECT * FROM variant_rows_affected_by_modified_cards
+        UNION
+        SELECT * FROM variant_rows_affected_by_modified_faces
       ),
       image_changes AS (
         SELECT
@@ -282,6 +359,20 @@ internal static class CardImageChangeTracker
 
         SELECT
           'added'::text AS change_kind,
+          av.catalog_id AS image_catalog_id
+        FROM added_affected_card_catalog_variants av
+
+        UNION
+
+        SELECT
+          'modified'::text AS change_kind,
+          mv.catalog_id AS image_catalog_id
+        FROM modified_affected_card_catalog_variants mv
+
+        UNION
+
+        SELECT
+          'added'::text AS change_kind,
           ap.id AS image_catalog_id
         FROM added_products ap
 
@@ -303,6 +394,7 @@ internal static class CardImageChangeTracker
       "separateFoilCloneImageSetCodes",
       FoilCloneImagePolicy.SeparateFoilCloneImageSetCodes
     );
+    command.Parameters.AddWithValue("foilCloneVariantType", CardCatalogVariantTypes.FoilClone);
 
     HashSet<int> addedCatalogIds = new HashSet<int>();
     HashSet<int> modifiedCatalogIds = new HashSet<int>();
