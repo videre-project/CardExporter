@@ -253,6 +253,7 @@ internal static class SourceManifestPreflight
     if (!TryReadLongAttribute(root, "setCount", out long setCount) ||
         !TryReadLongAttribute(root, "cardCount", out long cardCount) ||
         !TryReadLongAttribute(root, "productCount", out long productCount) ||
+        !TryReadLongAttribute(root, "cardCatalogVariantCount", out long cardCatalogVariantCount) ||
         !TryReadLongAttribute(root, "oracleCardCount", out long oracleCardCount) ||
         !TryReadLongAttribute(root, "cardFaceCount", out long cardFaceCount) ||
         !TryReadLongAttribute(root, "legalityCount", out long legalityCount))
@@ -264,6 +265,7 @@ internal static class SourceManifestPreflight
       setCount,
       cardCount,
       productCount,
+      cardCatalogVariantCount,
       oracleCardCount,
       cardFaceCount,
       legalityCount
@@ -395,6 +397,7 @@ internal sealed record SourceManifestImportCounts(
   long SetCount,
   long CardCount,
   long ProductCount,
+  long CardCatalogVariantCount,
   long OracleCardCount,
   long CardFaceCount,
   long LegalityCount

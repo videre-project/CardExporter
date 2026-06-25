@@ -12,6 +12,7 @@ internal readonly record struct StagedImportCounts(
   long SetCount,
   long CardCount,
   long ProductCount,
+  long CardCatalogVariantCount,
   long FaceCount,
   long LegalityCount
 );
@@ -20,6 +21,7 @@ internal readonly record struct StaleDeleteCounts(
   long FaceCount,
   long CardCount,
   long ProductCount,
+  long CardCatalogVariantCount,
   long OracleCardCount,
   long SetCount,
   long LegalityCount

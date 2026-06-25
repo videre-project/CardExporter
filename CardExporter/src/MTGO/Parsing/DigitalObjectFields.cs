@@ -69,6 +69,9 @@ internal sealed record DigitalObjectFields(
   public bool IsProductObject =>
     IsNonCardObject && !IsSubcard;
 
+  public bool IsFoilClone =>
+    CloneId is not null && IsFoil == true;
+
   public int? CollectorNumberValue => ParseCollectorNumberValue(CollectorNumber);
 
   public void ApplyPowerToughness(LookupTables lookups, ref string? power, ref string? toughness)

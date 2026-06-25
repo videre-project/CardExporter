@@ -20,6 +20,10 @@ internal static class StagingCopyWriter
     long setCount = await SetCopy.WriteAsync(connection, parser.EnumerateSets());
     long cardCount = await CardCopy.WriteAsync(connection, parser.EnumerateCards());
     long productCount = await ProductCopy.WriteAsync(connection, parser.EnumerateProducts());
+    long cardCatalogVariantCount = await CardCatalogVariantCopy.WriteAsync(
+      connection,
+      parser.EnumerateCardCatalogVariants()
+    );
     long faceCount = await CardFaceCopy.WriteAsync(connection, parser.EnumerateCardFaces());
     long legalityCount = await CardLegalityCopy.WriteAsync(connection, parser.EnumerateCardLegalities());
 
@@ -27,6 +31,7 @@ internal static class StagingCopyWriter
       setCount,
       cardCount,
       productCount,
+      cardCatalogVariantCount,
       faceCount,
       legalityCount
     );

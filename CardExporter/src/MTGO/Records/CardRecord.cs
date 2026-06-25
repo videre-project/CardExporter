@@ -76,6 +76,11 @@ internal sealed record CardRecord(
       return null;
     }
 
+    if (fields.IsFoilClone)
+    {
+      return null;
+    }
+
     if (fields.CloneId is int baseCatalogId && knownNonCards.Contains(baseCatalogId))
     {
       return null;

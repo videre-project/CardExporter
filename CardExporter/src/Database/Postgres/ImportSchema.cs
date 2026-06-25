@@ -100,6 +100,18 @@ internal static class ImportSchema
         raw JSONB NOT NULL
       ) ON COMMIT DROP;
 
+      CREATE TEMP TABLE tmp_card_catalog_variants (
+        catalog_id INTEGER NOT NULL,
+        card_id INTEGER NOT NULL,
+        variant_type TEXT NOT NULL,
+        set_code TEXT NULL,
+        name TEXT NULL,
+        card_texture_number INTEGER NULL,
+        is_foil BOOLEAN NULL,
+        is_token BOOLEAN NULL,
+        raw JSONB NOT NULL
+      ) ON COMMIT DROP;
+
       CREATE TEMP TABLE tmp_card_faces (
         card_id INTEGER NOT NULL,
         face_index SMALLINT NOT NULL,

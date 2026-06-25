@@ -324,6 +324,7 @@ internal static class SourceManifestWriter
       content.Add(new XAttribute("setCount", importCounts.SetCount.ToString(CultureInfo.InvariantCulture)));
       content.Add(new XAttribute("cardCount", importCounts.CardCount.ToString(CultureInfo.InvariantCulture)));
       content.Add(new XAttribute("productCount", importCounts.ProductCount.ToString(CultureInfo.InvariantCulture)));
+      content.Add(new XAttribute("cardCatalogVariantCount", importCounts.CardCatalogVariantCount.ToString(CultureInfo.InvariantCulture)));
       content.Add(new XAttribute("oracleCardCount", importCounts.OracleCardCount.ToString(CultureInfo.InvariantCulture)));
       content.Add(new XAttribute("cardFaceCount", importCounts.CardFaceCount.ToString(CultureInfo.InvariantCulture)));
       content.Add(new XAttribute("legalityCount", importCounts.LegalityCount.ToString(CultureInfo.InvariantCulture)));
@@ -392,6 +393,7 @@ internal static class SourceManifestWriter
     if (!TryReadLongAttribute(root, "setCount", out long setCount) ||
         !TryReadLongAttribute(root, "cardCount", out long cardCount) ||
         !TryReadLongAttribute(root, "productCount", out long productCount) ||
+        !TryReadLongAttribute(root, "cardCatalogVariantCount", out long cardCatalogVariantCount) ||
         !TryReadLongAttribute(root, "oracleCardCount", out long oracleCardCount) ||
         !TryReadLongAttribute(root, "cardFaceCount", out long cardFaceCount) ||
         !TryReadLongAttribute(root, "legalityCount", out long legalityCount))
@@ -403,6 +405,7 @@ internal static class SourceManifestWriter
       setCount,
       cardCount,
       productCount,
+      cardCatalogVariantCount,
       oracleCardCount,
       cardFaceCount,
       legalityCount

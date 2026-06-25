@@ -186,6 +186,7 @@ internal static class ImportCommand
       databaseState.SetCount,
       databaseState.CardCount,
       databaseState.ProductCount,
+      databaseState.CardCatalogVariantCount,
       databaseState.OracleCardCount,
       databaseState.CardFaceCount,
       databaseState.LegalityCount
@@ -253,10 +254,11 @@ internal static class ImportCommand
     if (!databaseState.HasCardData)
     {
       logger.LogInformation(
-        "Database is missing imported card data; full card data import will continue. Current counts: {SetCount} sets, {CardCount} cards, {ProductCount} products, {OracleCardCount} oracle cards, {CardFaceCount} card faces.",
+        "Database is missing imported card data; full card data import will continue. Current counts: {SetCount} sets, {CardCount} cards, {ProductCount} products, {CardCatalogVariantCount} card catalog variants, {OracleCardCount} oracle cards, {CardFaceCount} card faces.",
         databaseState.SetCount,
         databaseState.CardCount,
         databaseState.ProductCount,
+        databaseState.CardCatalogVariantCount,
         databaseState.OracleCardCount,
         databaseState.CardFaceCount
       );
@@ -267,15 +269,17 @@ internal static class ImportCommand
     if (CardDataCountsChanged(expectedCounts, databaseState))
     {
       logger.LogInformation(
-        "Database card data counts differ from the source manifest; full card data import will continue. Expected {ExpectedSetCount} sets, {ExpectedCardCount} cards, {ExpectedProductCount} products, {ExpectedOracleCardCount} oracle cards, {ExpectedCardFaceCount} card faces; found {SetCount} sets, {CardCount} cards, {ProductCount} products, {OracleCardCount} oracle cards, {CardFaceCount} card faces.",
+        "Database card data counts differ from the source manifest; full card data import will continue. Expected {ExpectedSetCount} sets, {ExpectedCardCount} cards, {ExpectedProductCount} products, {ExpectedCardCatalogVariantCount} card catalog variants, {ExpectedOracleCardCount} oracle cards, {ExpectedCardFaceCount} card faces; found {SetCount} sets, {CardCount} cards, {ProductCount} products, {CardCatalogVariantCount} card catalog variants, {OracleCardCount} oracle cards, {CardFaceCount} card faces.",
         expectedCounts.SetCount,
         expectedCounts.CardCount,
         expectedCounts.ProductCount,
+        expectedCounts.CardCatalogVariantCount,
         expectedCounts.OracleCardCount,
         expectedCounts.CardFaceCount,
         databaseState.SetCount,
         databaseState.CardCount,
         databaseState.ProductCount,
+        databaseState.CardCatalogVariantCount,
         databaseState.OracleCardCount,
         databaseState.CardFaceCount
       );
@@ -318,6 +322,7 @@ internal static class ImportCommand
     return databaseState.SetCount != expectedCounts.SetCount ||
       databaseState.CardCount != expectedCounts.CardCount ||
       databaseState.ProductCount != expectedCounts.ProductCount ||
+      databaseState.CardCatalogVariantCount != expectedCounts.CardCatalogVariantCount ||
       databaseState.OracleCardCount != expectedCounts.OracleCardCount ||
       databaseState.CardFaceCount != expectedCounts.CardFaceCount;
   }

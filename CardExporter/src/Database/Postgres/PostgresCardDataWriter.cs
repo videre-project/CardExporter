@@ -82,10 +82,11 @@ internal sealed class PostgresCardDataWriter
   )
   {
     _logger.LogInformation(
-      "Imported {SetCount} sets, {CardCount} cards, {ProductCount} products, {FaceCount} card faces, and {LegalityCount} card legalities; {AddedImageCatalogIdCount} added image catalog IDs and {ModifiedImageCatalogIdCount} modified image catalog IDs detected; {DeletedLegalityCount} stale legalities deleted, {DeletedFaceCount} stale faces deleted, {DeletedCardCount} stale cards deleted, {DeletedProductCount} stale products deleted, {DeletedOracleCardCount} stale oracle cards deleted, {DeletedSetCount} stale sets deleted.",
+      "Imported {SetCount} sets, {CardCount} cards, {ProductCount} products, {CardCatalogVariantCount} card catalog variants, {FaceCount} card faces, and {LegalityCount} card legalities; {AddedImageCatalogIdCount} added image catalog IDs and {ModifiedImageCatalogIdCount} modified image catalog IDs detected; {DeletedLegalityCount} stale legalities deleted, {DeletedFaceCount} stale faces deleted, {DeletedCardCount} stale cards deleted, {DeletedProductCount} stale products deleted, {DeletedCardCatalogVariantCount} stale card catalog variants deleted, {DeletedOracleCardCount} stale oracle cards deleted, {DeletedSetCount} stale sets deleted.",
       stagedCounts.SetCount,
       stagedCounts.CardCount,
       stagedCounts.ProductCount,
+      stagedCounts.CardCatalogVariantCount,
       stagedCounts.FaceCount,
       stagedCounts.LegalityCount,
       imageChanges.AddedCatalogIds.Count,
@@ -94,6 +95,7 @@ internal sealed class PostgresCardDataWriter
       deletedCounts.FaceCount,
       deletedCounts.CardCount,
       deletedCounts.ProductCount,
+      deletedCounts.CardCatalogVariantCount,
       deletedCounts.OracleCardCount,
       deletedCounts.SetCount
     );

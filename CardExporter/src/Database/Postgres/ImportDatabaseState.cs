@@ -13,6 +13,7 @@ internal sealed record ImportDatabaseState(
   long SetCount,
   long CardCount,
   long ProductCount,
+  long CardCatalogVariantCount,
   long OracleCardCount,
   long CardFaceCount,
   long LegalityCount
@@ -31,6 +32,7 @@ internal sealed record ImportDatabaseState(
       await CountRowsIfTableExistsAsync(connection, "sets"),
       await CountRowsIfTableExistsAsync(connection, "cards"),
       await CountRowsIfTableExistsAsync(connection, "products"),
+      await CountRowsIfTableExistsAsync(connection, "card_catalog_variants"),
       await CountRowsIfTableExistsAsync(connection, "oracle_cards"),
       await CountRowsIfTableExistsAsync(connection, "card_faces"),
       await CountRowsIfTableExistsAsync(connection, "card_legalities")
@@ -43,6 +45,7 @@ internal sealed record ImportDatabaseState(
       await CountRowsIfTableExistsAsync(connection, "sets"),
       await CountRowsIfTableExistsAsync(connection, "cards"),
       await CountRowsIfTableExistsAsync(connection, "products"),
+      await CountRowsIfTableExistsAsync(connection, "card_catalog_variants"),
       await CountRowsIfTableExistsAsync(connection, "oracle_cards"),
       await CountRowsIfTableExistsAsync(connection, "card_faces"),
       await CountRowsIfTableExistsAsync(connection, "card_legalities")

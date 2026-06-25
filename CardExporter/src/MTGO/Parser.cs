@@ -208,6 +208,57 @@ internal sealed class Parser
     }
   }
 
+  public IEnumerable<CardCatalogVariantRecord> EnumerateCardCatalogVariants()
+  {
+    LookupTables lookups = _lookupReader.Load();
+    Dictionary<int, CardRecord> knownCards = new Dictionary<int, CardRecord>();
+    HashSet<int> knownNonCards = new HashSet<int>();
+
+    foreach (string file in _files.GetSetFiles())
+    {
+      List<DigitalObjectFields> fileFields = DigitalObjectReader.ReadAll(file);
+
+      foreach (DigitalObjectFields fields in fileFields)
+      {
+        if (fields.CatalogId is int catalogId && fields.IsNonCardObject)
+        {
+          knownNonCards.Add(catalogId);
+        }
+      }
+
+      foreach (DigitalObjectFields fields in OrderFieldsForCardCreation(fileFields))
+      {
+        if (fields.CatalogId is not int catalogId)
+        {
+          continue;
+        }
+
+        if (fields.IsFoilClone)
+        {
+          if (fields.CloneId is int baseCatalogId &&
+              knownCards.TryGetValue(baseCatalogId, out CardRecord? baseCard) &&
+              CardCatalogVariantRecord.Create(fields, baseCard, lookups) is CardCatalogVariantRecord variant)
+          {
+            yield return variant;
+          }
+
+          continue;
+        }
+
+        CardRecord? card = CardRecord.Create(
+          fields,
+          lookups,
+          knownCards,
+          knownNonCards
+        );
+        if (card is not null)
+        {
+          knownCards[catalogId] = card;
+        }
+      }
+    }
+  }
+
   public IEnumerable<CardFace> EnumerateCardFaces()
   {
     LookupTables lookups = _lookupReader.Load();

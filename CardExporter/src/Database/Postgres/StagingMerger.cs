@@ -18,6 +18,7 @@ internal static class StagingMerger
     await OracleCardMerge.MergeAsync(connection);
     await CardMerge.MergeAsync(connection);
     await ProductMerge.MergeAsync(connection);
+    await CardCatalogVariantMerge.MergeAsync(connection);
     await CardFaceMerge.MergeAsync(connection);
     await CardLegalityMerge.MergeAsync(connection);
   }
@@ -26,6 +27,7 @@ internal static class StagingMerger
   {
     long legalityCount = await CardLegalityMerge.DeleteStaleAsync(connection);
     long faceCount = await CardFaceMerge.DeleteStaleAsync(connection);
+    long cardCatalogVariantCount = await CardCatalogVariantMerge.DeleteStaleAsync(connection);
     long cardCount = await CardMerge.DeleteStaleAsync(connection);
     long productCount = await ProductMerge.DeleteStaleAsync(connection);
     long oracleCardCount = await OracleCardMerge.DeleteStaleAsync(connection);
@@ -35,6 +37,7 @@ internal static class StagingMerger
       faceCount,
       cardCount,
       productCount,
+      cardCatalogVariantCount,
       oracleCardCount,
       setCount,
       legalityCount
