@@ -180,6 +180,11 @@ internal static class SourceManifestWriter
 
     foreach (SetRecord set in sets)
     {
+      if (string.IsNullOrWhiteSpace(set.SourceFile))
+      {
+        continue;
+      }
+
       if (!sourceFilesByPath.TryGetValue(set.SourceFile, out SourceFile? setSourceFile))
       {
         logger.LogWarning("Skipping source manifest for set {SetCode}; source file {SourceFile} was not indexed.", set.Code, set.SourceFile);

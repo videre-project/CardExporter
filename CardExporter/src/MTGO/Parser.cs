@@ -29,6 +29,8 @@ internal sealed class Parser
   private readonly ValidationRuleSetReader _validationRuleSetReader;
   private readonly ILogger _logger;
   private readonly IReadOnlyDictionary<string, SetMetadata> _setMetadata;
+  private IReadOnlyDictionary<string, string>? _productSetNamesByCode;
+  private IReadOnlyList<ProductRecord>? _products;
 
   private static readonly IReadOnlyDictionary<string, string[]> RuleSetTypeAliases =
     new Dictionary<string, string[]>(StringComparer.OrdinalIgnoreCase)
@@ -117,6 +119,9 @@ internal sealed class Parser
 
   public IEnumerable<SetRecord> EnumerateSets()
   {
+    IReadOnlyDictionary<string, string> productSetNamesByCode = GetProductSetNamesByCode();
+    var emittedSetCodes = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
     foreach (string file in _files.GetSetFiles())
     {
       string sourceFile = _files.GetRelativePath(file);
@@ -137,14 +142,17 @@ internal sealed class Parser
           break;
         }
 
+        emittedSetCodes.Add(code);
         _setMetadata.TryGetValue(code, out SetMetadata? metadata);
+        productSetNamesByCode.TryGetValue(code, out string? productSetName);
 
         yield return SetRecord.Create(
           code,
           reader.GetAttribute("age"),
           reader.GetAttribute("cardsetType"),
           sourceFile,
-          metadata
+          metadata,
+          productSetName
         );
         foundSet = true;
         break;
@@ -155,6 +163,42 @@ internal sealed class Parser
         _logger.LogWarning("No CardSet root was found in {File}", file);
       }
     }
+
+    foreach (string code in GetProducts()
+      .Select(static product => product.SetCode)
+      .Where(static code => !string.IsNullOrWhiteSpace(code))
+      .Select(static code => code!)
+      .Distinct(StringComparer.OrdinalIgnoreCase)
+      .Order(StringComparer.OrdinalIgnoreCase))
+    {
+      if (!emittedSetCodes.Add(code))
+      {
+        continue;
+      }
+
+      _setMetadata.TryGetValue(code, out SetMetadata? metadata);
+      productSetNamesByCode.TryGetValue(code, out string? productSetName);
+
+      yield return SetRecord.Create(
+        code,
+        age: null,
+        cardsetType: null,
+        sourceFile: string.Empty,
+        metadata,
+        productSetName
+      );
+    }
+  }
+
+  private IReadOnlyDictionary<string, string> GetProductSetNamesByCode()
+  {
+    if (_productSetNamesByCode is not null)
+    {
+      return _productSetNamesByCode;
+    }
+
+    _productSetNamesByCode = SetNameResolver.InferFromProducts(GetProducts());
+    return _productSetNamesByCode;
   }
 
   public IEnumerable<CardRecord> EnumerateCards()
@@ -193,19 +237,26 @@ internal sealed class Parser
 
   public IEnumerable<ProductRecord> EnumerateProducts()
   {
+    return GetProducts();
+  }
+
+  private IReadOnlyList<ProductRecord> GetProducts()
+  {
+    if (_products is not null)
+    {
+      return _products;
+    }
+
     LookupTables lookups = _lookupReader.Load();
 
-    foreach (string file in _files.GetSetFiles().Concat(_files.GetProductFiles()))
-    {
-      foreach (DigitalObjectFields fields in DigitalObjectReader.ReadAll(file))
-      {
-        ProductRecord? product = ProductRecord.Create(fields, lookups);
-        if (product is not null)
-        {
-          yield return product;
-        }
-      }
-    }
+    _products = _files.GetSetFiles()
+      .Concat(_files.GetProductFiles())
+      .SelectMany(static file => DigitalObjectReader.ReadAll(file))
+      .Select(fields => ProductRecord.Create(fields, lookups))
+      .OfType<ProductRecord>()
+      .ToArray();
+
+    return _products;
   }
 
   public IEnumerable<CardCatalogVariantRecord> EnumerateCardCatalogVariants()

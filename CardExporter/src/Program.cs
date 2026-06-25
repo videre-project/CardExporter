@@ -276,23 +276,17 @@ internal static class Program
         );
       }
 
-      bool shouldStartClientForImport =
-        options.Mode != CommandMode.Import ||
-        importAction == ImportPipelineAction.ImportCards;
-      if (options.StartClient && client is null && shouldStartClientForImport)
+      if (options.StartClient && client is null)
       {
         client = await BotClient.StartAsync(loggerFactory, logger, options.LogOn);
       }
 
       if (options.Mode == CommandMode.Import)
       {
-        CommandLineOptions importOptions = importAction == ImportPipelineAction.ImportLegalities
-          ? options with { StartClient = false, LogOn = false }
-          : options;
         int importResult = await ImportCommand.ExecuteAsync(
           dataDirectory,
           importAction,
-          importOptions,
+          options,
           loggerFactory,
           logger
         );

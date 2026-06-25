@@ -18,7 +18,7 @@ namespace CardExporter.MTGO.Files;
 internal static class SourceManifestPreflight
 {
   public const string FileName = "mtgo-source-files.xml";
-  public const string ParserOutputVersion = "5";
+  public const string ParserOutputVersion = "2";
   public static string OutputVersion => Client.Version.ToString();
 
   public static SourceManifestComparison CompareCardData(

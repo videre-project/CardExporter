@@ -25,7 +25,8 @@ internal sealed record SetRecord(
     string? age,
     string? cardsetType,
     string sourceFile,
-    SetMetadata? metadata
+    SetMetadata? metadata,
+    string? productSetName
   )
   {
     var raw = new
@@ -36,10 +37,10 @@ internal sealed record SetRecord(
 
     return new SetRecord(
       Code: code,
-      Name: metadata?.Name,
+      Name: NullIfWhiteSpace(metadata?.Name) ?? NullIfWhiteSpace(productSetName),
       ReleaseDate: metadata?.ReleaseDate,
       Age: metadata?.Age ?? (TryParseInt(age, out int parsedAge) ? parsedAge : null),
-      SetType: metadata?.SetType ?? NullIfWhiteSpace(cardsetType),
+      SetType: SetTypeClassifier.Resolve(code, metadata?.SetType, cardsetType),
       SourceFile: sourceFile,
       RawJson: JsonSerializer.Serialize(raw)
     );
