@@ -176,11 +176,6 @@ internal static class Program
           return 5;
         }
 
-        if (!options.R2.DryRun)
-        {
-          await ImportCommand.EnsureCurrentSchemaAsync(preflightConnectionString);
-        }
-
         ImportPreflightResult preflight = await ImportCommand.CheckPreflightAsync(
           dataDirectory,
           preflightConnectionString,

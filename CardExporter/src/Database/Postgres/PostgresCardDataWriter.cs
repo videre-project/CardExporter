@@ -26,7 +26,6 @@ internal sealed class PostgresCardDataWriter
   {
     await using var connection = new NpgsqlConnection(_connectionString);
     await connection.OpenAsync();
-    await ImportSchema.EnsureCurrentSchemaAsync(connection);
     await using var transaction = await connection.BeginTransactionAsync();
 
     await ImportSchema.CreateStagingTablesAsync(connection);
@@ -56,7 +55,6 @@ internal sealed class PostgresCardDataWriter
   {
     await using var connection = new NpgsqlConnection(_connectionString);
     await connection.OpenAsync();
-    await ImportSchema.EnsureCurrentSchemaAsync(connection);
     await using var transaction = await connection.BeginTransactionAsync();
 
     await ImportSchema.CreateLegalityStagingTableAsync(connection);

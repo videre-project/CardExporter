@@ -171,13 +171,6 @@ internal static class ImportCommand
     return options.ConnectionString ?? Environment.GetEnvironmentVariable("CARDEXPORTER_DATABASE_URL");
   }
 
-  public static async Task EnsureCurrentSchemaAsync(string connectionString)
-  {
-    await using var connection = new Npgsql.NpgsqlConnection(connectionString);
-    await connection.OpenAsync();
-    await ImportSchema.EnsureCurrentSchemaAsync(connection);
-  }
-
   private static SourceManifestImportCounts CreateManifestImportCounts(
     ImportDatabaseState databaseState
   )

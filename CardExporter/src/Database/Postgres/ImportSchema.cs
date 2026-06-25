@@ -3,9 +3,6 @@
   SPDX-License-Identifier: Apache-2.0
 **/
 
-using System;
-using System.IO;
-using System.Reflection;
 using System.Threading.Tasks;
 using Npgsql;
 
@@ -14,30 +11,6 @@ namespace CardExporter.Database.Postgres;
 
 internal static class ImportSchema
 {
-  private const string SchemaResourceName = "CardExporter.Database.Postgres.Schema.sql";
-  private static string? s_schemaSql;
-
-  public static async Task EnsureCurrentSchemaAsync(NpgsqlConnection connection)
-  {
-    await using var command = new NpgsqlCommand(ReadCurrentSchemaSql(), connection);
-    await command.ExecuteNonQueryAsync();
-  }
-
-  private static string ReadCurrentSchemaSql()
-  {
-    if (s_schemaSql is not null)
-    {
-      return s_schemaSql;
-    }
-
-    Assembly assembly = typeof(ImportSchema).Assembly;
-    using Stream stream = assembly.GetManifestResourceStream(SchemaResourceName) ??
-      throw new InvalidOperationException($"Embedded schema resource {SchemaResourceName} was not found.");
-    using var reader = new StreamReader(stream);
-    s_schemaSql = reader.ReadToEnd();
-    return s_schemaSql;
-  }
-
   public static async Task CreateStagingTablesAsync(NpgsqlConnection connection)
   {
     await using var command = new NpgsqlCommand(

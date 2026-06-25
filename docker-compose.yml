@@ -1,32 +1,9 @@
 services:
-  carddata-postgres:
-    image: postgres:17
-    container_name: cardexporter-postgres
-    restart: unless-stopped
-    environment:
-      POSTGRES_USER: ${CARDEXPORTER_POSTGRES_USER:-cardexporter}
-      POSTGRES_PASSWORD: ${CARDEXPORTER_POSTGRES_PASSWORD:-cardexporter}
-      POSTGRES_DB: ${CARDEXPORTER_POSTGRES_DB:-cardexporter}
-    ports:
-      - "127.0.0.1:${CARDEXPORTER_POSTGRES_PORT:-5434}:5432"
-    volumes:
-      - carddata-postgres-data:/var/lib/postgresql/data
-      - ./postgres/schema.sql:/pg/schema.sql:ro
-      - ./postgres/initdb.d:/docker-entrypoint-initdb.d:ro
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-
   cardexporter:
     image: videreproject/mtgosdk:latest
     container_name: cardexporter
     profiles:
       - import
-    depends_on:
-      carddata-postgres:
-        condition: service_healthy
     stdin_open: true
     tty: true
     environment:
@@ -34,7 +11,6 @@ services:
       - WINEDEBUG=-all
       - WINE_AUDIO_DRIVER=pulse
       - ALSA_LOG_LEVEL=0
-      - CARDEXPORTER_DATABASE_URL=Host=carddata-postgres;Port=5432;Database=${CARDEXPORTER_POSTGRES_DB:-cardexporter};Username=${CARDEXPORTER_POSTGRES_USER:-cardexporter};Password=${CARDEXPORTER_POSTGRES_PASSWORD:-cardexporter}
     volumes:
       - .:/workspace
       - ./asound.conf:/etc/asound.conf:ro
@@ -44,5 +20,4 @@ services:
     command: ["wine-run", "CardExporter/CardExporter.csproj", "import", "--start-client"]
 
 volumes:
-  carddata-postgres-data:
   carddata-wine-prefix:

@@ -45,6 +45,7 @@ After an import identifies new or changed catalog IDs, image synchronization ren
 ## Requirements
 
 - Docker with Docker Compose
+- Access to a shared [`mtgo-db`](https://github.com/videre-project/mtgo-db) PostgreSQL database
 - A valid MTGO account for commands that log into the client, render images, or read live runtime metadata
 - Cloudflare R2 credentials for commands that upload files or list bucket contents
 
@@ -87,7 +88,7 @@ Create a `.env` file in the repository root.
 
 ```env
 # PostgreSQL
-CARDEXPORTER_DATABASE_URL=Host=carddata-postgres;Port=5432;Database=cardexporter;Username=cardexporter;Password=cardexporter
+CARDEXPORTER_DATABASE_URL=Host=<mtgo-db-host>;Port=5432;Database=mtgo;Username=<user>;Password=<password>
 
 # Cloudflare R2. Required by upload and bucket-reconciliation commands.
 CF_S3_Access_Key_ID=...
@@ -96,6 +97,8 @@ R2_BUCKET_NAME=mtgo-cdn
 R2_ENDPOINT_URL=https://<account-id>.r2.cloudflarestorage.com
 R2_PUBLIC_BASE_URL=https://r2.videreproject.com
 ```
+
+CardExporter does not create or maintain permanent PostgreSQL tables. The catalog schema lives in [`mtgo-db`](https://github.com/videre-project/mtgo-db); CardExporter only writes into those existing tables and creates temporary staging tables for each import transaction.
 
 ### Optional path and output overrides
 
@@ -296,7 +299,7 @@ CardExporter/
 │   ├── src/
 │   │   ├── CLI/             # Command dispatch and command implementations
 │   │   ├── Database/
-│   │   │   ├── Postgres/    # Schema import, copy writers, merge logic, image-work queries
+│   │   │   ├── Postgres/    # Staging tables, copy writers, merge logic, image-work queries
 │   │   │   └── R2/          # R2 client, CDN manifest, and object-key helpers
 │   │   └── MTGO/
 │   │       ├── Files/       # Source-file indexing and manifests
@@ -305,8 +308,7 @@ CardExporter/
 │   │       └── Rendering/   # Card rendering and client-asset extraction
 │   └── CardExporter.csproj
 ├── manifests/               # Source, CDN, and art-override manifests
-├── postgres/                # PostgreSQL schema
-├── docker-compose.yml       # PostgreSQL and Wine/MTGO runtime services
+├── docker-compose.yml       # Wine/MTGO runtime service
 ├── wine-entrypoint.sh       # Wine audio and runtime setup
 └── Project.slnx
 ```
