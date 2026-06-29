@@ -309,7 +309,6 @@ CardExporter/
 │   └── CardExporter.csproj
 ├── manifests/               # Source, CDN, and art-override manifests
 ├── docker-compose.yml       # Wine/MTGO runtime service
-├── wine-entrypoint.sh       # Wine audio and runtime setup
 └── Project.slnx
 ```
 

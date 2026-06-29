@@ -1,6 +1,6 @@
 services:
   cardexporter:
-    image: videreproject/mtgosdk:latest
+    image: videreproject/mtgosdk:headless
     container_name: cardexporter
     profiles:
       - import
@@ -9,14 +9,11 @@ services:
     environment:
       - DISPLAY=:99
       - WINEDEBUG=-all
-      - WINE_AUDIO_DRIVER=pulse
-      - ALSA_LOG_LEVEL=0
     volumes:
       - .:/workspace
-      - ./asound.conf:/etc/asound.conf:ro
       - carddata-wine-prefix:/home/wine/.wine
     working_dir: /workspace
-    entrypoint: ["/usr/local/bin/xvfb-entrypoint.sh", "/workspace/wine-entrypoint.sh"]
+    entrypoint: ["/usr/local/bin/xvfb-entrypoint.sh"]
     command: ["wine-run", "CardExporter/CardExporter.csproj", "import", "--start-client"]
 
 volumes:
