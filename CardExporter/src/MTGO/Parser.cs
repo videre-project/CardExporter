@@ -5,8 +5,10 @@
 
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Xml;
+using System.Xml.Linq;
 using CardExporter.MTGO.Files;
 using CardExporter.MTGO.Parsing;
 using CardExporter.MTGO.Records;
@@ -29,6 +31,7 @@ internal sealed class Parser
   private readonly ValidationRuleSetReader _validationRuleSetReader;
   private readonly ILogger _logger;
   private readonly IReadOnlyDictionary<string, SetMetadata> _setMetadata;
+  private readonly string? _sourceManifestRoot;
   private IReadOnlyDictionary<string, string>? _productSetNamesByCode;
   private IReadOnlyList<ProductRecord>? _products;
 
@@ -47,7 +50,8 @@ internal sealed class Parser
   public Parser(
     string dataDirectory,
     ILogger logger,
-    IReadOnlyDictionary<string, SetMetadata>? setMetadata = null
+    IReadOnlyDictionary<string, SetMetadata>? setMetadata = null,
+    string? sourceManifestRoot = null
   )
   {
     _files = new CardDataFileIndex(dataDirectory, logger);
@@ -55,6 +59,7 @@ internal sealed class Parser
     _validationRuleSetReader = new ValidationRuleSetReader(_files);
     _logger = logger;
     _setMetadata = setMetadata ?? new Dictionary<string, SetMetadata>(StringComparer.OrdinalIgnoreCase);
+    _sourceManifestRoot = sourceManifestRoot;
   }
 
   public IEnumerable<SourceFile> EnumerateParsedSourceFiles()
@@ -109,6 +114,11 @@ internal sealed class Parser
           ruleSet.SourceRuleSetId
         );
       }
+    }
+
+    foreach (CardLegality legalityOverride in EnumerateManualLegalityOverrides(oracleIdsByCardName))
+    {
+      yield return legalityOverride;
     }
   }
 
@@ -487,6 +497,90 @@ internal sealed class Parser
     }
 
     return statuses;
+  }
+
+  private IEnumerable<CardLegality> EnumerateManualLegalityOverrides(
+    IReadOnlyDictionary<string, HashSet<Guid>> oracleIdsByCardName
+  )
+  {
+    string? manifestPath = ResolveManualLegalityOverridePath();
+    if (manifestPath is null)
+    {
+      yield break;
+    }
+
+    XDocument document;
+    try
+    {
+      document = XDocument.Load(manifestPath, LoadOptions.None);
+    }
+    catch (Exception exception)
+    {
+      _logger.LogWarning(exception, "Could not load MTGO legality override manifest {ManifestPath}.", manifestPath);
+      yield break;
+    }
+
+    foreach (XElement element in document.Root?.Elements("override") ?? [])
+    {
+      string? cardName = Attribute(element, "cardName");
+      string? formatCode = Attribute(element, "formatCode");
+      string? status = Attribute(element, "status");
+      string? sourceRuleSetId = Attribute(element, "sourceRuleSetId");
+      if (string.IsNullOrWhiteSpace(cardName) ||
+          string.IsNullOrWhiteSpace(formatCode) ||
+          string.IsNullOrWhiteSpace(status) ||
+          string.IsNullOrWhiteSpace(sourceRuleSetId))
+      {
+        _logger.LogWarning("Skipping incomplete legality override in {ManifestPath}.", manifestPath);
+        continue;
+      }
+
+      string normalizedCardName = ValidationRuleSetReader.NormalizeCardName(cardName);
+      if (!oracleIdsByCardName.TryGetValue(normalizedCardName, out HashSet<Guid>? oracleIds))
+      {
+        _logger.LogWarning(
+          "Skipping legality override for {CardName} in {FormatCode}: card name was not found.",
+          cardName,
+          formatCode
+        );
+        continue;
+      }
+
+      foreach (Guid oracleId in oracleIds)
+      {
+        yield return new CardLegality(
+          oracleId,
+          formatCode,
+          status,
+          sourceRuleSetId
+        );
+      }
+    }
+  }
+
+  private string? ResolveManualLegalityOverridePath()
+  {
+    string? configuredPath = Environment.GetEnvironmentVariable("CARDEXPORTER_LEGALITY_OVERRIDES");
+    if (!string.IsNullOrWhiteSpace(configuredPath))
+    {
+      return File.Exists(configuredPath) ? configuredPath : null;
+    }
+
+    string? manifestRoot = _sourceManifestRoot;
+    if (string.IsNullOrWhiteSpace(manifestRoot))
+    {
+      return null;
+    }
+
+    string path = Path.Combine(manifestRoot, "mtgo-legality-overrides.xml");
+    return File.Exists(path) ? path : null;
+  }
+
+  private static string? Attribute(XElement element, string name)
+  {
+    return element.Attributes()
+      .FirstOrDefault(attribute => string.Equals(attribute.Name.LocalName, name, StringComparison.OrdinalIgnoreCase))
+      ?.Value;
   }
 
   private static HashSet<string> ResolveLegalSetCodes(

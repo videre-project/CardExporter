@@ -45,7 +45,8 @@ internal static class ImportCommand
     var parser = new Parser(
       dataDirectory,
       loggerFactory.CreateLogger<Parser>(),
-      setMetadata
+      setMetadata,
+      options.SourceManifestRoot
     );
     var writer = new PostgresCardDataWriter(
       connectionString,
@@ -214,7 +215,8 @@ internal static class ImportCommand
   {
     var parser = new Parser(
       dataDirectory,
-      loggerFactory.CreateLogger<Parser>()
+      loggerFactory.CreateLogger<Parser>(),
+      sourceManifestRoot: options.SourceManifestRoot
     );
 
     SourceManifestComparison cardDataComparison = SourceManifestPreflight.CompareCardData(

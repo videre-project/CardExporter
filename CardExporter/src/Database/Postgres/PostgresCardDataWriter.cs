@@ -66,7 +66,8 @@ internal sealed class PostgresCardDataWriter
 
     await transaction.CommitAsync();
     _logger.LogInformation(
-      "Refreshed {LegalityCount} card legalities; {DeletedLegalityCount} stale legalities deleted.",
+      "Refreshed {LegalityCount} card legalities ({StagedLegalityCount} staged rows); {DeletedLegalityCount} stale legalities deleted.",
+      finalDatabaseState.LegalityCount,
       legalityCount,
       deletedLegalityCount
     );

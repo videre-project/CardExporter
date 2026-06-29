@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<legalityOverrides>
+  <override
+    cardName="Candelabra of Tawnos"
+    formatCode="legacy"
+    status="banned"
+    sourceRuleSetId="ManualOverrides/2026-06-29-BR"
+    sourceUrl="https://magic.wizards.com/en/news/announcements/banned-and-restricted-may-18-2026" />
+  <override
+    cardName="Seeker of Skybreak"
+    formatCode="pauper"
+    status="banned"
+    sourceRuleSetId="ManualOverrides/2026-06-29-BR"
+    sourceUrl="https://magic.wizards.com/en/news/announcements/banned-and-restricted-may-18-2026" />
+</legalityOverrides>
