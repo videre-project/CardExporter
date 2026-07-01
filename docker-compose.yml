@@ -2,19 +2,17 @@ services:
   cardexporter:
     image: videreproject/mtgosdk:headless
     container_name: cardexporter
-    profiles:
-      - import
-    stdin_open: true
-    tty: true
+    restart: unless-stopped
     environment:
       - DISPLAY=:99
       - WINEDEBUG=-all
+      - TZ=America/Los_Angeles
     volumes:
       - .:/workspace
       - carddata-wine-prefix:/home/wine/.wine
     working_dir: /workspace
     entrypoint: ["/usr/local/bin/xvfb-entrypoint.sh"]
-    command: ["wine-run", "CardExporter/CardExporter.csproj", "import", "--start-client"]
+    command: ["wine-run", "CardExporter/CardExporter.csproj", "schedule"]
 
 volumes:
   carddata-wine-prefix:

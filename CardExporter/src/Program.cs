@@ -4,6 +4,7 @@
 **/
 
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 using CardExporter.CLI;
 using CardExporter.CLI.Inspection;
@@ -42,6 +43,46 @@ internal static class Program
       return 1;
     }
 
+    using CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
+    ConsoleCancelEventHandler cancelHandler = (_, eventArgs) =>
+    {
+      eventArgs.Cancel = true;
+      cancellationTokenSource.Cancel();
+      logger.LogInformation("Stopping CardExporter...");
+    };
+
+    try
+    {
+      Console.CancelKeyPress += cancelHandler;
+      if (options.Mode == CommandMode.Schedule)
+      {
+        return await ScheduleCommand.ExecuteAsync(
+          options,
+          loggerFactory,
+          logger,
+          cancellationTokenSource.Token
+        );
+      }
+
+      return await ExecuteOnceAsync(options, loggerFactory, logger);
+    }
+    catch (Exception exception)
+    {
+      logger.LogError(exception, "CardExporter failed.");
+      return 1;
+    }
+    finally
+    {
+      Console.CancelKeyPress -= cancelHandler;
+    }
+  }
+
+  internal static async Task<int> ExecuteOnceAsync(
+    CommandLineOptions options,
+    ILoggerFactory loggerFactory,
+    ILogger logger
+  )
+  {
     VersionManifestPreflight? versionManifestPreflight = null;
     IDisposable? client = null;
     try
@@ -342,11 +383,6 @@ internal static class Program
 
       InspectionCommand.Run(dataDirectory, options, loggerFactory, logger);
       return 0;
-    }
-    catch (Exception exception)
-    {
-      logger.LogError(exception, "CardExporter failed.");
-      return 1;
     }
     finally
     {

@@ -14,6 +14,7 @@ internal enum CommandMode
 {
   Inspect,
   Import,
+  Schedule,
   ExportImages,
   R2Manifest,
   R2Upload,
@@ -47,7 +48,8 @@ internal sealed record CommandLineOptions(
   bool SyncImages,
   bool SyncAssets,
   bool Force,
-  R2Options R2
+  R2Options R2,
+  ScheduleOptions Schedule
 )
 {
   public static CommandLineOptions Parse(string[] args)
@@ -70,6 +72,15 @@ internal sealed record CommandLineOptions(
     bool syncImages = false;
     bool syncAssets = false;
     bool force = false;
+    string scheduleTimeZone = Environment.GetEnvironmentVariable("CARDEXPORTER_SCHEDULE_TIME_ZONE") ??
+      ScheduleOptions.DefaultTimeZoneId;
+    string scheduleWindows = Environment.GetEnvironmentVariable("CARDEXPORTER_SCHEDULE_WINDOWS") ??
+      ScheduleOptions.DefaultWindows;
+    int schedulePollIntervalMinutes = ParseOptionalPositiveInt(
+      Environment.GetEnvironmentVariable("CARDEXPORTER_SCHEDULE_POLL_MINUTES"),
+      "CARDEXPORTER_SCHEDULE_POLL_MINUTES",
+      ScheduleOptions.DefaultPollIntervalMinutes
+    );
     string sourceManifestRoot = Environment.GetEnvironmentVariable("CARDEXPORTER_SOURCE_MANIFEST_ROOT") ??
       SourceManifestOptions.DefaultSourceManifestRoot;
     string outputRoot = Environment.GetEnvironmentVariable("EXPORT_OUTPUT_ROOT") ?? ImageExportOptions.DefaultOutputRoot;
@@ -115,6 +126,13 @@ internal sealed record CommandLineOptions(
       if (string.Equals(arg, "import", StringComparison.OrdinalIgnoreCase))
       {
         mode = CommandMode.Import;
+        continue;
+      }
+
+      if (string.Equals(arg, "schedule", StringComparison.OrdinalIgnoreCase) ||
+          string.Equals(arg, "watch", StringComparison.OrdinalIgnoreCase))
+      {
+        mode = CommandMode.Schedule;
         continue;
       }
 
@@ -263,6 +281,28 @@ internal sealed record CommandLineOptions(
         continue;
       }
 
+      if (TryReadOptionValue(args, ref i, "--schedule-time-zone", out string? scheduleTimeZoneOption))
+      {
+        scheduleTimeZone = scheduleTimeZoneOption;
+        continue;
+      }
+
+      if (TryReadOptionValue(args, ref i, "--schedule-windows", out string? scheduleWindowsOption))
+      {
+        scheduleWindows = scheduleWindowsOption;
+        continue;
+      }
+
+      if (TryReadOptionValue(args, ref i, "--poll-interval-minutes", out string? pollIntervalMinutesOption) ||
+          TryReadOptionValue(args, ref i, "--poll-minutes", out pollIntervalMinutesOption))
+      {
+        schedulePollIntervalMinutes = ParsePositiveInt(
+          pollIntervalMinutesOption,
+          "--poll-interval-minutes"
+        );
+        continue;
+      }
+
       if (TryReadOptionValue(args, ref i, "--dump-lines", out string? dumpLinesOption))
       {
         dumpLines = ParsePositiveInt(dumpLinesOption, "--dump-lines");
@@ -363,6 +403,12 @@ internal sealed record CommandLineOptions(
       startClient = true;
     }
 
+    if (mode == CommandMode.Schedule)
+    {
+      syncImages = true;
+      syncAssets = true;
+    }
+
     if (mode == CommandMode.ExportImages)
     {
       startClient = true;
@@ -422,6 +468,11 @@ internal sealed record CommandLineOptions(
         r2EndpointUrl,
         r2PublicBaseUrl,
         dryRun
+      ),
+      new ScheduleOptions(
+        scheduleTimeZone,
+        scheduleWindows,
+        TimeSpan.FromMinutes(schedulePollIntervalMinutes)
       )
     );
   }
@@ -590,6 +641,17 @@ internal sealed record R2Options(
   public const string DefaultBucketName = "mtgo-cdn";
   public const string DefaultEndpointUrl = "https://1b2fec28af61a80de6823b7ac8356b4d.r2.cloudflarestorage.com";
   public const string DefaultPublicBaseUrl = "https://r2.videreproject.com";
+}
+
+internal sealed record ScheduleOptions(
+  string TimeZoneId,
+  string Windows,
+  TimeSpan PollInterval
+)
+{
+  public const string DefaultTimeZoneId = "America/Los_Angeles";
+  public const string DefaultWindows = "Tuesday=08:00-10:00;Wednesday=09:00-12:00";
+  public const int DefaultPollIntervalMinutes = 5;
 }
 
 internal static class DefaultPath

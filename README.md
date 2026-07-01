@@ -60,23 +60,41 @@ Create `.env` in the repository root using the settings described in [Configurat
 ### 2. Build the solution
 
 ```sh
-docker compose --profile import run --rm cardexporter \
+docker compose run --rm cardexporter \
   dotnet build Project.slnx
 ```
 
 ### 3. Preview the scheduled run
 
 ```sh
-docker compose --profile import run --rm cardexporter \
+docker compose run --rm cardexporter \
   wine-run CardExporter/CardExporter.csproj import --sync-images --dry-run
 ```
 
 The dry run checks the tracked inputs and reports planned work without changing PostgreSQL, R2, or either manifest.
 
-### 4. Run the scheduled import and synchronization flow
+### 4. Start the scheduler
 
 ```sh
-docker compose --profile import run --rm cardexporter \
+docker compose up -d
+```
+
+Follow scheduler logs with:
+
+```sh
+docker logs -f cardexporter
+```
+
+Stop the scheduler with:
+
+```sh
+docker compose down
+```
+
+To run the import and synchronization flow once instead of waiting for a scheduled poll:
+
+```sh
+docker compose run --rm cardexporter \
   wine-run CardExporter/CardExporter.csproj import --sync-images
 ```
 
@@ -116,10 +134,22 @@ EXPORT_CARD_HEIGHT=300
 CARDEXPORTER_ASSET_OUTPUT_ROOT=/workspace/output/assets
 ```
 
+### Optional schedule overrides
+
+The Docker service runs `schedule` by default. The default schedule polls every
+five minutes during the normal MTGO patch and maintenance windows:
+
+```env
+CARDEXPORTER_SCHEDULE_TIME_ZONE=America/Los_Angeles
+CARDEXPORTER_SCHEDULE_WINDOWS=Tuesday=08:00-10:00;Wednesday=09:00-12:00
+CARDEXPORTER_SCHEDULE_POLL_MINUTES=5
+```
+
 ## Commands
 
 | Command | Use it for | Primary side effects |
 |---|---|---|
+| `schedule` | Running the recurring patch-window import loop | Scheduled `import --sync-images` polls |
 | `import` | Incremental card, set, product, and legality imports | PostgreSQL and source tracking; optional image/CDN work with `--sync-images` |
 | `sync-images` | Rendering and uploading missing or pending card/product images | Local render output, R2, CDN tracking, and image-work state |
 | `export-images` | Rendering selected card/product images for inspection | Local files only |
@@ -129,19 +159,39 @@ CARDEXPORTER_ASSET_OUTPUT_ROOT=/workspace/output/assets
 | `export-mtgo-assets` | Extracting MTGO client assets without publishing them | Local files only |
 | `inspect` | Investigating MTGO source data and parser behavior | Diagnostic output |
 
+### `schedule`
+
+Run the patch-window scheduler.
+
+```sh
+docker compose up -d
+```
+
+The scheduler polls according to `CARDEXPORTER_SCHEDULE_WINDOWS`. Each poll runs
+the same import path as:
+
+```sh
+docker compose run --rm cardexporter \
+  wine-run CardExporter/CardExporter.csproj import --sync-images
+```
+
+When the MTGO version manifest is unchanged, the poll returns before starting
+MTGO or checking local source files. Schedule windows use
+`DAY=HH:mm-HH:mm` entries separated by semicolons.
+
 ### `import`
 
 Import changed MTGO data into PostgreSQL.
 
 ```sh
-docker compose --profile import run --rm cardexporter \
+docker compose run --rm cardexporter \
   wine-run CardExporter/CardExporter.csproj import
 ```
 
 The source-file manifest determines which import stages need to run. Add `--sync-images` when the same invocation should also process pending card/product image work and client-asset synchronization.
 
 ```sh
-docker compose --profile import run --rm cardexporter \
+docker compose run --rm cardexporter \
   wine-run CardExporter/CardExporter.csproj import --sync-images
 ```
 
@@ -158,7 +208,7 @@ Use this command for:
 - processing image work independently from a card-data import.
 
 ```sh
-docker compose --profile import run --rm cardexporter \
+docker compose run --rm cardexporter \
   wine-run CardExporter/CardExporter.csproj sync-images
 ```
 
@@ -169,7 +219,7 @@ Add `--dry-run` to list the missing IDs without rendering or uploading them.
 Render card or product images to disk without uploading them. This is useful for checking output quality before a sync.
 
 ```sh
-docker compose --profile import run --rm cardexporter \
+docker compose run --rm cardexporter \
   wine-run CardExporter/CardExporter.csproj export-images --catalog-ids 57140
 ```
 
@@ -187,7 +237,7 @@ Common filters and overrides:
 List the R2 bucket and rebuild `manifests/mtgo-cdn.csv` from object metadata.
 
 ```sh
-docker compose --profile import run --rm cardexporter \
+docker compose run --rm cardexporter \
   wine-run CardExporter/CardExporter.csproj r2-manifest
 ```
 
@@ -198,7 +248,7 @@ This is a reconciliation and recovery command. Use it after a manual bucket migr
 Upload local PNGs from `--output-root`. The CDN manifest is updated only for successful uploads.
 
 ```sh
-docker compose --profile import run --rm cardexporter \
+docker compose run --rm cardexporter \
   wine-run CardExporter/CardExporter.csproj r2-upload --output-root output
 ```
 
@@ -209,7 +259,7 @@ Use `r2-upload` when files have already been rendered locally and should be publ
 Extract MTGO client assets and upload generated files whose SHA-256 differs from CDN tracking.
 
 ```sh
-docker compose --profile import run --rm cardexporter \
+docker compose run --rm cardexporter \
   wine-run CardExporter/CardExporter.csproj sync-assets
 ```
 
@@ -227,7 +277,7 @@ set-symbols/
 Extract MTGO symbols and client image assets to disk without uploading them.
 
 ```sh
-docker compose --profile import run --rm cardexporter \
+docker compose run --rm cardexporter \
   wine-run CardExporter/CardExporter.csproj export-mtgo-assets
 ```
 
@@ -238,7 +288,7 @@ Files are written under `output/assets/` unless `--output-root` or `CARDEXPORTER
 Inspect the MTGO data directory while developing parsers or investigating individual source records.
 
 ```sh
-docker compose --profile import run --rm cardexporter \
+docker compose run --rm cardexporter \
   wine-run CardExporter/CardExporter.csproj inspect --find-catalog-id 57140
 ```
 
@@ -308,7 +358,7 @@ CardExporter/
 │   │       └── Rendering/   # Card rendering and client-asset extraction
 │   └── CardExporter.csproj
 ├── manifests/               # Source, CDN, and art-override manifests
-├── docker-compose.yml       # Wine/MTGO runtime service
+├── docker-compose.yml       # Scheduled Wine/MTGO runtime service
 └── Project.slnx
 ```
 
