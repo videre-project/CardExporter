@@ -43,6 +43,7 @@ internal sealed class LookupReader
     _tables = new LookupTables(
       CardNames: LoadLookup("CARDNAME_STRING.xml"),
       CardNameTokens: LoadLookup("CARDNAME_TOKEN.xml"),
+      AltNames: LoadLookup("ALT_NAME_STRING.xml"),
       SetCodes: LoadLookup("CARDSETNAME_STRING.xml"),
       Artists: LoadLookup("ARTIST_NAME_STRING.xml"),
       Colors: LoadLookup("COLOR.xml"),

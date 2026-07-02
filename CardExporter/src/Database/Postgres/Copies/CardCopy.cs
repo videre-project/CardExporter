@@ -28,6 +28,7 @@ internal static class CardCopy
         oracle_id,
         set_code,
         name,
+        printed_name,
         collector_number,
         art_id,
         artist,
@@ -71,6 +72,7 @@ internal static class CardCopy
       await importer.WriteAsync(card.OracleId, NpgsqlDbType.Uuid);
       await importer.WriteAsync(card.SetCode, NpgsqlDbType.Text);
       await importer.WriteAsync(card.Name, NpgsqlDbType.Text);
+      await importer.WriteAsync(card.PrintedName, NpgsqlDbType.Text);
       await importer.WriteAsync(card.CollectorNumber, NpgsqlDbType.Text);
       await importer.WriteAsync(card.ArtId, NpgsqlDbType.Integer);
       await importer.WriteAsync(card.Artist, NpgsqlDbType.Text);

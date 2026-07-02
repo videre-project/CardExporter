@@ -20,6 +20,7 @@ internal static class CardFaceMerge
         face_index,
         source_catalog_id,
         name,
+        printed_name,
         colors,
         color_mask,
         mana_value,
@@ -43,6 +44,7 @@ internal static class CardFaceMerge
         face_index,
         source_catalog_id,
         NULLIF(name, ''),
+        NULLIF(printed_name, ''),
         colors,
         color_mask,
         mana_value,
@@ -69,6 +71,7 @@ internal static class CardFaceMerge
       ON CONFLICT (card_id, face_index) DO UPDATE SET
         source_catalog_id = EXCLUDED.source_catalog_id,
         name = EXCLUDED.name,
+        printed_name = EXCLUDED.printed_name,
         colors = EXCLUDED.colors,
         color_mask = EXCLUDED.color_mask,
         mana_value = EXCLUDED.mana_value,

@@ -12,6 +12,7 @@ namespace CardExporter.MTGO.Parsing;
 internal sealed record DigitalObjectFields(
   int? CatalogId,
   string? CurrentSetCode,
+  string? AltNameId,
   string? CardNameId,
   string? CardNameTokenId,
   string? CardSetId,

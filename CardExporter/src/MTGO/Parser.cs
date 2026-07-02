@@ -442,6 +442,7 @@ internal sealed class Parser
           return new ParserDebugInfo(
             SourceFile: _files.GetRelativePath(file),
             Fields: fields,
+            AltName: lookups.GetAltName(fields.AltNameId),
             CardName: lookups.GetCardName(fields.CardNameId),
             CardNameToken: lookups.GetCardNameToken(fields.CardNameTokenId),
             SetCode: lookups.ResolveSetCode(fields),

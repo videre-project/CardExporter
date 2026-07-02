@@ -34,8 +34,9 @@ internal static class DebugCommands
 
     logger.LogInformation("Source file: {SourceFile}", debugInfo.SourceFile);
     logger.LogInformation(
-      "Raw fields: catalog={CatalogId}, cardNameId={CardNameId}, cardNameTokenId={CardNameTokenId}, cardSetId={CardSetId}, collector={CollectorNumber}, objectType={ObjectType}, cloneId={CloneId}",
+      "Raw fields: catalog={CatalogId}, altNameId={AltNameId}, cardNameId={CardNameId}, cardNameTokenId={CardNameTokenId}, cardSetId={CardSetId}, collector={CollectorNumber}, objectType={ObjectType}, cloneId={CloneId}",
       debugInfo.Fields.CatalogId,
+      debugInfo.Fields.AltNameId,
       debugInfo.Fields.CardNameId,
       debugInfo.Fields.CardNameTokenId,
       debugInfo.Fields.CardSetId,
@@ -44,7 +45,8 @@ internal static class DebugCommands
       debugInfo.Fields.CloneId
     );
     logger.LogInformation(
-      "Resolved lookups: cardName={CardName}, cardNameToken={CardNameToken}, setCode={SetCode}",
+      "Resolved lookups: altName={AltName}, cardName={CardName}, cardNameToken={CardNameToken}, setCode={SetCode}",
+      debugInfo.AltName,
       debugInfo.CardName,
       debugInfo.CardNameToken,
       debugInfo.SetCode
@@ -53,11 +55,12 @@ internal static class DebugCommands
     if (debugInfo.CardRecord is not null)
     {
       logger.LogInformation(
-        "Parsed card: id={Id}, set={SetCode}, collector={CollectorNumber}, name={Name}, mana={ManaCost}, type={TypeLine}, oracle={OracleText}, power={Power}, toughness={Toughness}, loyalty={Loyalty}, defense={Defense}, rarity={Rarity}, token={IsToken}",
+        "Parsed card: id={Id}, set={SetCode}, collector={CollectorNumber}, name={Name}, printedName={PrintedName}, mana={ManaCost}, type={TypeLine}, oracle={OracleText}, power={Power}, toughness={Toughness}, loyalty={Loyalty}, defense={Defense}, rarity={Rarity}, token={IsToken}",
         debugInfo.CardRecord.Id,
         debugInfo.CardRecord.SetCode,
         debugInfo.CardRecord.CollectorNumber,
         debugInfo.CardRecord.Name,
+        debugInfo.CardRecord.PrintedName,
         debugInfo.CardRecord.ManaCost,
         debugInfo.CardRecord.TypeLine,
         debugInfo.CardRecord.OracleText,

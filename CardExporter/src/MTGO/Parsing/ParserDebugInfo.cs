@@ -11,6 +11,7 @@ namespace CardExporter.MTGO.Parsing;
 internal sealed record ParserDebugInfo(
   string SourceFile,
   DigitalObjectFields Fields,
+  string? AltName,
   string? CardName,
   string? CardNameToken,
   string? SetCode,

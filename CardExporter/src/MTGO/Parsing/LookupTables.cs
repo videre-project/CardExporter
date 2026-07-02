@@ -13,6 +13,7 @@ namespace CardExporter.MTGO.Parsing;
 internal sealed record LookupTables(
   IReadOnlyDictionary<string, string> CardNames,
   IReadOnlyDictionary<string, string> CardNameTokens,
+  IReadOnlyDictionary<string, string> AltNames,
   IReadOnlyDictionary<string, string> SetCodes,
   IReadOnlyDictionary<string, string> Artists,
   IReadOnlyDictionary<string, string> Colors,
@@ -31,8 +32,14 @@ internal sealed record LookupTables(
 {
   public string? ResolveCardName(DigitalObjectFields fields)
   {
-    return GetCardName(fields.CardNameId) ?? GetCardNameToken(fields.CardNameTokenId);
+    return ResolveCanonicalCardName(fields) ?? ResolvePrintedCardName(fields);
   }
+
+  public string? ResolveCanonicalCardName(DigitalObjectFields fields) =>
+    GetCardName(fields.CardNameId);
+
+  public string? ResolvePrintedCardName(DigitalObjectFields fields) =>
+    GetAltName(fields.AltNameId);
 
   public string? ResolveSetCode(DigitalObjectFields fields)
   {
@@ -42,6 +49,8 @@ internal sealed record LookupTables(
   public string? GetCardName(string? id) => Get(CardNames, id);
 
   public string? GetCardNameToken(string? id) => Get(CardNameTokens, id);
+
+  public string? GetAltName(string? id) => Get(AltNames, id);
 
   public string? GetSetCode(string? id) => Get(SetCodes, id);
 

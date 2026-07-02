@@ -19,6 +19,7 @@ internal sealed record CardRecord(
   int Id,
   string? SetCode,
   string? Name,
+  string? PrintedName,
   string? CollectorNumber,
   int? ArtId,
   string? Artist,
@@ -86,7 +87,10 @@ internal sealed record CardRecord(
       return null;
     }
 
-    string? name = lookups.ResolveCardName(fields);
+    string? canonicalName = lookups.ResolveCanonicalCardName(fields);
+    string? printedName = lookups.ResolvePrintedCardName(fields);
+    string? name = canonicalName ?? printedName;
+    printedName = NormalizeDistinctPrintedName(printedName, name);
     string? setCode = lookups.ResolveSetCode(fields);
     string? collectorNumber = fields.CollectorNumber;
     int? collectorNumberValue = fields.CollectorNumberValue;
@@ -179,6 +183,7 @@ internal sealed record CardRecord(
       Id: catalogId,
       SetCode: setCode,
       Name: name,
+      PrintedName: printedName,
       CollectorNumber: collectorNumber,
       ArtId: artId,
       Artist: artist,
@@ -224,6 +229,7 @@ internal sealed record CardRecord(
     return this with
     {
       Name = Name ?? baseCard.Name,
+      PrintedName = PrintedName ?? baseCard.PrintedName,
       SetCode = SetCode ?? baseCard.SetCode,
       CollectorNumber = CollectorNumber ?? baseCard.CollectorNumber,
       ArtId = ArtId ?? baseCard.ArtId,
@@ -313,6 +319,18 @@ internal sealed record CardRecord(
 
     string[] parts = value.Trim().Split((char[]?)null, StringSplitOptions.RemoveEmptyEntries);
     return string.Join(" ", parts).ToLowerInvariant();
+  }
+
+  private static string? NormalizeDistinctPrintedName(string? printedName, string? canonicalName)
+  {
+    if (string.IsNullOrWhiteSpace(printedName))
+    {
+      return null;
+    }
+
+    return string.Equals(printedName.Trim(), canonicalName?.Trim(), StringComparison.OrdinalIgnoreCase)
+      ? null
+      : printedName;
   }
 
   private static string NormalizeSymbols(IEnumerable<string> values)

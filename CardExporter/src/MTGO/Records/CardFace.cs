@@ -3,6 +3,7 @@
   SPDX-License-Identifier: Apache-2.0
 **/
 
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
@@ -16,6 +17,7 @@ internal sealed record CardFace(
   short FaceIndex,
   int? SourceCatalogId,
   string? Name,
+  string? PrintedName,
   IReadOnlyList<string> Colors,
   decimal? ManaValue,
   string? FlavorText,
@@ -92,6 +94,7 @@ internal sealed record CardFace(
       FaceIndex: faceIndex,
       SourceCatalogId: card.Id,
       Name: card.Name,
+      PrintedName: card.PrintedName,
       Colors: card.Colors,
       ManaValue: card.ManaValue,
       FlavorText: card.FlavorText,
@@ -118,7 +121,10 @@ internal sealed record CardFace(
     LookupTables lookups
   )
   {
-    string? name = lookups.ResolveCardName(fields);
+    string? canonicalName = lookups.ResolveCanonicalCardName(fields);
+    string? printedName = lookups.ResolvePrintedCardName(fields);
+    string? name = canonicalName ?? printedName;
+    printedName = NormalizeDistinctPrintedName(printedName, name);
     IReadOnlyList<string> colors = lookups.ResolveColors(fields.ColorId);
     int? convertedManaCost = lookups.ResolveConvertedManaCost(fields.ConvertedManaCostId);
     decimal? manaValue = convertedManaCost;
@@ -178,6 +184,7 @@ internal sealed record CardFace(
       FaceIndex: faceIndex,
       SourceCatalogId: fields.CatalogId,
       Name: name,
+      PrintedName: printedName,
       Colors: colors,
       ManaValue: manaValue,
       FlavorText: flavorText,
@@ -225,6 +232,7 @@ internal sealed record CardFace(
     return this with
     {
       Name = Name ?? baseFace.Name,
+      PrintedName = PrintedName ?? baseFace.PrintedName,
       Colors = Colors.Count == 0 ? baseFace.Colors : Colors,
       ManaValue = ManaValue ?? baseFace.ManaValue,
       FlavorText = FlavorText ?? baseFace.FlavorText,
@@ -270,5 +278,17 @@ internal sealed record CardFace(
 
     faceCloneFields = cloneCandidates[0];
     return true;
+  }
+
+  private static string? NormalizeDistinctPrintedName(string? printedName, string? canonicalName)
+  {
+    if (string.IsNullOrWhiteSpace(printedName))
+    {
+      return null;
+    }
+
+    return string.Equals(printedName.Trim(), canonicalName?.Trim(), StringComparison.OrdinalIgnoreCase)
+      ? null
+      : printedName;
   }
 }

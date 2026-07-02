@@ -28,6 +28,7 @@ internal static class CardFaceCopy
         face_index,
         source_catalog_id,
         name,
+        printed_name,
         colors,
         color_mask,
         mana_value,
@@ -56,6 +57,7 @@ internal static class CardFaceCopy
       await importer.WriteAsync(cardFace.FaceIndex, NpgsqlDbType.Smallint);
       await importer.WriteAsync(cardFace.SourceCatalogId, NpgsqlDbType.Integer);
       await importer.WriteAsync(cardFace.Name, NpgsqlDbType.Text);
+      await importer.WriteAsync(cardFace.PrintedName, NpgsqlDbType.Text);
       await importer.WriteAsync(JsonSerializer.Serialize(cardFace.Colors), NpgsqlDbType.Jsonb);
       await importer.WriteAsync(cardFace.ColorMask, NpgsqlDbType.Integer);
       await importer.WriteAsync(cardFace.ManaValue, NpgsqlDbType.Numeric);

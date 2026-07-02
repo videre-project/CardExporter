@@ -1,17 +1,17 @@
 {
-  "version": "3.4.157.4679",
-  "codebase": "3.4.157.4679.20260623090043",
-  "date": "2026-06-23T09:00:43",
+  "version": "3.4.157.4683",
+  "codebase": "3.4.157.4683.20260701100032",
+  "date": "2026-07-01T10:00:32",
   "public_key": "e0b489d8605198df",
   "dependencies": [
     {
       "name": "AdminScene",
       "file": "AdminScene.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 36864,
       "hash": {
         "algorithm": "sha1",
-        "value": "e31353bedf6fc6cecbca681eee22aa804807f37"
+        "value": "90a5596a74fb25569945bc80f62d5dc97f4d1519"
       }
     },
     {
@@ -28,41 +28,41 @@
     {
       "name": "Card",
       "file": "Card.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 232741888,
       "hash": {
         "algorithm": "sha1",
-        "value": "98caf5ebbd6e341969aa121d5fabf40e3c686f"
+        "value": "5c93b693cbc4e82efccd5fe05e1ca905717587e"
       }
     },
     {
       "name": "CardManager",
       "file": "CardManager.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 685056,
       "hash": {
         "algorithm": "sha1",
-        "value": "7cdab6b9479273901b7cb4e471e77a961f1b5f60"
+        "value": "18f2e489f5322a817bd2ce509ffaa3ded7a0db47"
       }
     },
     {
       "name": "Chat",
       "file": "Chat.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 329728,
       "hash": {
         "algorithm": "sha1",
-        "value": "584a62c39c851078bb49a3c6e1c25ca887ae8"
+        "value": "b265a5a83c0bbed52c431fd561c83e117c2994"
       }
     },
     {
       "name": "CollectionAndDeckEditorScene",
       "file": "CollectionAndDeckEditorScene.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 616960,
       "hash": {
         "algorithm": "sha1",
-        "value": "2a507a65842e8824d162faf7f251a19011308a"
+        "value": "45538166c787e5f2bcee1bcdef10ac307e878d73"
       }
     },
     {
@@ -79,31 +79,31 @@
     {
       "name": "Core",
       "file": "Core.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 151040,
       "hash": {
         "algorithm": "sha1",
-        "value": "ee6226f76444a1f89e3e90681765e3d338aad"
+        "value": "9b8646b22877591f77c4cde035b8ba1f48758fd4"
       }
     },
     {
       "name": "DraftScene",
       "file": "DraftScene.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 186368,
       "hash": {
         "algorithm": "sha1",
-        "value": "eeefaeba93249f718c74a458a87a81b3a1ea3f81"
+        "value": "bb5c7f99bd99f83acd450295f4e6a60a8ee585"
       }
     },
     {
       "name": "DuelScene",
       "file": "DuelScene.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 1575936,
       "hash": {
         "algorithm": "sha1",
-        "value": "be402574c425a0f24e6acbcfc76566bc87b0c43a"
+        "value": "54bcd5485d858b35b1d8aff9d268c2244ce94f"
       }
     },
     {
@@ -131,22 +131,22 @@
     {
       "name": "FieldValidation",
       "file": "FieldValidation.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 31232,
       "public_key": "20c89727be25f230",
       "hash": {
         "algorithm": "sha1",
-        "value": "7da3d816bf36a557eacbd1cc63516b52eaa61e"
+        "value": "c69e5235c90ab6ba44ddf57d2f3fba3e88747f1"
       }
     },
     {
       "name": "FlsClient",
       "file": "FlsClient.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 83456,
       "hash": {
         "algorithm": "sha1",
-        "value": "3e6dc0616e388d85efc6fc1b49b1b3da48aaaafb"
+        "value": "572ca5603f56670443715c538e22a36e1253769"
       }
     },
     {
@@ -156,7 +156,7 @@
       "size": 275968,
       "hash": {
         "algorithm": "sha1",
-        "value": "2e39ef2fd3db941c490809459d29cbb9cbd655b"
+        "value": "8b7939e95444f42fd41338717fd89b9d6cced0e2"
       }
     },
     {
@@ -166,7 +166,7 @@
       "size": 69632,
       "hash": {
         "algorithm": "sha1",
-        "value": "453f395b65df25f1a7918684ed30c9b333d41a"
+        "value": "e47160f9aac37a75d6acb7529c96e227cd677b80"
       }
     },
     {
@@ -176,58 +176,58 @@
       "size": 5215232,
       "hash": {
         "algorithm": "sha1",
-        "value": "de83fc7d4ec167883d11c48afc128466da8db61"
+        "value": "42f43a4b02110159f4b16fa2610f2ac9beb59fc"
       }
     },
     {
       "name": "GameDetails",
       "file": "GameDetails.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 547840,
       "hash": {
         "algorithm": "sha1",
-        "value": "25ba836f87dbdf274a3cb2477d51cd528b6d86d2"
+        "value": "872e3b9267299a2841b0aa487e23ab98b14138ce"
       }
     },
     {
       "name": "HelpScene",
       "file": "HelpScene.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 15360,
       "hash": {
         "algorithm": "sha1",
-        "value": "225f5a7d75d4ecfa583da058d494bc090c3b7"
+        "value": "122186d86cd2f3122116cf1544be2393c7111dd"
       }
     },
     {
       "name": "HomeScene",
       "file": "HomeScene.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 101888,
       "hash": {
         "algorithm": "sha1",
-        "value": "959fb5c72e75f76baa7fe28962b5c6558f38c18"
+        "value": "ee519cc318d1bbb7de3d2848c22d165686ec1fcd"
       }
     },
     {
       "name": "LoginScene",
       "file": "LoginScene.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 166400,
       "hash": {
         "algorithm": "sha1",
-        "value": "7afcc896cc6349cb20e6c18a94a25589a185d1f"
+        "value": "6ea9ab709dc68fd803c494180441536f9a636bd"
       }
     },
     {
       "name": "Message",
       "file": "Message.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 45056,
       "public_key": "20c89727be25f230",
       "hash": {
         "algorithm": "sha1",
-        "value": "9d24e8fb06aac5162439dbcaf1abc2660bd2fc1"
+        "value": "6355dc255d4dafb275cabc4d21cb48995590a6e3"
       }
     },
     {
@@ -398,11 +398,11 @@
     {
       "name": "MTGO",
       "file": "MTGO.exe",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 14577240,
       "hash": {
         "algorithm": "sha1",
-        "value": "7868d1e9fb7d6361de5a69ebc8f634fdb4981"
+        "value": "32d141ede08261e0c918aececfccb6d6f0f6ffd4"
       }
     },
     {
@@ -412,7 +412,7 @@
       "size": 30720,
       "hash": {
         "algorithm": "sha1",
-        "value": "a34ea2771027893385beeb78e4d61ad1345a87f"
+        "value": "afd14ad42598a214d85c85935efef6b6762cc8b"
       }
     },
     {
@@ -432,7 +432,7 @@
       "size": 18944,
       "hash": {
         "algorithm": "sha1",
-        "value": "f2dbb6fa7c06bc690b9222956d4123d29faeb80"
+        "value": "3f7050c4263c4bf3486081bced2525eb17c8ade8"
       }
     },
     {
@@ -462,7 +462,7 @@
       "size": 164352,
       "hash": {
         "algorithm": "sha1",
-        "value": "fcee9ff82e9f71982a146183cc314cdbd3243"
+        "value": "2d6f4b4c69ecdbd046ab7393c0e4ddebaf172a0"
       }
     },
     {
@@ -472,7 +472,7 @@
       "size": 13312,
       "hash": {
         "algorithm": "sha1",
-        "value": "27a35cd471d18c3edce9df35a4db9efd65aa13b5"
+        "value": "f25da9445beae861fe80fbbafbc088def3daab"
       }
     },
     {
@@ -498,34 +498,34 @@
     {
       "name": "MTGOEnumStruct",
       "file": "MTGOEnumStruct.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 799232,
       "public_key": "20c89727be25f230",
       "hash": {
         "algorithm": "sha1",
-        "value": "243d562637b2dc666b56fbe992858b986526d5a"
+        "value": "dfef635148a3b078091ecb55cbf59aa7e2a659"
       }
     },
     {
       "name": "MTGOMessage",
       "file": "MTGOMessage.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 2658304,
       "public_key": "20c89727be25f230",
       "hash": {
         "algorithm": "sha1",
-        "value": "7d12e29b576433e03ec34afd2bd5ee1ca59d"
+        "value": "3aba44deef1273ad477359bd177d8ac151f1ef0"
       }
     },
     {
       "name": "MTGOValidation",
       "file": "MTGOValidation.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 40960,
       "public_key": "20c89727be25f230",
       "hash": {
         "algorithm": "sha1",
-        "value": "68747ffd78a84d3a1c8189c8bd5fe18db951ca4"
+        "value": "55589d6b12dc937d244e38fb3f8ed7d2ae3fdd"
       }
     },
     {
@@ -575,32 +575,32 @@
     {
       "name": "PerforceLib",
       "file": "PerforceLib.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 31232,
       "hash": {
         "algorithm": "sha1",
-        "value": "a99526ce5bec8cf12b66484f0fd4156f79d2764"
+        "value": "aa5df369934eb82738864d63a1913a668498269"
       }
     },
     {
       "name": "PlayScene",
       "file": "PlayScene.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 494080,
       "hash": {
         "algorithm": "sha1",
-        "value": "4763ad7b974c4a78dd99de947d1d0aa71f115"
+        "value": "e9ad426e38674f6b5e50202997f32ca394857a48"
       }
     },
     {
       "name": "RuleBasedValidation",
       "file": "RuleBasedValidation.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 57344,
       "public_key": "20c89727be25f230",
       "hash": {
         "algorithm": "sha1",
-        "value": "cfbceaa88bce37da904f8e57191166a7b579e38f"
+        "value": "bf4b53d71ea62770377ec27a92da735af681c10"
       }
     },
     {
@@ -661,41 +661,41 @@
     {
       "name": "SettingsScene",
       "file": "SettingsScene.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 846336,
       "hash": {
         "algorithm": "sha1",
-        "value": "2b9cbe44589312811cd1eff64761c5b251ec8d7"
+        "value": "9f4c562857b69853c7b217930fc60fea380ed56"
       }
     },
     {
       "name": "ShaderEffects",
       "file": "ShaderEffects.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 7304192,
       "hash": {
         "algorithm": "sha1",
-        "value": "163d85b212af51ae92f75d5e8ec511cc28c02d"
+        "value": "7f5c4ce41b49cb86153a6c42de52b66f48658eb"
       }
     },
     {
       "name": "SharedResources",
       "file": "SharedResources.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 8498688,
       "hash": {
         "algorithm": "sha1",
-        "value": "fc669115ee2b7786ac85e6dd781bbc74e818339"
+        "value": "d69d77e13445b051cde47d2362505c66d6777"
       }
     },
     {
       "name": "ShopResources",
       "file": "ShopResources.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 47616,
       "hash": {
         "algorithm": "sha1",
-        "value": "abf418a64d6fa48d950559a74a51553ffaf7f1c"
+        "value": "7c19d85b95bbb6ec41870f8b38c686c084f5"
       }
     },
     {
@@ -712,11 +712,11 @@
     {
       "name": "StoreScene",
       "file": "StoreScene.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 114176,
       "hash": {
         "algorithm": "sha1",
-        "value": "c8fb80d42c1d52cf36ba7c82158f583aff4e455"
+        "value": "141b79b5ecfb3d0da89b7dd167920769ebb8b22"
       }
     },
     {
@@ -986,43 +986,43 @@
     {
       "name": "ThemeResources",
       "file": "ThemeResources.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 9474560,
       "hash": {
         "algorithm": "sha1",
-        "value": "e6b1f6a72b4cb7767331579ba9fde7c9f1be9c6e"
+        "value": "294ffbbbeba349548ede55f634d7ea99e784f43"
       }
     },
     {
       "name": "TradeScene",
       "file": "TradeScene.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 158208,
       "hash": {
         "algorithm": "sha1",
-        "value": "4d83ba506454e9b4fae3c1d2a44f279eace4312"
+        "value": "90313aeaa9293fe4181cf33471771471abeca9a"
       }
     },
     {
       "name": "WotC.Common",
       "file": "WotC.Common.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 188928,
       "public_key": "20c89727be25f230",
       "hash": {
         "algorithm": "sha1",
-        "value": "859dcd8efb591b08742b012e973c53cb383c23e"
+        "value": "c37c2389c7288e17195f585b81e821214b29b7"
       }
     },
     {
       "name": "WotC.Common.Client",
       "file": "WotC.Common.Client.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 12288,
       "public_key": "20c89727be25f230",
       "hash": {
         "algorithm": "sha1",
-        "value": "6ebad2dcc0805dac6920d540f073f6dd3940e1b9"
+        "value": "5c7d14803b1fb4217a6469fbaa1038ce96ac6166"
       }
     },
     {
@@ -1032,157 +1032,157 @@
       "size": 20480,
       "hash": {
         "algorithm": "sha1",
-        "value": "5476e85e8f495bfa3bcdad82d19bb5b3acbf134"
+        "value": "18a8efc08131d05ffa1a131638e192a98eda27fc"
       }
     },
     {
       "name": "WotC.MtGO.Client.Common.Collections",
       "file": "WotC.MtGO.Client.Common.Collections.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 13312,
       "hash": {
         "algorithm": "sha1",
-        "value": "5d1523d4d4a74c9ca62e9ba9619f4a2833fc8"
+        "value": "9642a26c6f6bc5e9c725aad3d7d91bb8981fe"
       }
     },
     {
       "name": "WotC.MtGO.Client.Common.Diagnostics",
       "file": "WotC.MtGO.Client.Common.Diagnostics.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 111104,
       "hash": {
         "algorithm": "sha1",
-        "value": "596056541cddc78418afa36faf30ffa5d7ecc31"
+        "value": "6929466ae3846d3f71e1b5309bb1dc4b46e39045"
       }
     },
     {
       "name": "WotC.MtGO.Client.Model.Admin",
       "file": "WotC.MtGO.Client.Model.Admin.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 10240,
       "hash": {
         "algorithm": "sha1",
-        "value": "28282defbfd102d803e3835771d514630766567"
+        "value": "244215430a3355a8fa42ab012d458478a2e5b81"
       }
     },
     {
       "name": "WotC.MtGO.Client.Model.Chat",
       "file": "WotC.MtGO.Client.Model.Chat.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 103936,
       "hash": {
         "algorithm": "sha1",
-        "value": "e0f1e79cabfa27765e2698c846ef4fbe0193d11"
+        "value": "161fb3f3dccebf4b3c28da73303c73dcdba53bc7"
       }
     },
     {
       "name": "WotC.MtGO.Client.Model.Core",
       "file": "WotC.MtGO.Client.Model.Core.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 573440,
       "hash": {
         "algorithm": "sha1",
-        "value": "dc9f8caa6ad3ef7f95d5d055adf21616361d6b"
+        "value": "ad251eed33c43898c7b877b2fe74131dd2e9086"
       }
     },
     {
       "name": "WotC.MtGO.Client.Model.Data",
       "file": "WotC.MtGO.Client.Model.Data.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 21504,
       "hash": {
         "algorithm": "sha1",
-        "value": "5bd38187fcc0a44de57b7bf76389088a5d8139b"
+        "value": "b3c89a141362e3b021908d2966c4ed3a7e1eb"
       }
     },
     {
       "name": "WotC.MtGO.Client.Model.Help",
       "file": "WotC.MtGO.Client.Model.Help.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 9728,
       "hash": {
         "algorithm": "sha1",
-        "value": "1f36f72a83d51b76a6d94cb04b2dbe1f7ebc52e"
+        "value": "72f37d27a36e8cd5f92245069e22dce3b7a8b"
       }
     },
     {
       "name": "WotC.MtGO.Client.Model.Home",
       "file": "WotC.MtGO.Client.Model.Home.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 8704,
       "hash": {
         "algorithm": "sha1",
-        "value": "86adb4abe2f561ea7341544172b74e9d8a756c5"
+        "value": "c715de42127aa6c66a9dc7cd55bf5f6f39a4f9"
       }
     },
     {
       "name": "WotC.MtGO.Client.Model.Play",
       "file": "WotC.MtGO.Client.Model.Play.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 13312512,
       "hash": {
         "algorithm": "sha1",
-        "value": "c2226d4a95afc7b912d28b345cf033c56a6556"
+        "value": "673a388a61f88966aafd9a41ed578d98cef1a64"
       }
     },
     {
       "name": "WotC.MtGO.Client.Model.Reference",
       "file": "WotC.MtGO.Client.Model.Reference.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 231936,
       "hash": {
         "algorithm": "sha1",
-        "value": "7dd5d55b5395e98cd033a98dbfc3d9524254ca"
+        "value": "c26640ef2692a37ef73b353d8656386c3c9776ec"
       }
     },
     {
       "name": "WotC.MtGO.Client.Model.Session",
       "file": "WotC.MtGO.Client.Model.Session.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 23552,
       "hash": {
         "algorithm": "sha1",
-        "value": "d6b43b757d3bfcfb692d4addecfd36a3c9ace1b2"
+        "value": "b816b5d41386c03a7e3aa3e949efe9f826eeb6ae"
       }
     },
     {
       "name": "WotC.MtGO.Client.Model.Settings",
       "file": "WotC.MtGO.Client.Model.Settings.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 67072,
       "hash": {
         "algorithm": "sha1",
-        "value": "a5b3282bcece20d685a4d88e6ab434496e5acd"
+        "value": "ccafc08357d4e797b3e1d80c85d35ba20bee74a"
       }
     },
     {
       "name": "WotC.MtGO.Client.Model.Store",
       "file": "WotC.MtGO.Client.Model.Store.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 72192,
       "hash": {
         "algorithm": "sha1",
-        "value": "e8a9afe12881378ce4c02b527c89797fcf7eadaa"
+        "value": "4abcae8ed9a0bc5ba556ee44616515d6f82a651"
       }
     },
     {
       "name": "WotC.MtGO.Client.Model.Trade",
       "file": "WotC.MtGO.Client.Model.Trade.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 61952,
       "hash": {
         "algorithm": "sha1",
-        "value": "586cb3e72fb1bf91949d1cece85aa1cfdba8f8"
+        "value": "4edb525c457a4cd8b1b88e313cf783ded995ac8"
       }
     },
     {
       "name": "WotC.MTGO.Common.GameServer.Attribute",
       "file": "WotC.MTGO.Common.GameServer.Attribute.dll",
-      "version": "3.4.157.4679",
+      "version": "3.4.157.4683",
       "size": 6656,
       "hash": {
         "algorithm": "sha1",
-        "value": "d58392c19db82572a36c33279ebf40968c49c49d"
+        "value": "bbc84fe6302a6c235e5865dc5e418bbc893fcf4"
       }
     },
     {

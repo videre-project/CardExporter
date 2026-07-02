@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<sourceManifest outputVersion="3.4.157.4679" parserOutputVersion="2" setCount="419" cardCount="74887" productCount="1987" cardCatalogVariantCount="74033" oracleCardCount="33357" cardFaceCount="2608" legalityCount="233499">
+<sourceManifest outputVersion="3.4.157.4683" parserOutputVersion="3" setCount="419" cardCount="74887" productCount="1987" cardCatalogVariantCount="74033" oracleCardCount="33357" cardFaceCount="2608" legalityCount="233499">
   <sourceFile sourceType="shared" relativePath="CardDataSource/ALT_NAME_STRING.xml" byteCount="15274" sha256="16c5715f7cd20fb9cb9bda5267613e477eed13b71f4eb35b06efa7b5198d55de" />
   <sourceFile sourceType="shared" relativePath="CardDataSource/ARTIFACT_TYPEID0.xml" byteCount="1735" sha256="7fed7f2fa4e8046a2cdf9332f544060047aa8f008015a251c5dffb3b63743d4c" />
   <sourceFile sourceType="shared" relativePath="CardDataSource/ARTIFACT_TYPEID0_1.xml" byteCount="438" sha256="38977928308470d4334999dcb627882467d379fd5e7f57d6ff098a30a8817e86" />
@@ -700,30 +700,30 @@
   <sourceFile sourceType="set" setCode="ZNE" setName="Zendikar Rising Expeditions" relativePath="CardDataSource/client_ZNE.xml" byteCount="33439" sha256="6616a9ccc2b740eeeac14bdbb2b4afc151dda47e0ffba3cee27bdcb939174ad6" />
   <sourceFile sourceType="set" setCode="ZNR" setName="Zendikar Rising" relativePath="CardDataSource/client_ZNR.xml" byteCount="412578" sha256="92154765639b810561744d249f99d3742efab17e4e43f172a760d303d89205f3" />
   <sourceFile sourceType="set" setCode="ZNR" setName="Zendikar Rising" relativePath="CardDataSource/client_ZNR_DO.xml" byteCount="2675" sha256="5ffc8ccdaecb339bcc352677cf56f8f51a8180503a35cfa3c65774cdd9644b95" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CCMDRBRAWL_ruleset.xml" byteCount="15522" sha256="6549d567cde2780cd8c413deb71e60c8573328f89eb8c8395826d23dd468c677" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CCMDRDUEL_ruleset.xml" byteCount="20409" sha256="ca7a9242fad29b213cccf8e654c778b92f660332de0701d97c5ac662dda27b6e" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CCMDR_ruleset.xml" byteCount="17287" sha256="57f1320f1b72d40b177a3ccea39c715be083ee8af304e1198aba2aed4a7dcd7a" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CFREECMD_ruleset.xml" byteCount="2803" sha256="71d9ddfc0aa6d562263477dd21f246ae05dce5539ce3b2101edb10c5dcb29fed" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CFREEFORM_ruleset.xml" byteCount="2049" sha256="3ab278ab18deb61a0f9322893bbe6adbc8e0d1c943378b0bb797b0dbd5aa35fa" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CFREEVAN_ruleset.xml" byteCount="2066" sha256="0142ef01e94b8b85f50219bc31e3ddfa5fc34b22b3f6c78b737569cdb51c422b" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CFRTHM_ruleset.xml" byteCount="2269" sha256="64bce57363d8ffe78ada42a00ec27aa805cc1fb3dfa70115a166f282a5d21015" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CHULAHOOP_ruleset.xml" byteCount="5383" sha256="4c8d46df0e693a77aa33bbbe7033882c3fc09a3f5ab8e939c8d17fd5afa30296" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CLEGACY_ruleset.xml" byteCount="8032" sha256="d86be4254f03e5220577d53c048bf84140d7801cbdf3cf43a869c0c2b76cc2fa" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CMODERN_ruleset.xml" byteCount="4977" sha256="9a4cc666a85838ba72b00f4a99ba14aedee3cee71f84d95aea3c813f6b56bfe5" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CMOMIR_ruleset.xml" byteCount="2255" sha256="c5b54fdf962b181519ba318b872fd409b8212896b9996125813246116b870036" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CPAUPER_ruleset.xml" byteCount="5836" sha256="f525cbb60d8f73a7d4e30fcc16104721f051382729d9f96b0111fca8da610f02" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CPIONEER_ruleset.xml" byteCount="3712" sha256="8c6eb3d815a17d31e24f62aa95464badf910f77e8bd9688843a383e0cd29d86a" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CCMDRBRAWL_ruleset.xml" byteCount="20851" sha256="6400a8637f58660aebd4675d403184f96d0c8bc2fb1feef324c0d03cbe2a3d6d" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CCMDRDUEL_ruleset.xml" byteCount="20831" sha256="a30f5141c92ab122a996390ad53d92ec9b56386c697a0edb937e8709ca889373" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CCMDR_ruleset.xml" byteCount="17692" sha256="af74595576afb26089afabea71b373f7441c87370c54b70063f0666f4a298bff" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CFREECMD_ruleset.xml" byteCount="3445" sha256="b2fb4fb57eb3286c13d3eccf37497dc1abf9d6fabc1450482e8198a1c371df4b" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CFREEFORM_ruleset.xml" byteCount="2241" sha256="1fbebcbe32811ef53dda8702c3bece5dcf6b6f635c3a27b10eac7c15b9bf8292" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CFREEVAN_ruleset.xml" byteCount="2258" sha256="be47a46cb13c0ba5eac6f2b581375f634fe78371fa95e8e0d44461f955ad77a5" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CFRTHM_ruleset.xml" byteCount="2615" sha256="c34ae2d2451ad5a0f40a02e471cfd2c13ec45e99eaadbfe852e27e5a373bec78" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CHULAHOOP_ruleset.xml" byteCount="3967" sha256="f5fb78f6e8b775b1f42f02b6e99ccc97efd04e4541860b04353461c2f28ffd9d" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CLEGACY_ruleset.xml" byteCount="8254" sha256="aabd1c7ebe30f8359cdd195365c408310247382360158d38688861913ca7d561" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CMODERN_ruleset.xml" byteCount="5089" sha256="532a5719664fac376a6796edbb4069df78c7d550e88771b487bd29eb7b9ddc2a" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CMOMIR_ruleset.xml" byteCount="2945" sha256="d9c5f42d9d71da60888b0da4274d2e7462b9b9d3064a7ade5a7757372ce1587b" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CPAUPER_ruleset.xml" byteCount="6113" sha256="6490faaa6b9f26cd49770caf9d8fb4141ea844e93dec82528a37fad6a76ca456" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CPIONEER_ruleset.xml" byteCount="3753" sha256="a0bd89c89a2a7eda7740072e96420298a92fddbbce23ee4d642c4543f8a0e8aa" />
   <sourceFile sourceType="legality" relativePath="ValidationRulesets/CPREMODERN_ruleset.xml" byteCount="3865" sha256="129478ab574216531f09404c3819e41fc6521bc221faa2933fd21f44de7166c4" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CPWALK_ruleset.xml" byteCount="6653" sha256="bbb24e10d549b20a275716a5b9a7d7711d35063b8c89e5d01cf0b3e21e860ce9" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CSTANDARD_ruleset.xml" byteCount="2723" sha256="fa634d7e1d24b1873199bfb5ab52ffd7848172f69f71583ae596eb62fcba544b" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CTEST_ruleset.xml" byteCount="569" sha256="cf4a2d0b52cfa1c884739c0f8c835a8195af23d1e8488e30dfc0679e8baed508" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CVINTAGE_ruleset.xml" byteCount="7556" sha256="968aba02c9f5cdcb10421ab22ebaad55fb2b89ffe1e3e22fc1b6dc8fc886620b" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/DCMDRCUBE_ruleset.xml" byteCount="9018" sha256="497f42a608b1e3826eb21000206310b1b8b08f6416a180df0bc66ba609d99adf" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/DCMMCMMCMM_ruleset.xml" byteCount="7340" sha256="686c5fdd6fb512a6c92e0dc8ad89fcd524e453f02c15d25afb7db4b9836beec4" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/DCMRCMRCMR_ruleset.xml" byteCount="4635" sha256="dbb40ce6231a67be8fbbdb41a506720365965e075ce07b775ea0b0c78b5ec0db" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/DGTLTCMD_ruleset.xml" byteCount="7950" sha256="d050c4e0f14f9b8725fdb0d5a2a711f6966e55509e66cec8b86bd40b262dc29c" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/S6CMM_ruleset.xml" byteCount="4628" sha256="d72e8bf732edcc0d7fbecd61b8e29cfd2e283cb60460c7bba400c2b5fd40e781" />
-  <sourceFile sourceType="legality" relativePath="ValidationRulesets/S6CMR_ruleset.xml" byteCount="4630" sha256="fee61855a43ab3500cde8a27caeb395b9fdfadbbba1f866049556289988b8d19" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CPWALK_ruleset.xml" byteCount="7524" sha256="d8b3aa23336c836009d570eae2087ec1dc7eeab8a57e0239c0c5ef24f25fa53e" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CSTANDARD_ruleset.xml" byteCount="2785" sha256="5ca5f6d7ab13c8675e09707542ba839b9bee2f8953ae631984103f7a14188045" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CTEST_ruleset.xml" byteCount="692" sha256="9272b6f6600f092284d2434ebe940b235d35e4a0ec342947b538bac682e1d07d" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/CVINTAGE_ruleset.xml" byteCount="7815" sha256="220c9f1342515b139f06bc863c15ea45dd9e3fdafcd690f9fa0a976aeeddcbf9" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/DCMDRCUBE_ruleset.xml" byteCount="14093" sha256="1ab1a669272024ee140599b68c09e0fbceab5c4a75f8c16eff7e7470078b6967" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/DCMMCMMCMM_ruleset.xml" byteCount="12395" sha256="8d449999822630b587f849d0ed76d0b7229de0662ef729d1f69c8e90a649f551" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/DCMRCMRCMR_ruleset.xml" byteCount="7420" sha256="b4baa3eb4778152dcb7c7f3cdc6ffdee3230b25664466e3f4928808cf860b678" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/DGTLTCMD_ruleset.xml" byteCount="12184" sha256="867f4f09fd23f557826d9ba7169becf94b120ae8cdf9e9662bfc50b6e13325fe" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/S6CMM_ruleset.xml" byteCount="7762" sha256="d5195da88fc8e50cf8f13b54261ec4ad3c771a8a4b02530fad25a801496769c9" />
+  <sourceFile sourceType="legality" relativePath="ValidationRulesets/S6CMR_ruleset.xml" byteCount="7415" sha256="ad5695e50059e64f84581bb06d88c5219d094c05fd6a3d2c844f66c63c5d6776" />
   <sourceFile sourceType="asset" relativePath="Card.dll" byteCount="232741888" sha256="873966a04f69c8b10829d6665592089b392014f47fbe00679ffe5d55ed18e227" />
   <sourceFile sourceType="asset" relativePath="DuelScene.dll" byteCount="1575936" sha256="09007387ef53248995be404718a84acd981dcac4ac340451f3035298ac093f64" />
 </sourceManifest>

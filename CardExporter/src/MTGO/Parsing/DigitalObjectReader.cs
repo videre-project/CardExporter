@@ -61,6 +61,7 @@ internal static class DigitalObjectReader
 
     string? cardNameId = null;
     string? cardNameTokenId = null;
+    string? altNameId = null;
     string? cardSetId = null;
     string? collectorNumber = null;
     string? objectType = null;
@@ -125,6 +126,10 @@ internal static class DigitalObjectReader
         else if (reader.Name == "ARTIST_NAME_STRING")
         {
           artistId = reader.GetAttribute("id");
+        }
+        else if (reader.Name == "ALT_NAME_STRING")
+        {
+          altNameId = reader.GetAttribute("id");
         }
         else if (reader.Name == "CARDNAME_STRING")
         {
@@ -293,6 +298,7 @@ internal static class DigitalObjectReader
     return new DigitalObjectFields(
       CatalogId: catalogId,
       CurrentSetCode: currentSetCode,
+      AltNameId: altNameId,
       CardNameId: cardNameId,
       CardNameTokenId: cardNameTokenId,
       CardSetId: cardSetId,
