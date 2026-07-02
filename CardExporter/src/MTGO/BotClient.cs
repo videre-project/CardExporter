@@ -30,6 +30,7 @@ internal static class BotClient
       new ClientOptions
       {
         CreateProcess = true,
+        CloseOnExit = true,
         AcceptEULAPrompt = true
       },
       loggerFactory: loggerFactory
