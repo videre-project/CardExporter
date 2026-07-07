@@ -200,6 +200,26 @@ runs this job after GoatBots publishes the daily dump:
 docker compose up -d cardexporter-prices
 ```
 
+For an interactive tmux workflow, use the tmux override file to keep the
+containers idle and run the schedulers in foreground panes. Build once first so
+both panes can run the same DLL without racing over `bin/obj` files:
+
+```sh
+docker compose -f docker-compose.yml -f docker-compose.tmux.yml up -d cardexporter cardexporter-prices
+docker exec cardexporter bash -lc 'cd /workspace && dotnet build CardExporter/CardExporter.csproj'
+```
+
+```sh
+tmux set-option -g set-titles on \; \
+  set-option -g set-titles-string "#S: #W" \; \
+  new-session -s "MTGO" -n "Automation" -c /home/csqua/Documents/MTGOBot \
+    'printf "\033]2;MTGO Bot\007"; docker exec -it mtgobot wine-run' \; \
+  split-window -v -p 35 -c /home/csqua/Documents/CardExporter \
+    'printf "\033]2;CardExporter Import\007"; docker exec -it cardexporter bash -lc "export PATH=/opt/wine/bin:\$PATH; cd /workspace/CardExporter/bin/Debug/net10.0-windows && wine cmd /c \"C:\\dotnet\\dotnet.exe CardExporter.dll schedule\""' \; \
+  split-window -h -p 50 -c /home/csqua/Documents/CardExporter \
+    'printf "\033]2;CardExporter Prices\007"; docker exec -it cardexporter-prices bash -lc "export PATH=/opt/wine/bin:\$PATH; cd /workspace/CardExporter/bin/Debug/net10.0-windows && wine cmd /c \"C:\\dotnet\\dotnet.exe CardExporter.dll schedule --schedule-job sync-prices\""'
+```
+
 ### `import`
 
 Import changed MTGO data into PostgreSQL.

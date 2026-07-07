@@ -1,0 +1,7 @@
+services:
+  cardexporter:
+    command: ["sleep", "infinity"]
+
+  cardexporter-prices:
+    container_name: cardexporter-prices
+    command: ["sleep", "infinity"]

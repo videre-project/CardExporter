@@ -193,6 +193,16 @@ internal static class ScheduleCommand
   {
     yield return timeZoneId;
 
+    if (TimeZoneInfo.TryConvertIanaIdToWindowsId(timeZoneId, out string? windowsTimeZoneId))
+    {
+      yield return windowsTimeZoneId;
+    }
+
+    if (TimeZoneInfo.TryConvertWindowsIdToIanaId(timeZoneId, out string? ianaTimeZoneId))
+    {
+      yield return ianaTimeZoneId;
+    }
+
     if (string.Equals(timeZoneId, "America/Los_Angeles", StringComparison.OrdinalIgnoreCase))
     {
       yield return "Pacific Standard Time";
@@ -200,6 +210,14 @@ internal static class ScheduleCommand
     else if (string.Equals(timeZoneId, "Pacific Standard Time", StringComparison.OrdinalIgnoreCase))
     {
       yield return "America/Los_Angeles";
+    }
+    else if (string.Equals(timeZoneId, "Europe/Berlin", StringComparison.OrdinalIgnoreCase))
+    {
+      yield return "W. Europe Standard Time";
+    }
+    else if (string.Equals(timeZoneId, "W. Europe Standard Time", StringComparison.OrdinalIgnoreCase))
+    {
+      yield return "Europe/Berlin";
     }
   }
 
