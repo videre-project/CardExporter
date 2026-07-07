@@ -32,7 +32,8 @@ internal static class ScheduleCommand
     }
 
     logger.LogInformation(
-      "Starting CardExporter schedule in {TimeZoneId}; polling every {PollInterval} during {ScheduleWindows}.",
+      "Starting CardExporter {ScheduleJob} schedule in {TimeZoneId}; polling every {PollInterval} during {ScheduleWindows}.",
+      options.Schedule.Job,
       timeZone.Id,
       pollInterval,
       string.Join(", ", windows.Select(static window => window.ToDisplayString()))
@@ -71,11 +72,26 @@ internal static class ScheduleCommand
         break;
       }
 
-      await RunImportPollAsync(options, loggerFactory, logger);
+      await RunPollAsync(options, loggerFactory, logger);
     }
 
     logger.LogInformation("CardExporter schedule stopped.");
     return 0;
+  }
+
+  private static async Task RunPollAsync(
+    CommandLineOptions options,
+    ILoggerFactory loggerFactory,
+    ILogger logger
+  )
+  {
+    if (options.Schedule.Job == ScheduleJob.SyncPrices)
+    {
+      await RunPricePollAsync(options, loggerFactory, logger);
+      return;
+    }
+
+    await RunImportPollAsync(options, loggerFactory, logger);
   }
 
   private static async Task RunImportPollAsync(
@@ -113,6 +129,43 @@ internal static class ScheduleCommand
 
     logger.LogError(
       "Scheduled CardExporter import poll exited with status code {StatusCode}.",
+      result
+    );
+  }
+
+  private static async Task RunPricePollAsync(
+    CommandLineOptions options,
+    ILoggerFactory loggerFactory,
+    ILogger logger
+  )
+  {
+    CommandLineOptions priceOptions = options with
+    {
+      Mode = CommandMode.SyncPrices,
+      StartClient = false,
+      LogOn = false
+    };
+
+    logger.LogInformation("Starting scheduled CardExporter price sync poll.");
+    int result;
+    try
+    {
+      result = await Program.ExecuteOnceAsync(priceOptions, loggerFactory, logger);
+    }
+    catch (Exception exception)
+    {
+      logger.LogError(exception, "Scheduled CardExporter price sync poll failed.");
+      return;
+    }
+
+    if (result == 0)
+    {
+      logger.LogInformation("Scheduled CardExporter price sync poll completed successfully.");
+      return;
+    }
+
+    logger.LogError(
+      "Scheduled CardExporter price sync poll exited with status code {StatusCode}.",
       result
     );
   }

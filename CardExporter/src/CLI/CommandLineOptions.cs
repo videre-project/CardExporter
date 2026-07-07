@@ -21,8 +21,15 @@ internal enum CommandMode
   R2Delete,
   SyncImages,
   SyncAssets,
+  SyncPrices,
   ExportManaSymbols,
   ExportMTGOAssets
+}
+
+internal enum ScheduleJob
+{
+  Import,
+  SyncPrices
 }
 
 internal sealed record CommandLineOptions(
@@ -49,7 +56,8 @@ internal sealed record CommandLineOptions(
   bool SyncAssets,
   bool Force,
   R2Options R2,
-  ScheduleOptions Schedule
+  ScheduleOptions Schedule,
+  PriceSyncOptions PriceSync
 )
 {
   public static CommandLineOptions Parse(string[] args)
@@ -76,10 +84,31 @@ internal sealed record CommandLineOptions(
       ScheduleOptions.DefaultTimeZoneId;
     string scheduleWindows = Environment.GetEnvironmentVariable("CARDEXPORTER_SCHEDULE_WINDOWS") ??
       ScheduleOptions.DefaultWindows;
+    ScheduleJob scheduleJob = ParseScheduleJob(
+      Environment.GetEnvironmentVariable("CARDEXPORTER_SCHEDULE_JOB"),
+      "CARDEXPORTER_SCHEDULE_JOB"
+    );
     int schedulePollIntervalMinutes = ParseOptionalPositiveInt(
       Environment.GetEnvironmentVariable("CARDEXPORTER_SCHEDULE_POLL_MINUTES"),
       "CARDEXPORTER_SCHEDULE_POLL_MINUTES",
       ScheduleOptions.DefaultPollIntervalMinutes
+    );
+    string priceSource = Environment.GetEnvironmentVariable("CARDEXPORTER_PRICE_SOURCE") ??
+      PriceSyncOptions.DefaultSource;
+    string priceLatestUrl = Environment.GetEnvironmentVariable("CARDEXPORTER_GOATBOTS_PRICE_HISTORY_URL") ??
+      PriceSyncOptions.DefaultLatestPriceHistoryUrl;
+    string priceYearlyUrlTemplate = Environment.GetEnvironmentVariable("CARDEXPORTER_GOATBOTS_PRICE_HISTORY_YEAR_URL_TEMPLATE") ??
+      PriceSyncOptions.DefaultYearlyPriceHistoryUrlTemplate;
+    string priceDefinitionsUrl = Environment.GetEnvironmentVariable("CARDEXPORTER_GOATBOTS_CARD_DEFINITIONS_URL") ??
+      PriceSyncOptions.DefaultCardDefinitionsUrl;
+    bool priceBackfill = ParseOptionalBool(
+      Environment.GetEnvironmentVariable("CARDEXPORTER_PRICE_BACKFILL"),
+      "CARDEXPORTER_PRICE_BACKFILL"
+    );
+    int priceFromYear = ParseOptionalPositiveInt(
+      Environment.GetEnvironmentVariable("CARDEXPORTER_PRICE_FROM_YEAR"),
+      "CARDEXPORTER_PRICE_FROM_YEAR",
+      PriceSyncOptions.DefaultFromYear
     );
     string sourceManifestRoot = Environment.GetEnvironmentVariable("CARDEXPORTER_SOURCE_MANIFEST_ROOT") ??
       SourceManifestOptions.DefaultSourceManifestRoot;
@@ -174,6 +203,13 @@ internal sealed record CommandLineOptions(
         continue;
       }
 
+      if (string.Equals(arg, "sync-prices", StringComparison.OrdinalIgnoreCase) ||
+          string.Equals(arg, "price-sync", StringComparison.OrdinalIgnoreCase))
+      {
+        mode = CommandMode.SyncPrices;
+        continue;
+      }
+
       if (string.Equals(arg, "export-mana-symbols", StringComparison.OrdinalIgnoreCase) ||
           string.Equals(arg, "mana-symbol-export", StringComparison.OrdinalIgnoreCase))
       {
@@ -224,6 +260,12 @@ internal sealed record CommandLineOptions(
       if (string.Equals(arg, "--force", StringComparison.OrdinalIgnoreCase))
       {
         force = true;
+        continue;
+      }
+
+      if (string.Equals(arg, "--backfill", StringComparison.OrdinalIgnoreCase))
+      {
+        priceBackfill = true;
         continue;
       }
 
@@ -293,6 +335,12 @@ internal sealed record CommandLineOptions(
         continue;
       }
 
+      if (TryReadOptionValue(args, ref i, "--schedule-job", out string? scheduleJobOption))
+      {
+        scheduleJob = ParseScheduleJob(scheduleJobOption, "--schedule-job");
+        continue;
+      }
+
       if (TryReadOptionValue(args, ref i, "--poll-interval-minutes", out string? pollIntervalMinutesOption) ||
           TryReadOptionValue(args, ref i, "--poll-minutes", out pollIntervalMinutesOption))
       {
@@ -300,6 +348,36 @@ internal sealed record CommandLineOptions(
           pollIntervalMinutesOption,
           "--poll-interval-minutes"
         );
+        continue;
+      }
+
+      if (TryReadOptionValue(args, ref i, "--price-source", out string? priceSourceOption))
+      {
+        priceSource = priceSourceOption;
+        continue;
+      }
+
+      if (TryReadOptionValue(args, ref i, "--price-history-url", out string? priceLatestUrlOption))
+      {
+        priceLatestUrl = priceLatestUrlOption;
+        continue;
+      }
+
+      if (TryReadOptionValue(args, ref i, "--price-history-year-url-template", out string? priceYearlyUrlTemplateOption))
+      {
+        priceYearlyUrlTemplate = priceYearlyUrlTemplateOption;
+        continue;
+      }
+
+      if (TryReadOptionValue(args, ref i, "--card-definitions-url", out string? priceDefinitionsUrlOption))
+      {
+        priceDefinitionsUrl = priceDefinitionsUrlOption;
+        continue;
+      }
+
+      if (TryReadOptionValue(args, ref i, "--from-year", out string? priceFromYearOption))
+      {
+        priceFromYear = ParsePositiveInt(priceFromYearOption, "--from-year");
         continue;
       }
 
@@ -405,8 +483,11 @@ internal sealed record CommandLineOptions(
 
     if (mode == CommandMode.Schedule)
     {
-      syncImages = true;
-      syncAssets = true;
+      if (scheduleJob == ScheduleJob.Import)
+      {
+        syncImages = true;
+        syncAssets = true;
+      }
     }
 
     if (mode == CommandMode.ExportImages)
@@ -472,7 +553,16 @@ internal sealed record CommandLineOptions(
       new ScheduleOptions(
         scheduleTimeZone,
         scheduleWindows,
-        TimeSpan.FromMinutes(schedulePollIntervalMinutes)
+        TimeSpan.FromMinutes(schedulePollIntervalMinutes),
+        scheduleJob
+      ),
+      new PriceSyncOptions(
+        priceSource,
+        priceLatestUrl,
+        priceYearlyUrlTemplate,
+        priceDefinitionsUrl,
+        priceBackfill,
+        priceFromYear
       )
     );
   }
@@ -567,6 +657,30 @@ internal sealed record CommandLineOptions(
     throw new ArgumentException($"{optionName} must be true or false.");
   }
 
+  private static ScheduleJob ParseScheduleJob(string? value, string optionName)
+  {
+    if (string.IsNullOrWhiteSpace(value))
+    {
+      return ScheduleJob.Import;
+    }
+
+    if (string.Equals(value, "import", StringComparison.OrdinalIgnoreCase) ||
+        string.Equals(value, "cards", StringComparison.OrdinalIgnoreCase) ||
+        string.Equals(value, "card-import", StringComparison.OrdinalIgnoreCase))
+    {
+      return ScheduleJob.Import;
+    }
+
+    if (string.Equals(value, "sync-prices", StringComparison.OrdinalIgnoreCase) ||
+        string.Equals(value, "prices", StringComparison.OrdinalIgnoreCase) ||
+        string.Equals(value, "price-sync", StringComparison.OrdinalIgnoreCase))
+    {
+      return ScheduleJob.SyncPrices;
+    }
+
+    throw new ArgumentException($"{optionName} must be import or sync-prices.");
+  }
+
   private static void AddCatalogIds(
     ICollection<int> catalogIds,
     ISet<int> seenCatalogIds,
@@ -646,12 +760,29 @@ internal sealed record R2Options(
 internal sealed record ScheduleOptions(
   string TimeZoneId,
   string Windows,
-  TimeSpan PollInterval
+  TimeSpan PollInterval,
+  ScheduleJob Job
 )
 {
   public const string DefaultTimeZoneId = "America/Los_Angeles";
   public const string DefaultWindows = "Tuesday=08:00-10:00;Wednesday=09:00-12:00";
   public const int DefaultPollIntervalMinutes = 5;
+}
+
+internal sealed record PriceSyncOptions(
+  string Source,
+  string LatestPriceHistoryUrl,
+  string YearlyPriceHistoryUrlTemplate,
+  string CardDefinitionsUrl,
+  bool Backfill,
+  int FromYear
+)
+{
+  public const string DefaultSource = "goatbots";
+  public const string DefaultLatestPriceHistoryUrl = "https://www.goatbots.com/download/prices/price-history.zip";
+  public const string DefaultYearlyPriceHistoryUrlTemplate = "https://www.goatbots.com/download/prices/price-history-{0}.zip";
+  public const string DefaultCardDefinitionsUrl = "https://www.goatbots.com/download/prices/card-definitions.zip";
+  public const int DefaultFromYear = 2023;
 }
 
 internal static class DefaultPath

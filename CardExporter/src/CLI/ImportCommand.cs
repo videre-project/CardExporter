@@ -12,6 +12,7 @@ using CardExporter.MTGO;
 using CardExporter.MTGO.Files;
 using CardExporter.MTGO.Parsing;
 using Microsoft.Extensions.Logging;
+using Npgsql;
 
 
 namespace CardExporter.CLI;
@@ -169,7 +170,68 @@ internal static class ImportCommand
 
   public static string? ResolveConnectionString(CommandLineOptions options)
   {
-    return options.ConnectionString ?? Environment.GetEnvironmentVariable("CARDEXPORTER_DATABASE_URL");
+    string? explicitConnectionString = options.ConnectionString ??
+      Environment.GetEnvironmentVariable("CARDEXPORTER_DATABASE_URL");
+    if (!string.IsNullOrWhiteSpace(explicitConnectionString))
+    {
+      return explicitConnectionString;
+    }
+
+    return ResolvePostgresEnvironmentConnectionString();
+  }
+
+  private static string? ResolvePostgresEnvironmentConnectionString()
+  {
+    string? database = FirstEnvironmentValue("POSTGRES_DB", "PGDATABASE");
+    string? username = FirstEnvironmentValue("POSTGRES_USER", "PGUSER");
+    if (string.IsNullOrWhiteSpace(database) || string.IsNullOrWhiteSpace(username))
+    {
+      return null;
+    }
+
+    var builder = new NpgsqlConnectionStringBuilder
+    {
+      Host = FirstEnvironmentValue("CARDEXPORTER_POSTGRES_HOST", "POSTGRES_HOST", "PGHOST") ?? "postgres",
+      Port = ParsePostgresPort(
+        FirstEnvironmentValue("CARDEXPORTER_POSTGRES_PORT", "PGPORT")
+      ),
+      Database = database,
+      Username = username
+    };
+
+    string? password = FirstEnvironmentValue("POSTGRES_PASSWORD", "PGPASSWORD");
+    if (password is not null)
+    {
+      builder.Password = password;
+    }
+
+    return builder.ConnectionString;
+  }
+
+  private static int ParsePostgresPort(string? value)
+  {
+    if (string.IsNullOrWhiteSpace(value))
+    {
+      return 5432;
+    }
+
+    return int.TryParse(value, out int port) && port > 0
+      ? port
+      : 5432;
+  }
+
+  private static string? FirstEnvironmentValue(params string[] names)
+  {
+    foreach (string name in names)
+    {
+      string? value = Environment.GetEnvironmentVariable(name);
+      if (!string.IsNullOrWhiteSpace(value))
+      {
+        return value;
+      }
+    }
+
+    return null;
   }
 
   private static SourceManifestImportCounts CreateManifestImportCounts(

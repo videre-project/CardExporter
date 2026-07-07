@@ -169,6 +169,23 @@ internal static class Program
         );
       }
 
+      if (options.Mode == CommandMode.SyncPrices)
+      {
+        string? connectionString = ImportCommand.ResolveConnectionString(options);
+        if (string.IsNullOrWhiteSpace(connectionString))
+        {
+          logger.LogError("A database connection string is required. Set CARDEXPORTER_DATABASE_URL or pass --connection-string.");
+          return 5;
+        }
+
+        return await PriceSyncCommand.ExecuteAsync(
+          connectionString,
+          options.PriceSync,
+          options.R2.DryRun,
+          logger
+        );
+      }
+
       if (options.Mode == CommandMode.ExportManaSymbols)
       {
         if (options.StartClient)

@@ -19,6 +19,10 @@ CardExporter turns those sources into three forms of operating state:
 2. **Pending image work** for new or changed card and product catalog IDs.
 3. **Manifest files** that track MTGO source inputs and generated CDN objects.
 
+Price history is imported separately from GoatBots with `sync-prices`. It writes
+catalog price definitions and daily sell-price history into PostgreSQL without
+starting MTGO or touching R2.
+
 Each scheduled import first fetches Videre's MTGO version manifest and compares its `codebase` field with `manifests/mtgo-version.json`. When the codebase is unchanged, the run returns before checking local MTGO files, PostgreSQL, image work, or client assets. When it is new, changed, or temporarily unavailable, CardExporter falls back to the local manifests and database checks below.
 
 The normal flow is:
@@ -107,6 +111,8 @@ Create a `.env` file in the repository root.
 ```env
 # PostgreSQL
 CARDEXPORTER_DATABASE_URL=Host=<mtgo-db-host>;Port=5432;Database=mtgo;Username=<user>;Password=<password>
+CARDEXPORTER_POSTGRES_HOST=postgres
+CARDEXPORTER_POSTGRES_PORT=5432
 
 # Cloudflare R2. Required by upload and bucket-reconciliation commands.
 CF_S3_Access_Key_ID=...
@@ -115,6 +121,12 @@ R2_BUCKET_NAME=mtgo-cdn
 R2_ENDPOINT_URL=https://<account-id>.r2.cloudflarestorage.com
 R2_PUBLIC_BASE_URL=https://r2.videreproject.com
 ```
+
+CardExporter also understands the `POSTGRES_DB`, `POSTGRES_USER`, and
+`POSTGRES_PASSWORD` variables from `mtgo-db/.env` when
+`CARDEXPORTER_DATABASE_URL` is unset. In that mode, use
+`CARDEXPORTER_POSTGRES_HOST` and `CARDEXPORTER_POSTGRES_PORT` if the database is
+not reachable as `postgres:5432`.
 
 CardExporter does not create or maintain permanent PostgreSQL tables. The catalog schema lives in [`mtgo-db`](https://github.com/videre-project/mtgo-db); CardExporter only writes into those existing tables and creates temporary staging tables for each import transaction.
 
@@ -151,6 +163,7 @@ CARDEXPORTER_SCHEDULE_POLL_MINUTES=5
 |---|---|---|
 | `schedule` | Running the recurring patch-window import loop | Scheduled `import --sync-images` polls |
 | `import` | Incremental card, set, product, and legality imports | PostgreSQL and source tracking; optional image/CDN work with `--sync-images` |
+| `sync-prices` | Importing GoatBots card definitions and daily price history | PostgreSQL price definition and history tables |
 | `sync-images` | Rendering and uploading missing or pending card/product images | Local render output, R2, CDN tracking, and image-work state |
 | `export-images` | Rendering selected card/product images for inspection | Local files only |
 | `r2-manifest` | Rebuilding the local CDN manifest from the bucket | `manifests/mtgo-cdn.csv` |
@@ -179,6 +192,14 @@ When the MTGO version manifest is unchanged, the poll returns before starting
 MTGO or checking local source files. Schedule windows use
 `DAY=HH:mm-HH:mm` entries separated by semicolons.
 
+Use `--schedule-job sync-prices` for the independent GoatBots price-history
+poller. The compose file includes a separate `cardexporter-prices` service that
+runs this job after GoatBots publishes the daily dump:
+
+```sh
+docker compose up -d cardexporter-prices
+```
+
 ### `import`
 
 Import changed MTGO data into PostgreSQL.
@@ -196,6 +217,34 @@ docker compose run --rm cardexporter \
 ```
 
 Add `--dry-run` to report detected changes and planned work without mutating PostgreSQL, R2, or the manifest files.
+
+### `sync-prices`
+
+Import GoatBots card definitions and sell-price history into PostgreSQL. A
+normal run downloads the latest daily price archive and the current card
+definition archive:
+
+```sh
+docker compose run --rm cardexporter \
+  wine-run CardExporter/CardExporter.csproj sync-prices
+```
+
+Add `--dry-run` to parse and stage the archives without committing rows:
+
+```sh
+docker compose run --rm cardexporter \
+  wine-run CardExporter/CardExporter.csproj sync-prices --dry-run
+```
+
+Use `--backfill --from-year 2023` to import yearly archives from GoatBots:
+
+```sh
+docker compose run --rm cardexporter \
+  wine-run CardExporter/CardExporter.csproj sync-prices --backfill --from-year 2023
+```
+
+Price sync is catalog-ID based. IDs that GoatBots publishes but CardExporter has
+not seen in cards, card variants, or products are logged and skipped.
 
 ### `sync-images`
 

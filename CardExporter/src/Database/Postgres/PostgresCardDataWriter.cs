@@ -44,10 +44,12 @@ internal sealed class PostgresCardDataWriter
     );
     await StagingMerger.MergeAsync(connection);
     StaleDeleteCounts deletedCounts = await StagingMerger.DeleteStaleAsync(connection);
+    long catalogItemCount = await CatalogItemMerge.RefreshAsync(connection);
     ImportDatabaseState finalDatabaseState = await ImportDatabaseState.ReadAsync(connection);
 
     await transaction.CommitAsync();
     LogCompletedImport(stagedCounts, deletedCounts, imageChanges);
+    _logger.LogInformation("Refreshed {CatalogItemCount} catalog item rows.", catalogItemCount);
     return new CardDataImportResult(stagedCounts, deletedCounts, imageChanges, finalDatabaseState);
   }
 

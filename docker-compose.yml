@@ -3,6 +3,8 @@ services:
     image: videreproject/mtgosdk:headless
     container_name: cardexporter
     restart: unless-stopped
+    env_file:
+      - .env
     environment:
       - DISPLAY=:99
       - WINEDEBUG=-all
@@ -13,6 +15,24 @@ services:
     working_dir: /workspace
     entrypoint: ["/usr/local/bin/xvfb-entrypoint.sh"]
     command: ["wine-run", "CardExporter/CardExporter.csproj", "schedule"]
+
+  cardexporter-prices:
+    image: videreproject/mtgosdk:headless
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - DISPLAY=:99
+      - WINEDEBUG=-all
+      - TZ=Europe/Berlin
+      - CARDEXPORTER_SCHEDULE_TIME_ZONE=Europe/Berlin
+      - CARDEXPORTER_SCHEDULE_WINDOWS=Monday=05:45-06:15;Tuesday=05:45-06:15;Wednesday=05:45-06:15;Thursday=05:45-06:15;Friday=05:45-06:15;Saturday=05:45-06:15;Sunday=05:45-06:15
+      - CARDEXPORTER_SCHEDULE_POLL_MINUTES=30
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    entrypoint: ["/usr/local/bin/xvfb-entrypoint.sh"]
+    command: ["wine-run", "CardExporter/CardExporter.csproj", "schedule", "--schedule-job", "sync-prices"]
 
 volumes:
   carddata-wine-prefix:
