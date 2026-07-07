@@ -58,7 +58,7 @@ internal static class ImageSyncCommand
     CdnManifest manifest = CdnManifest.Load(options.CdnManifestPath);
     MissingCardImageCatalog missingImages = await CardImageCatalogRepository.GetCatalogIdsForSyncAsync(
       connectionString,
-      manifest.ImageCatalogIds,
+      manifest.ImageKeys,
       scope
     );
     IReadOnlyList<CardImageCatalogEntry> missingEntries = missingImages.Entries;
@@ -149,6 +149,7 @@ internal static class ImageSyncCommand
           CardImageKind kind = imageKinds.GetValueOrDefault(image.CatalogId, CardImageKind.Card);
           await client.UploadPngAsync(image.CatalogId, kind, image.PngBytes);
           manifest.UpsertImage(image.CatalogId, options.PublicBaseUrl, DateTimeOffset.UtcNow, kind);
+          await DeleteObsoleteImagePathAsync(client, manifest, image.CatalogId, kind, logger);
           uploadedCatalogIdsInBatch.Add(image.CatalogId);
           uploadedCount++;
           uploadedInBatch++;
@@ -196,6 +197,39 @@ internal static class ImageSyncCommand
   {
     GC.Collect();
     GC.WaitForPendingFinalizers();
+  }
+
+  private static async Task DeleteObsoleteImagePathAsync(
+    R2ImageClient client,
+    CdnManifest manifest,
+    int catalogId,
+    CardImageKind uploadedKind,
+    ILogger logger
+  )
+  {
+    CardImageKind obsoleteKind = uploadedKind == CardImageKind.Product
+      ? CardImageKind.Card
+      : CardImageKind.Product;
+    string obsoleteKey = CardImageKey.Create(catalogId, obsoleteKind);
+    if (!manifest.TryGet(obsoleteKey, out _))
+    {
+      return;
+    }
+
+    try
+    {
+      await client.DeletePngAsync(catalogId, obsoleteKind);
+      manifest.RemoveImage(catalogId, obsoleteKind);
+    }
+    catch (Exception exception)
+    {
+      logger.LogWarning(
+        exception,
+        "Uploaded image for catalog ID {CatalogId}, but failed to delete obsolete {ObsoleteImageKind} R2 path.",
+        catalogId,
+        obsoleteKind
+      );
+    }
   }
 
   private static void LogMissingSetSummary(

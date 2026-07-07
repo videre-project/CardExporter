@@ -21,11 +21,12 @@ internal sealed record ProductRecord(
 {
   public static ProductRecord? Create(
     DigitalObjectFields fields,
-    LookupTables lookups
+    LookupTables lookups,
+    bool forceProduct = false
   )
   {
     if (fields.CatalogId is not int catalogId ||
-        !fields.IsProductObject)
+        (!fields.IsProductObject && !forceProduct))
     {
       return null;
     }

@@ -33,7 +33,13 @@ internal sealed class Parser
   private readonly IReadOnlyDictionary<string, SetMetadata> _setMetadata;
   private readonly string? _sourceManifestRoot;
   private IReadOnlyDictionary<string, string>? _productSetNamesByCode;
+  private IReadOnlyDictionary<string, string?>? _setTypesByCode;
   private IReadOnlyList<ProductRecord>? _products;
+
+  private const string MtgoOnlySetType = "MTGO_ONLY";
+  private const string TestSetType = "TestSet";
+  private const string LibraryOfCongressSetCode = "CC";
+  private const string AvatarProductNamePrefix = "Avatar -";
 
   private static readonly IReadOnlyDictionary<string, string[]> RuleSetTypeAliases =
     new Dictionary<string, string[]>(StringComparer.OrdinalIgnoreCase)
@@ -222,7 +228,7 @@ internal sealed class Parser
       List<DigitalObjectFields> fileFields = DigitalObjectReader.ReadAll(file);
       foreach (DigitalObjectFields fields in fileFields)
       {
-        if (fields.CatalogId is int catalogId && fields.IsNonCardObject)
+        if (fields.CatalogId is int catalogId && IsProductRecord(fields, lookups))
         {
           knownNonCards.Add(catalogId);
         }
@@ -262,11 +268,98 @@ internal sealed class Parser
     _products = _files.GetSetFiles()
       .Concat(_files.GetProductFiles())
       .SelectMany(static file => DigitalObjectReader.ReadAll(file))
-      .Select(fields => ProductRecord.Create(fields, lookups))
+      .Select(fields => ProductRecord.Create(fields, lookups, IsCollectionProduct(fields, lookups)))
       .OfType<ProductRecord>()
       .ToArray();
 
     return _products;
+  }
+
+  private bool IsProductRecord(DigitalObjectFields fields, LookupTables lookups)
+  {
+    return fields.IsProductObject || IsCollectionProduct(fields, lookups);
+  }
+
+  private bool IsCollectionProduct(DigitalObjectFields fields, LookupTables lookups)
+  {
+    string? name = lookups.ResolveCardName(fields);
+    if (!StartsWithAvatarProductPrefix(name))
+    {
+      return false;
+    }
+
+    string? setCode = lookups.ResolveSetCode(fields);
+    return IsAvatarProductSet(setCode, ResolveSetType(setCode));
+  }
+
+  private string? ResolveSetType(string? setCode)
+  {
+    if (string.IsNullOrWhiteSpace(setCode))
+    {
+      return null;
+    }
+
+    if (GetSetTypesByCode().TryGetValue(setCode, out string? setType))
+    {
+      return setType;
+    }
+
+    _setMetadata.TryGetValue(setCode, out SetMetadata? metadata);
+    return SetTypeClassifier.Resolve(setCode, metadata?.SetType, sourceSetType: null);
+  }
+
+  private static bool IsAvatarProductSet(string? setCode, string? setType)
+  {
+    if (string.Equals(setType, MtgoOnlySetType, StringComparison.OrdinalIgnoreCase))
+    {
+      return true;
+    }
+
+    return string.Equals(setCode, LibraryOfCongressSetCode, StringComparison.OrdinalIgnoreCase) &&
+      string.Equals(setType, TestSetType, StringComparison.OrdinalIgnoreCase);
+  }
+
+  private IReadOnlyDictionary<string, string?> GetSetTypesByCode()
+  {
+    if (_setTypesByCode is not null)
+    {
+      return _setTypesByCode;
+    }
+
+    var setTypesByCode = new Dictionary<string, string?>(StringComparer.OrdinalIgnoreCase);
+    foreach (string file in _files.GetSetFiles())
+    {
+      using XmlReader reader = XmlReader.Create(file, ReaderSettings);
+      while (reader.Read())
+      {
+        if (reader.NodeType != XmlNodeType.Element || reader.Name != "CardSet")
+        {
+          continue;
+        }
+
+        string? code = reader.GetAttribute("id");
+        if (!string.IsNullOrWhiteSpace(code))
+        {
+          _setMetadata.TryGetValue(code, out SetMetadata? metadata);
+          setTypesByCode[code] = SetTypeClassifier.Resolve(
+            code,
+            metadata?.SetType,
+            reader.GetAttribute("cardsetType")
+          );
+        }
+
+        break;
+      }
+    }
+
+    _setTypesByCode = setTypesByCode;
+    return _setTypesByCode;
+  }
+
+  private static bool StartsWithAvatarProductPrefix(string? name)
+  {
+    return !string.IsNullOrWhiteSpace(name) &&
+      name.StartsWith(AvatarProductNamePrefix, StringComparison.OrdinalIgnoreCase);
   }
 
   public IEnumerable<CardCatalogVariantRecord> EnumerateCardCatalogVariants()
@@ -281,7 +374,7 @@ internal sealed class Parser
 
       foreach (DigitalObjectFields fields in fileFields)
       {
-        if (fields.CatalogId is int catalogId && fields.IsNonCardObject)
+        if (fields.CatalogId is int catalogId && IsProductRecord(fields, lookups))
         {
           knownNonCards.Add(catalogId);
         }
@@ -360,7 +453,7 @@ internal sealed class Parser
 
       foreach (DigitalObjectFields fields in fileFields)
       {
-        if (fields.CatalogId is int catalogId && fields.IsNonCardObject)
+        if (fields.CatalogId is int catalogId && IsProductRecord(fields, lookups))
         {
           knownNonCards.Add(catalogId);
         }
@@ -421,7 +514,7 @@ internal sealed class Parser
     {
       foreach (DigitalObjectFields fields in DigitalObjectReader.ReadAll(file))
       {
-        if (fields.CatalogId is int catalogId && fields.IsNonCardObject)
+        if (fields.CatalogId is int catalogId && IsProductRecord(fields, lookups))
         {
           knownNonCards.Add(catalogId);
         }

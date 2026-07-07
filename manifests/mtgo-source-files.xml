@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<sourceManifest outputVersion="3.4.157.4683" parserOutputVersion="3" setCount="419" cardCount="74887" productCount="1987" cardCatalogVariantCount="74033" oracleCardCount="33357" cardFaceCount="2608" legalityCount="233499">
+<sourceManifest outputVersion="3.4.157.4683" parserOutputVersion="3" setCount="419" cardCount="74040" productCount="2834" cardCatalogVariantCount="74033" oracleCardCount="32510" cardFaceCount="2608" legalityCount="227570">
   <sourceFile sourceType="shared" relativePath="CardDataSource/ALT_NAME_STRING.xml" byteCount="15274" sha256="16c5715f7cd20fb9cb9bda5267613e477eed13b71f4eb35b06efa7b5198d55de" />
   <sourceFile sourceType="shared" relativePath="CardDataSource/ARTIFACT_TYPEID0.xml" byteCount="1735" sha256="7fed7f2fa4e8046a2cdf9332f544060047aa8f008015a251c5dffb3b63743d4c" />
   <sourceFile sourceType="shared" relativePath="CardDataSource/ARTIFACT_TYPEID0_1.xml" byteCount="438" sha256="38977928308470d4334999dcb627882467d379fd5e7f57d6ff098a30a8817e86" />

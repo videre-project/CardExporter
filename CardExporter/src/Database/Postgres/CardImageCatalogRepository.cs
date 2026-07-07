@@ -19,7 +19,7 @@ internal static class CardImageCatalogRepository
 {
   public static async Task<MissingCardImageCatalog> GetCatalogIdsForSyncAsync(
     string connectionString,
-    IReadOnlySet<int> manifestCatalogIds,
+    IReadOnlySet<string> manifestImageKeys,
     CardImageSyncScope scope
   )
   {
@@ -131,9 +131,10 @@ internal static class CardImageCatalogRepository
     while (await reader.ReadAsync())
     {
       int catalogId = reader.GetInt32(0);
-      if (scope.IncludeExistingManifestRows || !manifestCatalogIds.Contains(catalogId))
+      CardImageKind kind = ParseImageKind(reader.GetString(1));
+      string imageKey = CardImageKey.Create(catalogId, kind);
+      if (scope.IncludeExistingManifestRows || !manifestImageKeys.Contains(imageKey))
       {
-        CardImageKind kind = ParseImageKind(reader.GetString(1));
         missingEntries.Add(new CardImageCatalogEntry(catalogId, kind));
         string? setCode = reader.IsDBNull(2) ? null : reader.GetString(2);
         string summaryKey = string.IsNullOrWhiteSpace(setCode) ? string.Empty : setCode;

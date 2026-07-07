@@ -72,6 +72,11 @@ internal sealed record CardRecord(
       return null;
     }
 
+    if (knownNonCards.Contains(catalogId))
+    {
+      return null;
+    }
+
     if (fields.IsNonCardObject)
     {
       return null;

@@ -25,11 +25,9 @@ internal sealed class CdnManifest
 
   public int Count => _rows.Count;
 
-  public IReadOnlySet<int> ImageCatalogIds => _rows.Values
-    .Select(static row => row.CatalogId)
-    .Where(static catalogId => catalogId is not null)
-    .Select(static catalogId => catalogId!.Value)
-    .ToHashSet();
+  public IReadOnlySet<string> ImageKeys => _rows.Keys
+    .Where(static key => CardImageKey.TryParseImageKey(key, out _, out _))
+    .ToHashSet(StringComparer.Ordinal);
 
   public static CdnManifest Empty()
   {
@@ -145,6 +143,11 @@ internal sealed class CdnManifest
     }
 
     return removed;
+  }
+
+  public bool RemoveImage(int catalogId, CardImageKind kind)
+  {
+    return _rows.Remove(CardImageKey.Create(catalogId, kind));
   }
 
   public void Write(string path)
