@@ -19,6 +19,7 @@ internal static class ProductMerge
         id,
         set_code,
         name,
+        description,
         object_type,
         texture_number,
         is_tradable,
@@ -29,6 +30,7 @@ internal static class ProductMerge
         p.id,
         p.set_code,
         NULLIF(p.name, ''),
+        NULLIF(p.description, ''),
         NULLIF(p.object_type, ''),
         p.texture_number,
         p.is_tradable,
@@ -42,6 +44,7 @@ internal static class ProductMerge
       ON CONFLICT (id) DO UPDATE SET
         set_code = EXCLUDED.set_code,
         name = EXCLUDED.name,
+        description = EXCLUDED.description,
         object_type = EXCLUDED.object_type,
         texture_number = EXCLUDED.texture_number,
         is_tradable = EXCLUDED.is_tradable,

@@ -26,6 +26,7 @@ internal static class ProductCopy
         id,
         set_code,
         name,
+        description,
         object_type,
         texture_number,
         is_tradable,
@@ -40,6 +41,7 @@ internal static class ProductCopy
       await importer.WriteAsync(product.Id, NpgsqlDbType.Integer);
       await importer.WriteAsync(product.SetCode, NpgsqlDbType.Text);
       await importer.WriteAsync(product.Name, NpgsqlDbType.Text);
+      await importer.WriteAsync(product.Description, NpgsqlDbType.Text);
       await importer.WriteAsync(product.ObjectType, NpgsqlDbType.Text);
       await importer.WriteAsync(product.TextureNumber, NpgsqlDbType.Integer);
       await importer.WriteAsync(product.IsTradable, NpgsqlDbType.Boolean);

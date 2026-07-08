@@ -68,6 +68,7 @@ internal static class ImportSchema
         id INTEGER NOT NULL,
         set_code TEXT NULL,
         name TEXT NULL,
+        description TEXT NULL,
         object_type TEXT NULL,
         texture_number INTEGER NULL,
         is_tradable BOOLEAN NULL,
