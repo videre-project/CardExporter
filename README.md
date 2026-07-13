@@ -111,6 +111,8 @@ Create a `.env` file in the repository root.
 ```env
 # PostgreSQL
 CARDEXPORTER_DATABASE_URL=Host=<mtgo-db-host>;Port=5432;Database=mtgo;Username=<user>;Password=<password>
+# CardExporter shares the mtgo-db-shared Docker network
+# so it can reach Postgres directly by service name.
 CARDEXPORTER_POSTGRES_HOST=postgres
 CARDEXPORTER_POSTGRES_PORT=5432
 
