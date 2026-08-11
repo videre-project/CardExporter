@@ -4,8 +4,10 @@
 **/
 
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using CardExporter.Database.Postgres;
@@ -68,12 +70,26 @@ internal static class PriceSyncCommand
           options.YearlyPriceHistoryUrlTemplate,
           year
         );
-        await ImportPriceArchiveAsync(httpClient, writer, archiveUrl, options.Source, dryRun, logger);
+        await ImportPriceArchiveAsync(httpClient, writer, archiveUrl, options.Source, dryRun, logger, options.PriceDates);
+      }
+    }
+    else if (options.PriceDates is not null && options.PriceDates.Count > 0)
+    {
+      // When specific dates are requested, use yearly archives for those years
+      var years = options.PriceDates.Select(d => d.Year).Distinct().OrderBy(y => y).ToList();
+      foreach (int year in years)
+      {
+        string archiveUrl = string.Format(
+          CultureInfo.InvariantCulture,
+          options.YearlyPriceHistoryUrlTemplate,
+          year
+        );
+        await ImportPriceArchiveAsync(httpClient, writer, archiveUrl, options.Source, dryRun, logger, options.PriceDates);
       }
     }
     else
     {
-      await ImportPriceArchiveAsync(httpClient, writer, options.LatestPriceHistoryUrl, options.Source, dryRun, logger);
+      await ImportPriceArchiveAsync(httpClient, writer, options.LatestPriceHistoryUrl, options.Source, dryRun, logger, options.PriceDates);
     }
 
     return 0;
@@ -85,13 +101,14 @@ internal static class PriceSyncCommand
     string archiveUrl,
     string source,
     bool dryRun,
-    ILogger logger
+    ILogger logger,
+    IReadOnlyList<DateOnly> priceDates = null
   )
   {
     byte[] archiveBytes = await DownloadAsync(httpClient, archiveUrl, logger);
     using var archiveStream = new MemoryStream(archiveBytes, writable: false);
     PriceHistoryImportResult result = await writer.ImportPricesAsync(
-      GoatBotsPriceArchiveReader.ReadPrices(archiveStream, source, logger),
+      GoatBotsPriceArchiveReader.ReadPrices(archiveStream, source, logger, priceDates),
       dryRun
     );
 

@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.IO.Compression;
+using System.Linq;
 using System.Text.Json;
 using Microsoft.Extensions.Logging;
 
@@ -67,15 +68,26 @@ internal static class GoatBotsPriceArchiveReader
   public static IEnumerable<CatalogPriceRecord> ReadPrices(
     Stream zipStream,
     string source,
-    ILogger logger
+    ILogger logger,
+    IReadOnlyList<DateOnly> priceDates = null
   )
   {
+    HashSet<DateOnly> dateFilter = null;
+    if (priceDates is not null && priceDates.Count > 0)
+    {
+      dateFilter = priceDates.ToHashSet();
+    }
     using var archive = new ZipArchive(zipStream, ZipArchiveMode.Read, leaveOpen: true);
     foreach (ZipArchiveEntry entry in archive.Entries)
     {
       if (!TryParsePriceDate(entry.Name, out DateOnly priceDate))
       {
         logger.LogDebug("Skipping non-price GoatBots ZIP entry {EntryName}.", entry.Name);
+        continue;
+      }
+
+      if (dateFilter is not null && !dateFilter.Contains(priceDate))
+      {
         continue;
       }
 
