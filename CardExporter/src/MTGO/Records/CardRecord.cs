@@ -218,7 +218,7 @@ internal sealed record CardRecord(
       ShouldWork: shouldWork,
       IsFoil: isFoil,
       IsToken: isToken,
-      RawJson: JsonSerializer.Serialize(fields)
+      RawJson: JsonSerializer.Serialize(fields, JsonSerializationOptions.Default)
     );
 
     if (fields.CloneId is int baseCardCatalogId && knownCards.TryGetValue(baseCardCatalogId, out CardRecord? baseCard))

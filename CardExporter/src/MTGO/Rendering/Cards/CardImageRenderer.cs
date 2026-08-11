@@ -29,6 +29,23 @@ internal static class CardImageRenderer
   {
     ArtOverrideApplicator.ApplyForCatalogIds(catalogIds, renderHeight, renderColumns, logger);
 
+    // Warm up the MTGO renderer with a single card to avoid first-batch failures
+    if (catalogIds.Count > 0)
+    {
+      try
+      {
+        _ = CardRenderer.RenderCards(
+          [catalogIds[0]],
+          columns: renderColumns,
+          cardHeight: renderHeight
+        );
+      }
+      catch (Exception warmupException)
+      {
+        logger.LogDebug(warmupException, "MTGO renderer warm-up failed; continuing anyway.");
+      }
+    }
+
     var renderedImagesByCatalogId = new Dictionary<int, RenderedCardImage>();
     var pendingCatalogIds = catalogIds.ToList();
     var lastFailureReasons = new Dictionary<int, string>();

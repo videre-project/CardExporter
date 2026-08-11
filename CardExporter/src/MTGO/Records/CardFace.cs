@@ -200,7 +200,7 @@ internal sealed record CardFace(
       Defense: CardAdapter.NullIfEmpty(faceDefinition.Defense),
       Artist: artist,
       ArtId: artId,
-      RawJson: JsonSerializer.Serialize(fields)
+      RawJson: JsonSerializer.Serialize(fields, JsonSerializationOptions.Default)
     );
   }
 

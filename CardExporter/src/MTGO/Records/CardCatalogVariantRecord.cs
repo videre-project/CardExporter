@@ -48,7 +48,7 @@ internal sealed record CardCatalogVariantRecord(
       CardTextureNumber: fields.CardTextureNumber,
       IsFoil: fields.IsFoil,
       IsToken: fields.IsToken ?? baseCard.IsToken,
-      RawJson: JsonSerializer.Serialize(fields)
+      RawJson: JsonSerializer.Serialize(fields, JsonSerializationOptions.Default)
     );
   }
 }

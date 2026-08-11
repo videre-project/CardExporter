@@ -42,7 +42,7 @@ internal sealed record SetRecord(
       Age: metadata?.Age ?? (TryParseInt(age, out int parsedAge) ? parsedAge : null),
       SetType: SetTypeClassifier.Resolve(code, metadata?.SetType, cardsetType),
       SourceFile: sourceFile,
-      RawJson: JsonSerializer.Serialize(raw)
+      RawJson: JsonSerializer.Serialize(raw, JsonSerializationOptions.Default)
     );
   }
 

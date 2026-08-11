@@ -5,6 +5,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 
 
@@ -110,6 +111,18 @@ internal sealed record CommandLineOptions(
       "CARDEXPORTER_PRICE_FROM_YEAR",
       PriceSyncOptions.DefaultFromYear
     );
+    List<DateOnly> priceDates = new List<DateOnly>();
+    string? priceDatesEnv = Environment.GetEnvironmentVariable("CARDEXPORTER_PRICE_DATES");
+    if (!string.IsNullOrWhiteSpace(priceDatesEnv))
+    {
+      foreach (string part in priceDatesEnv.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+      {
+        if (DateOnly.TryParseExact(part, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateOnly parsed))
+        {
+          priceDates.Add(parsed);
+        }
+      }
+    }
     string sourceManifestRoot = Environment.GetEnvironmentVariable("CARDEXPORTER_SOURCE_MANIFEST_ROOT") ??
       SourceManifestOptions.DefaultSourceManifestRoot;
     string outputRoot = Environment.GetEnvironmentVariable("EXPORT_OUTPUT_ROOT") ?? ImageExportOptions.DefaultOutputRoot;
@@ -381,6 +394,23 @@ internal sealed record CommandLineOptions(
         continue;
       }
 
+      if (TryReadOptionValue(args, ref i, "--price-date", out string? priceDateOption) ||
+          TryReadOptionValue(args, ref i, "--price-dates", out priceDateOption))
+      {
+        foreach (string part in priceDateOption.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+        {
+          if (DateOnly.TryParseExact(part, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateOnly parsed))
+          {
+            priceDates.Add(parsed);
+          }
+          else
+          {
+            throw new ArgumentException($"Invalid date format for --price-date: {part}. Use yyyy-MM-dd.");
+          }
+        }
+        continue;
+      }
+
       if (TryReadOptionValue(args, ref i, "--dump-lines", out string? dumpLinesOption))
       {
         dumpLines = ParsePositiveInt(dumpLinesOption, "--dump-lines");
@@ -562,7 +592,8 @@ internal sealed record CommandLineOptions(
         priceYearlyUrlTemplate,
         priceDefinitionsUrl,
         priceBackfill,
-        priceFromYear
+        priceFromYear,
+        priceDates
       )
     );
   }
@@ -775,7 +806,8 @@ internal sealed record PriceSyncOptions(
   string YearlyPriceHistoryUrlTemplate,
   string CardDefinitionsUrl,
   bool Backfill,
-  int FromYear
+  int FromYear,
+  IReadOnlyList<DateOnly> PriceDates
 )
 {
   public const string DefaultSource = "goatbots";

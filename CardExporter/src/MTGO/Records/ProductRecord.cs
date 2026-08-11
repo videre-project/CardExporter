@@ -40,7 +40,7 @@ internal sealed record ProductRecord(
       ObjectType: fields.ObjectType,
       TextureNumber: fields.CardTextureNumber,
       IsTradable: fields.IsTradable,
-      RawJson: JsonSerializer.Serialize(fields)
+      RawJson: JsonSerializer.Serialize(fields, JsonSerializationOptions.Default)
     );
   }
 }
